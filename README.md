@@ -2,7 +2,7 @@
 ## Soft-MarketPlace
 
 ### Setup : 
-#### git clone https://github.com/Bougueddra-Adem/Soft-MarketPlace.git
+#### git clone https://github.com/Bouguedra-Adem/Soft-MarketPlace.git
 #### cd Soft-MarketPlace
 #### npm Install
 #### ng serve
