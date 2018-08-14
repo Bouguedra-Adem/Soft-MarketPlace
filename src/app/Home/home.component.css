@@ -1,0 +1,73 @@
+.bg-light {
+    background-color: #0e0e0ee6!important;
+    font-size: 13px;
+};
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.navbar-light .navbar-nav .nav-link {
+     color: rgb(255, 255, 255); 
+}
+.carousel-caption {
+    background: rgba(3, 3, 3, 0.5);
+    height: 100%;
+    width: 100%;
+    right: 15%; 
+     bottom: 0px; 
+    left: 0px;
+    z-index: 300;
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    color: #fff;
+    text-align: center;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255); 
+}
+.w-100 {
+    width: 100% !important;
+    height: 450px;
+}
+.SpanNav{
+    color:white;
+    font-size: 150px;
+}
+.dropdown-menu{
+    left:400px;
+ 
+ }
+ 
+.w-100 {
+    width: 100% !important;
+    height: 450px;
+}
+.input-group > .form-control:not(:last-child), .input-group > .custom-select:not(:last-child){
+    border: 2px solid rgba(75, 73, 73, 0.31);;
+    border-radius: 22px;
+    width: 500px;
+    height: 50px;
+}
+.inputform{
+    height: 50px;
+}
+.form{
+    margin-left: 200px;
+}
+.nav-item{
+    padding-left: 45px;
+}
+.btn-outline-secondary {
+    color: #eeeeee;
+    background-color: transparent;
+    background-image: none;
+}  
+
