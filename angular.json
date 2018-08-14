@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SoftwarApp": {
+    "Soft-MarketPlace": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/SoftwarApp",
+            "outputPath": "dist/Soft-MarketPlace",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,10 +24,10 @@
             ],
             "styles": [
               "src/styles.css",
-              "../SOFTWARAPP/node_modules/bootstrap/dist/css/bootstrap.css"
+              "../Soft-MarketPlace/node_modules/bootstrap/dist/css/bootstrap.css"
               
             ],
-            "scripts": [ "../SOFTWARAPP/node_modules/jquery/dist/jquery.min.js","../SOFTWARAPP/node_modules/bootstrap/dist/js/bootstrap.min.js" ]
+            "scripts": [ "../Soft-MarketPlace/node_modules/jquery/dist/jquery.min.js","../Soft-MarketPlace/node_modules/bootstrap/dist/js/bootstrap.min.js" ]
           },
           "configurations": {
             "production": {
@@ -52,18 +52,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "SoftwarApp:build"
+            "browserTarget": "Soft-MarketPlace:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "SoftwarApp:build:production"
+              "browserTarget": "Soft-MarketPlace:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SoftwarApp:build"
+            "browserTarget": "Soft-MarketPlace:build"
           }
         },
         "test": {
@@ -97,7 +97,7 @@
         }
       }
     },
-    "SoftwarApp-e2e": {
+    "Soft-MarketPlace-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -105,11 +105,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "SoftwarApp:serve"
+            "devServerTarget": "Soft-MarketPlace:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "SoftwarApp:serve:production"
+              "devServerTarget": "Soft-MarketPlace:serve:production"
             }
           }
         },
@@ -125,5 +125,5 @@
       }
     }
   },
-  "defaultProject": "SoftwarApp"
+  "defaultProject": "Soft-MarketPlace"
 }
