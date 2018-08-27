@@ -1,3 +1,4 @@
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +32,7 @@ hr{
     width: 195px;
     right: 23px;
     height: 500px;
-
+    margin-bottom: 20px;
    
 }
 .bg-light1[_ngcontent-c1] {
@@ -69,7 +70,7 @@ hr{
     padding-left: 73px;
     margin-right: 0px;
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 .ctn3{
     width: 100%;
@@ -77,7 +78,7 @@ hr{
     padding-left: 73px;
     margin-right: 0px;
     margin-left: 0px;
-    margin-top: 2000px;
+ 
 
 }
 .btn-secondary.dropdown-toggle{

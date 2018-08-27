@@ -6,12 +6,12 @@ export const environment = {
   production: false,
   Firebase:{
     
-      apiKey: "AIzaSyC9xfrf0012nExMV-pikwS4uCOGBjaHjAA",
-      authDomain: "software-bfe20.firebaseapp.com",
-      databaseURL: "https://software-bfe20.firebaseio.com",
-      projectId: "software-bfe20",
-      storageBucket: "software-bfe20.appspot.com",
-      messagingSenderId: "299236789296"
+    apiKey: "AIzaSyCeWFA19AzhKsh1OFkgTgTueBnzf31uw7k",
+    authDomain: "soft-marketplace.firebaseapp.com",
+    databaseURL: "https://soft-marketplace.firebaseio.com",
+    projectId: "soft-marketplace",
+    storageBucket: "soft-marketplace.appspot.com",
+    messagingSenderId: "371301655562"
     },
   
 };

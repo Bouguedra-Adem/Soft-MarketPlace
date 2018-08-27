@@ -1,0 +1,136 @@
+body{
+    color: white;
+    }
+    .navbar-expand-lg .navbar-collapse{
+        text-align: center;
+        font-style: italic;
+        font-weight: 500;
+    
+        
+    }
+    .navbar[_ngcontent-c3] {
+        margin-bottom: 20px;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        box-shadow: 1px 6px 5px -2px rgba(0, 0, 0, 0.76);
+    }
+    
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        margin-left: 25%;
+        text-align: center;
+        font-style: italic;
+        font-weight: 500;
+    }
+    .navbar{
+        margin-bottom: 10px;
+        box-shadow: 1px 6px 5px -2px rgba(0, 0, 0, 0.12);
+        margin-bottom: 10px;
+    }
+    .nav-item{
+        padding-left: 30px;
+    }
+    .nav-item :hover{
+    
+    }
+    .navbar[_ngcontent-c0] {
+        margin-bottom: 0px;
+    }
+    .logo{
+        height: 20px;
+        width: 50px;
+    }
+    
+    .nav-item2{
+        position: absolute;
+        top: 8px;
+        right: 50px;
+        
+    }
+    
+    
+    
+    .jj{
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 15px;
+    }
+    .bg-light {
+        background-color: #0c1a1e!important;
+        font-size: 10px;
+    };
+    .SpanNav{
+        color:white;
+        font-size: 150px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+         color: rgb(255, 255, 255); 
+       
+    }
+    
+    .navbar-light[_ngcontent-c2] .navbar-nav[_ngcontent-c2] .nav-link[_ngcontent-c2] {
+        color: #d9e0e2;
+    }
+    .navbar-light[_ngcontent-c1] .navbar-nav[_ngcontent-c1] .nav-link[_ngcontent-c1] :hover {
+        color: rgb(255, 255, 255); 
+        text-decoration: underline;
+    } 
+    .nav-link {
+        font-size: 12px;
+    }
+    .nav-link:hover {
+        font-size: 13px;
+        color: rgb(255, 0, 0); 
+        text-decoration: underline;
+       
+    }
+    .navbar[_ngcontent-c1] {
+        margin-bottom: 100px;
+        -webkit-box-shadow: 1px 6px 5px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 6px 5px -2px rgba(0,0,0,0.75);
+        box-shadow: 1px 6px 5px -2px rgba(0, 0, 0, 0.12);
+    }
+ .nav-item2{
+    position: absolute;
+    top: 0px;
+    right: 50px;
+ }
+ .navbar-expand-lg .navbar-nav .dropdown-menu {
+     position: relative; 
+}
+.dropleft .dropdown-menu {
+     top: 0px; 
+     right: 0%; 
+     left: 0; 
+    margin-top: 0; 
+     margin-right: 0rem; 
+     margin-top: 5px;
+}
+.ctn1 {
+    height:100vh;
+    min-height:400px;
+    background-size:cover;
+   
+  }
+  .container {
+    width: 100%;
+     padding-right: 0px; 
+     max-width: 100%;
+ padding-left: 0px; 
+    margin-right: auto;
+    margin-left: auto;
+} 
+.img-fluid {
+    max-width: 100%;
+    height: 400px;
+    width: 100%;
+}
+.btn{
+    padding: 0px;
+}

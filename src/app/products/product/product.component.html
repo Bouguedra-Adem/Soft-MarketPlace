@@ -1,22 +1,17 @@
 <div class="container">
     <div class="row">
-         <div class="col-12 col-sm-6 col- col-md-4 col-lg-3 col" *ngFor="let user of users " colspan = "6" rowspan="7" >
+         <div class="col-12 col-sm-6 col- col-md-4 col-lg-3 col" *ngFor="let Projet of Projets " colspan = "6" rowspan="7" >
             <div class="card Pub" style="width: 14rem;" >
-             <img class="card-img-top" src="{{user.img}}" alt="Card image cap">
+             <img class="card-img-top" src="../../assets/B.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">{{user.name}}</h5>
-                    <p class="card-text">c'est un logiciel pour simplifé la manuplition et la gestion des info dans l'esnterprise et bla bla bla bla</p>
-                    <p >{{user.prix}}</p>
+                    <h5 class="card-title">{{Projet.titreProjet}}</h5>
+                    <p class="card-text lead">{{Projet.DescriptionProjet}}</p>
+                    <p >{{Projet.PrixProjet}}</p>
                     <hr>
-                    <button type="button" class="btn  btn btn-outline-secondary" data-toggle="modal" data-target=".bd-example-modal-sm">See More</button>
+                    <a class="nav-link"   routerLink="/ProductDetaill">Voir Plus</a>
 
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-outline-secondary"><img src="../assets/panier1.png" alt=""></button>
+                        <a class="nav-link" routerLink="/Contact"> <img src="../assets/panier1.png" alt=""></a>
+                      
                 </div>
             </div>
         </div>

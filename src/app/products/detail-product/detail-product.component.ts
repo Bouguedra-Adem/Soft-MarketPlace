@@ -10,6 +10,10 @@ export class DetailProductComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
+  scroll(el) {
+    el.scrollIntoView();
+}
 
 }

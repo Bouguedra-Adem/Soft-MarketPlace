@@ -7,7 +7,7 @@ import { Component, OnInit,Input } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  @Input() users;
+  @Input() Projets;
   constructor() { }
 
   ngOnInit() {
