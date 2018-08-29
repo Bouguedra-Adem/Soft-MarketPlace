@@ -1,35 +1,109 @@
-.w-100{
-    height: 450px;
+.card{
+    -webkit-box-shadow: 0px 7px 27px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 27px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 27px 0px rgba(0,0,0,0.75);
 }
-.navbar[_ngcontent-c0]{
-    margin-bottom: 0px;
-}
-.Pub{
-   
-   opacity: 0.9;
-    margin-top: 2%;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.36);
-    
-}
-.Pub:hover{
-    -webkit-box-shadow: 1px 13px 64px -9px rgba(0,0,0,0.84);
-    -moz-box-shadow: 1px 13px 64px -9px rgba(0,0,0,0.84);
-    box-shadow: 1px 13px 64px -9px rgba(0,0,0,0.84);
-       
-}
-.modal-content{
-    
+p{
+    font-size: 13px;
 }
 .col{
-    margin-top: 10px;
+    margin-top: 15px;
 }
-.btn-outline-secondary {
-    color: #66aef7;
-    background-color: #ffffff;
-    border-color: #ffffff;
+.pp{
+    display: none;
 }
-.btn-outline-secondary :hover {
-    color: #66aef7;
-    background-color: #ffffff;
-    border-color: #ffffff;
+.page-link{
+    color: rgb(0, 0, 0);
+}
+.project {
+    margin-bottom: 30px;
+    vertical-align: top;
+    margin-right: 30px;
+    float: left;
+    cursor: pointer;
+    width:100%;
+}
+
+.project figure {
+    position: relative;
+    display: inline-block;
+}
+
+.project figure img {
+    width: 100%;
+}
+
+.project figure:hover figcaption {
+    background:#d81e05;
+}
+.project figure:hover figcaption .project-details {
+    color: #fff;
+}
+.project figure:hover  .pp {
+    display: inline-block;
+}
+
+.project figure:hover  .actions  {
+
+    top: 0%;
+    font-size:2.3em;
+    font-weight:700;
+    padding-top:10%;
+    
+}
+
+.project figure .actions {
+    display: table-cell;
+    position: absolute;
+    bottom: 0px;
+    top: 50%;
+    left:0;
+    right:0;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+    background-color: rgba(29,29,29,.5);
+    -ms-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    color:#fff;
+    font-size:2em;
+    padding:2%;
+    font-weight:400;
+    text-align:center;
+    vertical-align: middle;
+}
+
+@media (min-width: 992px) {
+    .project figure .actions {
+    top: 60%;
+    left:0;
+    right:0;
+    font-size:1.5em;
+    padding:2%;
+   
+}
+.project figure:hover .actions {
+    top: 0%;
+    font-size:2em;
+    padding-top:20%;
+}
+}
+
+@media (min-width: 1200px) {
+    .project figure .actions {
+    top: 65%;
+    left:0;
+    right:0;
+    font-size:1.1em;
+    padding:2%;
+    font-weight:400;
+}
+.project figure:hover .actions {
+    top: 0%;
+    font-size:1.5em;
+    padding-top:25%;
+}
 }

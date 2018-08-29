@@ -11,6 +11,7 @@ import * as $ from 'jquery';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
+  bool: boolean=true;
   Projets :any[];
   Projets1 :any[]=[];
   Projets2 :any[]=[];

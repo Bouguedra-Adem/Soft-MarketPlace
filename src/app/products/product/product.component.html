@@ -1,19 +1,42 @@
+
 <div class="container">
     <div class="row">
-         <div class="col-12 col-sm-6 col- col-md-4 col-lg-3 col" *ngFor="let Projet of Projets " colspan = "6" rowspan="7" >
-            <div class="card Pub" style="width: 14rem;" >
-             <img class="card-img-top" src="../../assets/B.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">{{Projet.titreProjet}}</h5>
-                    <p class="card-text lead">{{Projet.DescriptionProjet}}</p>
-                    <p >{{Projet.PrixProjet}}</p>
-                    <hr>
-                    <a class="nav-link"   routerLink="/ProductDetaill">Voir Plus</a>
-
-                        <a class="nav-link" routerLink="/Contact"> <img src="../assets/panier1.png" alt=""></a>
-                      
+         <div class="col-12 col-sm-6 col- col-md-4 col-lg-6 col" *ngFor="let Projet of tab " colspan = "6" rowspan="7" >
+                <div class="card" >
+                        
+                   <div class="project">
+                        <figure >
+                            <img src="../../assets/B.jpg" class="cadr-img-top">
+                            <span class="actions">
+                                <span class="project-details">Titre Logiciel</span><br>
+                                <h6 class="pp">Description</h6>
+                                <p class="pp"> blablablablablablablablablablablablablablabla
+                                              blablablablablablablablablablablablablabla
+                                               bla
+                                </p>
+                           </span>
+                       </figure>
+                    </div>
+            
+                    <div class="card-body">
+                        <div class="container"> 
+                            <div class="row">  
+                                <div class="col-lg-4">
+                                    <h6> 1200 DA</h6> 
+                                    <img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star1.png" alt="">            
+                                </div>  
+                                                
+                                <div class="col-lg-6">
+                                   <button type="button" class="btn btn-outline-success">See More</button>
+                                </div>
+                                <div class="col-lg-2">
+                                   <button type="button " class=" btn1 btn btn-outline-light"><img src="../../assets/cart.png" alt=""></button>
+                               </div>
+                            </div>
+                       </div> 
+                    </div>
                 </div>
-            </div>
-        </div>
+           </div>
+        
      </div>
 </div>
