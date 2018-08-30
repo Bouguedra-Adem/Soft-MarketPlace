@@ -1,0 +1,35 @@
+.w-100{
+    height: 450px;
+}
+.navbar[_ngcontent-c0]{
+    margin-bottom: 0px;
+}
+.Pub{
+   
+   opacity: 0.9;
+    margin-top: 2%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.36);
+    
+}
+.Pub:hover{
+    -webkit-box-shadow: 1px 13px 64px -9px rgba(0,0,0,0.84);
+    -moz-box-shadow: 1px 13px 64px -9px rgba(0,0,0,0.84);
+    box-shadow: 1px 13px 64px -9px rgba(0,0,0,0.84);
+       
+}
+.modal-content{
+    
+}
+.col{
+    margin-top: 10px;
+}
+.btn-outline-secondary {
+    color: #66aef7;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.btn-outline-secondary :hover {
+    color: #66aef7;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}

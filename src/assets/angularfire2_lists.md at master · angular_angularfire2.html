@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com/">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-TWpmaIgbLeEglE+xl1SOBnHQoK7ScaGgpsqLKZ1OCoJvBDA7YHi1Svkl6ycTvDdqgiib/kn046lTFZQBV9fGJw==" rel="stylesheet" href="./angularfire2_lists.md at master · angular_angularfire2_files/frameworks-0603882e6b9840d86c616b357dcbbdad.css">
+  <link crossorigin="anonymous" media="all" integrity="sha512-GGGnSlPnGyn1z7s9hiBuSzEM28fLSO2rkqnpuC7yNSW9FxzfusreocZARzyQQLCns17V/6U8xhDjotCNxa0jWg==" rel="stylesheet" href="./angularfire2_lists.md at master · angular_angularfire2_files/github-e412d94ad18cc2d61ee1b8c55b0c9736.css">
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>angularfire2/lists.md at master · angular/angularfire2</title>
+    <meta name="description" content="The official Angular library for Firebase.">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/139426?s=400&amp;v=4"><meta property="og:site_name" content="GitHub"><meta property="og:type" content="object"><meta property="og:title" content="angular/angularfire2"><meta property="og:url" content="https://github.com/angular/angularfire2"><meta property="og:description" content="angularfire2 - The official Angular library for Firebase.">
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzA0NTc0ODE4OjU2NGNlMTg0ZjVkNzQzNDc0OTA4YTJjOThhYWEzODFhYWJiYmEyOTUwOGNjMDFlYmYwMjQ0ZTk0NzA1ZTIyNWU=--77eb26a463c44ce727f684a597b65a657eea76f4">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="https://github.com/sessions/sudo_modal">
+  <meta name="request-id" content="1E18:2B95:2468B2C:455C1F8:5B6EF2F2" data-pjax-transient="">
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient="">
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta name="octolytics-host" content="collector.githubapp.com"><meta name="octolytics-app-id" content="github"><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event"><meta name="octolytics-dimension-request_id" content="1E18:2B95:2468B2C:455C1F8:5B6EF2F2"><meta name="octolytics-dimension-region_edge" content="iad"><meta name="octolytics-dimension-region_render" content="iad"><meta name="octolytics-actor-id" content="32870464"><meta name="octolytics-actor-login" content="Bouguedra-Adem"><meta name="octolytics-actor-hash" content="05c7e4c0e9508adcae1cfb4a366342096e8c94069f091cc84aaafcdfde07ddfe">
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true">
+
+
+
+  <meta class="js-ga-set" name="userId" content="3fd9825bf462314c18671c8dfd134b2b" %="">
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="Bouguedra-Adem">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="M2IwMWZlNjY2MTIzZDEwYjJiYzBlOGExNGMwNzExYzQyNzI0NzU3NjJhNTUzNjFmOTI4N2FlNGM3ZWY5NjYzMHx7InJlbW90ZV9hZGRyZXNzIjoiMTU0LjEyMS4yNTEuMjM0IiwicmVxdWVzdF9pZCI6IjFFMTg6MkI5NToyNDY4QjJDOjQ1NUMxRjg6NUI2RUYyRjIiLCJ0aW1lc3RhbXAiOjE1MzM5OTc4MTEsImhvc3QiOiJnaXRodWIuY29tIn0=">
+
+    <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_DOCKERFILE_CI_CTA,MARKETPLACE_PLAN_RESTRICTION_EDITOR,MARKETPLACE_SEARCH,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES,MARKETPLACE_RETARGETING">
+
+  <meta name="html-safe-nonce" content="d3079bc8a4adade0f8ef64e003ba88def768fa37">
+
+  <meta http-equiv="x-pjax-version" content="2d3dadeb8c2c69b7d9f92ce185f22b37">
+  
+
+      <link href="https://github.com/angular/angularfire2/commits/master.atom" rel="alternate" title="Recent Commits to angularfire2:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/angular/angularfire2 git https://github.com/angular/angularfire2.git">
+
+  <meta name="octolytics-dimension-user_id" content="139426"><meta name="octolytics-dimension-user_login" content="angular"><meta name="octolytics-dimension-repository_id" content="49453413"><meta name="octolytics-dimension-repository_nwo" content="angular/angularfire2"><meta name="octolytics-dimension-repository_public" content="true"><meta name="octolytics-dimension-repository_is_fork" content="false"><meta name="octolytics-dimension-repository_network_root_id" content="49453413"><meta name="octolytics-dimension-repository_network_root_nwo" content="angular/angularfire2"><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false">
+
+
+    <link rel="canonical" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md" data-pjax-transient="">
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+<link rel="manifest" href="https://github.com/manifest.json" crossorigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex flex-justify-between px-3 container-lg">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <div class="d-flex">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search position-relative js-jump-to" role="search combobox" aria-owns="jump-to-results" aria-label="Search or jump to" aria-haspopup="listbox" aria-expanded="true">
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --><form class="js-site-search-form" data-scope-type="Repository" data-scope-id="49453413" data-scoped-search-url="/angular/angularfire2/search" data-unscoped-search-url="/search" action="https://github.com/angular/angularfire2/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+      <label class="form-control header-search-wrapper header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text" class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable" data-hotkey="s,/" name="q" value="" placeholder="Search or jump to…" data-unscoped-placeholder="Search or jump to…" data-scoped-placeholder="Search or jump to…" autocapitalize="off" aria-autocomplete="list" aria-controls="jump-to-results" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=pMW4aUX8wfz6Ae7lIddc138xcqY3npcI0t2xRmCIR800sLCzA8h8S/CU684rZK4t+YGk6IO2sXJqm+G6EwSe+w==" spellcheck="false" autocomplete="off">
+          <input type="hidden" class="js-site-search-type-field" name="type">
+            <img src="./angularfire2_lists.md at master · angular_angularfire2_files/search-shortcut-hint.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              <ul class="d-none js-jump-to-suggestions-template-container">
+                <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item">
+                  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center p-2 jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md">
+                    <div class="jump-to-octicon js-jump-to-octicon mr-2 text-center d-none"></div>
+                    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar" alt="" aria-label="Team" src="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md" width="28" height="28">
+
+                    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+                    </div>
+
+                    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+                      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+                        In this repository
+                      </span>
+                      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+                        All GitHub
+                      </span>
+                      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+                    </div>
+
+                    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+                      Jump to
+                      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+                    </div>
+                  </a>
+                </li>
+                <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-repo-octicon-template" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-project-octicon-template" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-search-octicon-template" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+              </ul>
+              <ul class="d-none js-jump-to-no-results-template-container">
+                <li class="d-flex flex-justify-center flex-items-center p-3 f5 d-none">
+                  <span class="text-gray">No suggested jump to results</span>
+                </li>
+              </ul>
+
+              <ul id="jump-to-results" class="js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+                <li class="d-flex flex-justify-center flex-items-center p-0 f5">
+                  <img src="./angularfire2_lists.md at master · angular_angularfire2_files/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+                </li>
+              </ul>
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none" role="navigation">
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="https://github.com/pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="https://github.com/issues">
+                Issues
+</a>            </li>
+              <li>
+                <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="https://github.com/marketplace">
+                   Marketplace
+</a>              </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="https://github.com/explore">
+                Explore
+</a>            </li>
+          </ul>
+      </div>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown">
+    <span class="d-inline-block  px-2">
+      
+    <a aria-label="You have no unread notifications" class="notification-indicator tooltipped tooltipped-s  js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:32870464" href="https://github.com/notifications">
+        <span class="mail-status "></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.99 11.991v1H0v-1l.73-.58c.769-.769.809-2.547 1.189-4.416.77-3.767 4.077-4.996 4.077-4.996 0-.55.45-1 .999-1 .55 0 1 .45 1 1 0 0 3.387 1.229 4.156 4.996.38 1.879.42 3.657 1.19 4.417l.659.58h-.01zM6.995 15.99c1.11 0 1.999-.89 1.999-1.999H4.996c0 1.11.89 1.999 1.999 1.999z"></path></svg>
+</a>
+    </span>
+  </li>
+
+  <li class="dropdown">
+    <details class="details-overlay details-reset d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink" aria-label="Create new…" data-ga-click="Header, create new, icon:add" aria-haspopup="menu">
+        <svg class="octicon octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw" role="menu">
+        
+<a role="menuitem" class="dropdown-item" href="https://github.com/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="https://github.com/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="https://github.com/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="angular/angularfire2">This repository</span>
+  </div>
+    <a role="menuitem" class="dropdown-item" href="https://github.com/angular/angularfire2/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </details-menu>
+    </details>
+  </li>
+
+  <li class="dropdown">
+
+    <details class="details-overlay details-reset d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1" aria-label="View profile and more" data-ga-click="Header, show menu, icon:avatar" aria-haspopup="menu">
+        <img alt="@Bouguedra-Adem" class="avatar float-left mr-1" src="./angularfire2_lists.md at master · angular_angularfire2_files/32870464" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw" role="menu">
+        <ul>
+          <li class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="https://github.com/Bouguedra-Adem" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">Bouguedra-Adem</strong></a></li>
+          <li class="dropdown-divider"></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://github.com/Bouguedra-Adem" data-ga-click="Header, go to profile, text:your profile">Your profile</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://github.com/Bouguedra-Adem?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://github.com/Bouguedra-Adem?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a></li>
+            <li><a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a></li>
+          <li class="dropdown-divider"></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://help.github.com/" data-ga-click="Header, go to help, text:help">Help</a></li>
+          <li><a role="menuitem" class="dropdown-item" href="https://github.com/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a></li>
+          <li>
+            <!-- '"` --><!-- </textarea></xmp> --><form class="logout-form" action="https://github.com/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="2i2f1kmgp21AGVEtw2eBcfwaJhtV5tIVcxTgxrD7PuDxXzVbmZ/yEoUPJUN3cm/PBkvCBlED4dC2RQSEzLL7OA==">
+              <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+                Sign out
+              </button>
+</form>          </li>
+        </ul>
+      </details-menu>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --><form class="sr-only right-0" action="https://github.com/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="uuouTo84vdzdtAe4bWdY0GDsjgLeqzmhzs86zv5VRwmRmITDXwfooxiic9bZcrZumr1qH9pOCmQLnt6MghyC0Q==">
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+
+
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container="">
+      
+
+
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --><form data-autosubmit="true" data-remote="true" class="js-social-container" action="https://github.com/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="A60FTA55JIfrlPg02LxhLW/0RODfa+bwth2Eyh507OnzJxUlpzbGVzZf8OT5MMiXTqFcLF82Xgufrhx9P//hIA==">      <input type="hidden" name="repository_id" id="repository_id" value="49453413" class="form-control">
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="https://github.com/angular/angularfire2/subscription" class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle repository notifications menu" data-ga-click="Repository, click Watch settings, action:blob#show">
+            <span class="js-select-button">
+                <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count" href="https://github.com/angular/angularfire2/watchers" aria-label="313 users are watching this repository">
+            313
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_included" value="included" checked="checked">
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_subscribed" value="subscribed">
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                        Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_ignore" value="ignore">
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"></path></svg>
+                        Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --><form class="starred js-social-form" action="https://github.com/angular/angularfire2/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="lL4LiqApoB45yXsxCBgEdhchH3FAP0851pEvzkDUGc4VZ4Dd2eMiZKs8RoHykzeHdi+Wna0Z+0EEAIRJsW5EdA==">
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar angular/angularfire2" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/angular/angularfire2/stargazers" aria-label="3960 users starred this repository">
+          3,960
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --><form class="unstarred js-social-form" action="https://github.com/angular/angularfire2/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="U+Qmp2i+/6gEJQH7w+sb9s7+EicfGYNXiiAbhwWNiQkHqty8KBaoERXypdFEMfdfLBKACgPr24qwfbwznmJh7g==">
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Star this repository" title="Star angular/angularfire2" data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/angular/angularfire2/stargazers" aria-label="3960 users starred this repository">
+          3,960
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <!-- '"` --><!-- </textarea></xmp> --><form class="btn-with-count" action="https://github.com/angular/angularfire2/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="hMr7Kks58JL3DRwmim3g2l4Xjo7GG0JcXUsoweeSzcBIsajPOa79kr+lUsCLxu9OtwgPDTu9gJlDDLw3IIyNcw==">
+            <button type="submit" class="btn btn-sm btn-with-count" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" title="Fork your own copy of angular/angularfire2 to your account" aria-label="Fork your own copy of angular/angularfire2 to your account">
+              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+              Fork
+            </button>
+</form>
+    <a href="https://github.com/angular/angularfire2/network/members" class="social-count" aria-label="1164 users forked this repository">
+      1,164
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" href="https://github.com/angular">angular</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="https://github.com/angular/angularfire2">angularfire2</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" data-pjax="#js-repo-pjax-container">
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /angular/angularfire2" href="https://github.com/angular/angularfire2">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /angular/angularfire2/issues" href="https://github.com/angular/angularfire2/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">39</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /angular/angularfire2/pulls" href="https://github.com/angular/angularfire2/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">3</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /angular/angularfire2/projects" href="https://github.com/angular/angularfire2/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      Projects
+      <span class="Counter">0</span>
+</a>
+
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /angular/angularfire2/wiki" href="https://github.com/angular/angularfire2/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      Wiki
+</a>
+
+  <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /angular/angularfire2/pulse" href="https://github.com/angular/angularfire2/pulse">
+    <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="https://github.com/angular/angularfire2/blob/26f76134f1ef183871bb0f40a96e52b792cfb317/docs/rtdb/lists.md">Permalink</a>
+
+  <!-- blob contrib key: blob_contributors:v21:5dcb09b64c6ea50be1181ecbf4b36309 -->
+
+  
+
+  <div class="file-navigation">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w" type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax="">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/blob/api_reference/docs/rtdb/lists.md" data-name="api_reference" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                api_reference
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/blob/apptype/docs/rtdb/lists.md" data-name="apptype" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                apptype
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/blob/davideast-patch-1/docs/rtdb/lists.md" data-name="davideast-patch-1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                davideast-patch-1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/blob/firestore_types/docs/rtdb/lists.md" data-name="firestore_types" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                firestore_types
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md" data-name="master" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/blob/providers_and_di/docs/rtdb/lists.md" data-name="providers_and_di" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                providers_and_di
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/blob/timestampsInSnapshots/docs/rtdb/lists.md" data-name="timestampsInSnapshots" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                timestampsInSnapshots
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/blob/wip_router_guard/docs/rtdb/lists.md" data-name="wip_router_guard" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                wip_router_guard
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/5.0.0-rc.11/docs/rtdb/lists.md" data-name="5.0.0-rc.11" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.0.0-rc.11">
+                5.0.0-rc.11
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/5.0.0-rc.10/docs/rtdb/lists.md" data-name="5.0.0-rc.10" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.0.0-rc.10">
+                5.0.0-rc.10
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/5.0.0-rc.9/docs/rtdb/lists.md" data-name="5.0.0-rc.9" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.0.0-rc.9">
+                5.0.0-rc.9
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/5.0.0-rc.8/docs/rtdb/lists.md" data-name="5.0.0-rc.8" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.0.0-rc.8">
+                5.0.0-rc.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/5.0.0-rc.7/docs/rtdb/lists.md" data-name="5.0.0-rc.7" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.0.0-rc.7">
+                5.0.0-rc.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/5.0.0-rc.6/docs/rtdb/lists.md" data-name="5.0.0-rc.6" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.0.0-rc.6">
+                5.0.0-rc.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/5.0.0-rc.4/docs/rtdb/lists.md" data-name="5.0.0-rc.4" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.0.0-rc.4">
+                5.0.0-rc.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/5.0.0-rc.3/docs/rtdb/lists.md" data-name="5.0.0-rc.3" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.0.0-rc.3">
+                5.0.0-rc.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/5.0.0-rc.2/docs/rtdb/lists.md" data-name="5.0.0-rc.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.0.0-rc.2">
+                5.0.0-rc.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/5.0.0-rc.0/docs/rtdb/lists.md" data-name="5.0.0-rc.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="5.0.0-rc.0">
+                5.0.0-rc.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/4.0.0-rc.2/docs/rtdb/lists.md" data-name="4.0.0-rc.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="4.0.0-rc.2">
+                4.0.0-rc.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/4.0.0-rc.1/docs/rtdb/lists.md" data-name="4.0.0-rc.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="4.0.0-rc.1">
+                4.0.0-rc.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/4.0.0-rc.0/docs/rtdb/lists.md" data-name="4.0.0-rc.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="4.0.0-rc.0">
+                4.0.0-rc.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-beta.8/docs/rtdb/lists.md" data-name="2.0.0-beta.8" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-beta.8">
+                2.0.0-beta.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-beta.7/docs/rtdb/lists.md" data-name="2.0.0-beta.7" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-beta.7">
+                2.0.0-beta.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-beta7/docs/rtdb/lists.md" data-name="2.0.0-beta7" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-beta7">
+                2.0.0-beta7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-beta.6/docs/rtdb/lists.md" data-name="2.0.0-beta.6" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-beta.6">
+                2.0.0-beta.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-beta.5/docs/rtdb/lists.md" data-name="2.0.0-beta.5" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-beta.5">
+                2.0.0-beta.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-beta.4/docs/rtdb/lists.md" data-name="2.0.0-beta.4" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-beta.4">
+                2.0.0-beta.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-beta.2/docs/rtdb/lists.md" data-name="2.0.0-beta.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-beta.2">
+                2.0.0-beta.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-beta.1/docs/rtdb/lists.md" data-name="2.0.0-beta.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-beta.1">
+                2.0.0-beta.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-beta.0/docs/rtdb/lists.md" data-name="2.0.0-beta.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-beta.0">
+                2.0.0-beta.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.16/docs/rtdb/lists.md" data-name="2.0.0-alpha.16" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.16">
+                2.0.0-alpha.16
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.15/docs/rtdb/lists.md" data-name="2.0.0-alpha.15" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.15">
+                2.0.0-alpha.15
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.14/docs/rtdb/lists.md" data-name="2.0.0-alpha.14" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.14">
+                2.0.0-alpha.14
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.13/docs/rtdb/lists.md" data-name="2.0.0-alpha.13" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.13">
+                2.0.0-alpha.13
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.12/docs/rtdb/lists.md" data-name="2.0.0-alpha.12" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.12">
+                2.0.0-alpha.12
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.11/docs/rtdb/lists.md" data-name="2.0.0-alpha.11" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.11">
+                2.0.0-alpha.11
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.10/docs/rtdb/lists.md" data-name="2.0.0-alpha.10" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.10">
+                2.0.0-alpha.10
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.9/docs/rtdb/lists.md" data-name="2.0.0-alpha.9" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.9">
+                2.0.0-alpha.9
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.8/docs/rtdb/lists.md" data-name="2.0.0-alpha.8" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.8">
+                2.0.0-alpha.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.7/docs/rtdb/lists.md" data-name="2.0.0-alpha.7" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.7">
+                2.0.0-alpha.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.6/docs/rtdb/lists.md" data-name="2.0.0-alpha.6" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.6">
+                2.0.0-alpha.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.5/docs/rtdb/lists.md" data-name="2.0.0-alpha.5" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.5">
+                2.0.0-alpha.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.4/docs/rtdb/lists.md" data-name="2.0.0-alpha.4" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.4">
+                2.0.0-alpha.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.3/docs/rtdb/lists.md" data-name="2.0.0-alpha.3" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.3">
+                2.0.0-alpha.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.2/docs/rtdb/lists.md" data-name="2.0.0-alpha.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.2">
+                2.0.0-alpha.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/angular/angularfire2/tree/2.0.0-alpha.1/docs/rtdb/lists.md" data-name="2.0.0-alpha.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0-alpha.1">
+                2.0.0-alpha.1
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      <a href="https://github.com/angular/angularfire2/find/master" class="js-pjax-capture-input btn btn-sm BtnGroup-item" data-pjax="" data-hotkey="t">
+        Find file
+      </a>
+      <clipboard-copy for="blob-path" class="btn btn-sm BtnGroup-item" tabindex="0" role="button">
+        Copy path
+      </clipboard-copy>
+    </div>
+    <div id="blob-path" class="breadcrumb">
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="https://github.com/angular/angularfire2"><span>angularfire2</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="https://github.com/angular/angularfire2/tree/master/docs"><span>docs</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="https://github.com/angular/angularfire2/tree/master/docs/rtdb"><span>rtdb</span></a></span><span class="separator">/</span><strong class="final-path">lists.md</strong>
+    </div>
+  </div>
+
+
+  
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="https://github.com/angular/angularfire2/commit/60f98ba84029ec80f5fc06c7dd744b00f0a6688a" data-pjax="">
+          60f98ba
+        </a>
+        <relative-time datetime="2018-05-14T16:41:27Z" title="May 14, 2018, 6:41 PM GMT+2">on May 14</relative-time>
+      </span>
+      <div>
+        <a rel="contributor" data-skip-pjax="true" data-hovercard-user-id="44975" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jamesdaniels" aria-describedby="hovercard-aria-description"><img class="avatar" src="./angularfire2_lists.md at master · angular_angularfire2_files/44975" width="20" height="20" alt="@jamesdaniels"></a>
+        <a class="user-mention" rel="contributor" data-hovercard-user-id="44975" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jamesdaniels" aria-describedby="hovercard-aria-description">jamesdaniels</a>
+          <a data-pjax="true" title="docs(): rxjs 6 (#1639)" class="message" href="https://github.com/angular/angularfire2/commit/60f98ba84029ec80f5fc06c7dd744b00f0a6688a">docs(): rxjs 6 (</a><a class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="322625126" data-permission-text="Issue title is private" data-url="https://github.com/angular/angularfire2/issues/1639" href="https://github.com/angular/angularfire2/pull/1639">#1639</a><a data-pjax="true" title="docs(): rxjs 6 (#1639)" class="message" href="https://github.com/angular/angularfire2/commit/60f98ba84029ec80f5fc06c7dd744b00f0a6688a">)</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>5</strong>
+         contributors
+      </button>
+          <a class="avatar-link" data-hovercard-user-id="44975" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/angular/angularfire2/commits/master/docs/rtdb/lists.md?author=jamesdaniels" aria-describedby="hovercard-aria-description">
+      <img class="avatar" src="./angularfire2_lists.md at master · angular_angularfire2_files/44975" width="20" height="20" alt="@jamesdaniels"> 
+</a>    <a class="avatar-link" data-hovercard-user-id="2472925" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/angular/angularfire2/commits/master/docs/rtdb/lists.md?author=myspivey" aria-describedby="hovercard-aria-description">
+      <img class="avatar" src="./angularfire2_lists.md at master · angular_angularfire2_files/2472925" width="20" height="20" alt="@myspivey"> 
+</a>    <a class="avatar-link" data-hovercard-user-id="8406756" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/angular/angularfire2/commits/master/docs/rtdb/lists.md?author=orahul1" aria-describedby="hovercard-aria-description">
+      <img class="avatar" src="./angularfire2_lists.md at master · angular_angularfire2_files/8406756" width="20" height="20" alt="@orahul1"> 
+</a>    <a class="avatar-link" data-hovercard-user-id="10915134" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/angular/angularfire2/commits/master/docs/rtdb/lists.md?author=cheooool" aria-describedby="hovercard-aria-description">
+      <img class="avatar" src="./angularfire2_lists.md at master · angular_angularfire2_files/10915134" width="20" height="20" alt="@cheooool"> 
+</a>    <a class="avatar-link" data-hovercard-user-id="4570265" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/angular/angularfire2/commits/master/docs/rtdb/lists.md?author=davideast" aria-describedby="hovercard-aria-description">
+      <img class="avatar" src="./angularfire2_lists.md at master · angular_angularfire2_files/4570265" width="20" height="20" alt="@davideast"> 
+</a>
+
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <a class="d-inline-block" data-hovercard-user-id="44975" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jamesdaniels" aria-describedby="hovercard-aria-description"><img src="./angularfire2_lists.md at master · angular_angularfire2_files/44975(1)" width="24" height="24" alt="@jamesdaniels"></a>
+            <a data-hovercard-user-id="44975" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jamesdaniels" aria-describedby="hovercard-aria-description">jamesdaniels</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <a class="d-inline-block" data-hovercard-user-id="2472925" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/myspivey" aria-describedby="hovercard-aria-description"><img src="./angularfire2_lists.md at master · angular_angularfire2_files/2472925(1)" width="24" height="24" alt="@myspivey"></a>
+            <a data-hovercard-user-id="2472925" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/myspivey" aria-describedby="hovercard-aria-description">myspivey</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <a class="d-inline-block" data-hovercard-user-id="8406756" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/orahul1" aria-describedby="hovercard-aria-description"><img src="./angularfire2_lists.md at master · angular_angularfire2_files/8406756(1)" width="24" height="24" alt="@orahul1"></a>
+            <a data-hovercard-user-id="8406756" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/orahul1" aria-describedby="hovercard-aria-description">orahul1</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <a class="d-inline-block" data-hovercard-user-id="10915134" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/cheooool" aria-describedby="hovercard-aria-description"><img src="./angularfire2_lists.md at master · angular_angularfire2_files/10915134(1)" width="24" height="24" alt="@cheooool"></a>
+            <a data-hovercard-user-id="10915134" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/cheooool" aria-describedby="hovercard-aria-description">cheooool</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <a class="d-inline-block" data-hovercard-user-id="4570265" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/davideast" aria-describedby="hovercard-aria-description"><img src="./angularfire2_lists.md at master · angular_angularfire2_files/4570265(1)" width="24" height="24" alt="@davideast"></a>
+            <a data-hovercard-user-id="4570265" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/davideast" aria-describedby="hovercard-aria-description">davideast</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="file">
+    <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="https://github.com/angular/angularfire2/raw/master/docs/rtdb/lists.md">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="https://github.com/angular/angularfire2/blame/master/docs/rtdb/lists.md">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="https://github.com/angular/angularfire2/commits/master/docs/rtdb/lists.md">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw" href="https://desktop.github.com/" aria-label="Open this file in GitHub Desktop" data-ga-click="Repository, open with desktop, type:windows">
+            <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"></path></svg>
+        </a>
+
+          <!-- '"` --><!-- </textarea></xmp> --><form class="inline-form js-update-url-with-hash" action="https://github.com/angular/angularfire2/edit/master/docs/rtdb/lists.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="owGNRdHtqyNhIXTNoZkPt2CflPcTG3XqBjnrAkX+09R87ntzgkZSM+mZ0ziTIg5l4nVzyzgTYs3Oy250SOwYTg==">
+            <button class="btn-octicon tooltipped tooltipped-nw" type="submit" aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with="">
+              <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"></path></svg>
+            </button>
+</form>
+        <!-- '"` --><!-- </textarea></xmp> --><form class="inline-form" action="https://github.com/angular/angularfire2/delete/master/docs/rtdb/lists.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="rsL6etv8u/4dfGqwfqXpgrZN8jcDs1vlVJz3niFH0kQBzPrB+ytSzqlTWuEYNTmNwK1gMbKBF2u8M8onijFfuA==">
+          <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit" aria-label="Fork this project and delete the file" data-disable-with="">
+            <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"></path></svg>
+          </button>
+</form>  </div>
+
+  <div class="file-info">
+      252 lines (188 sloc)
+      <span class="file-info-divider"></span>
+    9.78 KB
+  </div>
+</div>
+
+    
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-3-retrieving-data-as-lists" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#3-retrieving-data-as-lists"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Retrieving data as lists</h1>
+<blockquote>
+<p>AngularFire synchronizes data as lists using the <code>AngularFireList</code> service.</p>
+</blockquote>
+<p>The <code>AngularFireList</code> service is not created by itself, but through the <code>AngularFireDatabase</code> service.</p>
+<p>The guide below demonstrates how to retrieve, save, and remove data as lists.</p>
+<h2><a id="user-content-injecting-the-angularfiredatabase-service" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#injecting-the-angularfiredatabase-service"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Injecting the AngularFireDatabase service</h2>
+<p><strong>Make sure you have bootstrapped your application for AngularFire. See the Installation guide for bootstrap setup.</strong></p>
+<p>AngularFireDatabase is a service which can be injected through the constructor of your Angular component or <code>@Injectable()</code> service.
+In the previous step, we modified the <code>/src/app/app.component.ts</code> to retrieve data as an object. In this step, let's start with a clean slate.</p>
+<p>Replace your  <code>/src/app/app.component.ts</code> from previous step to look like below.</p>
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">import</span> { <span class="pl-smi">Component</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>@angular/core<span class="pl-pds">'</span></span>;
+<span class="pl-k">import</span> { <span class="pl-smi">AngularFireDatabase</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>angularfire2/database<span class="pl-pds">'</span></span>;
+
+@<span class="pl-en">Component</span>({
+  selector: <span class="pl-s"><span class="pl-pds">'</span>app-root<span class="pl-pds">'</span></span>,
+  templateUrl: <span class="pl-s"><span class="pl-pds">'</span>app.component.html<span class="pl-pds">'</span></span>,
+  styleUrls: [<span class="pl-s"><span class="pl-pds">'</span>app.component.css<span class="pl-pds">'</span></span>]
+})
+<span class="pl-k">export</span> <span class="pl-k">class</span> <span class="pl-en">AppComponent</span> {
+  <span class="pl-k">constructor</span>(<span class="pl-v">db</span><span class="pl-k">:</span> <span class="pl-en">AngularFireDatabase</span>) {
+    
+  }
+}</pre></div>
+<p>In this section, we're going to modify the <code>/src/app/app.component.ts</code>  to retrieve data as list, but before that let's look at ways around how to bind to a list.</p>
+<h2><a id="user-content-create-a-list-binding" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#create-a-list-binding"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a list binding</h2>
+<p>Data is retrieved through the <code>AngularFireDatabase</code> service. The service is also generic. Provide the singular type and not the array type.</p>
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">const</span> listRef <span class="pl-k">=</span> <span class="pl-smi">db</span>.<span class="pl-en">list</span>(<span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span>);
+<span class="pl-k">const</span> shirtsRef <span class="pl-k">=</span> <span class="pl-smi">db</span>.<span class="pl-en">list</span>&lt;<span class="pl-en">Shirt</span>&gt;(<span class="pl-s"><span class="pl-pds">'</span>shirts<span class="pl-pds">'</span></span>);</pre></div>
+<h3><a id="user-content-retrieve-data" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#retrieve-data"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Retrieve data</h3>
+<p>To get the list in realtime, create a list binding as a property of your component or service.</p>
+<p>Then in your template, you can use the <code>async</code> pipe to unwrap the binding.</p>
+<p>Update <code>/src/app/app.component.ts</code> to import <code>AngularFireList</code> from angularfire2 and iterate thru the list once data is retrieved. Also note the change in attribute <code>templateUrl</code> to inline <code>template</code> below.</p>
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">import</span> { <span class="pl-smi">Component</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>@angular/core<span class="pl-pds">'</span></span>;
+<span class="pl-k">import</span> { <span class="pl-smi">AngularFireDatabase</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>angularfire2/database<span class="pl-pds">'</span></span>;
+<span class="pl-k">import</span> { <span class="pl-smi">Observable</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>rxjs<span class="pl-pds">'</span></span>;
+
+@<span class="pl-en">Component</span>({
+  selector: <span class="pl-s"><span class="pl-pds">'</span>app-root<span class="pl-pds">'</span></span>,
+  template: <span class="pl-s"><span class="pl-pds">`</span></span>
+<span class="pl-s">  &lt;ul&gt;</span>
+<span class="pl-s">    &lt;li *ngFor="let item of items | async"&gt;</span>
+<span class="pl-s">       {{ item | json }}</span>
+<span class="pl-s">    &lt;/li&gt;</span>
+<span class="pl-s">  &lt;/ul&gt;</span>
+<span class="pl-s">  <span class="pl-pds">`</span></span>,
+})
+<span class="pl-k">export</span> <span class="pl-k">class</span> <span class="pl-en">AppComponent</span> {
+  items<span class="pl-k">:</span> <span class="pl-en">Observable</span>&lt;<span class="pl-c1">any</span>[]&gt;;
+  <span class="pl-k">constructor</span>(<span class="pl-v">db</span><span class="pl-k">:</span> <span class="pl-en">AngularFireDatabase</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-smi">items</span> <span class="pl-k">=</span> <span class="pl-smi">db</span>.<span class="pl-en">list</span>(<span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span>).<span class="pl-en">valueChanges</span>();
+  }
+}</pre></div>
+<h2><a id="user-content-angularfireaction---action-based-api" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#angularfireaction---action-based-api"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>AngularFireAction</code> - Action based API</h2>
+<p>AngularFire provides methods that stream data back as redux compatible actions. This gives you extra horsepower when using libraries like Animations, ngrx, and ReactiveForms.</p>
+<h3><a id="user-content-valuechanges" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#valuechanges"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>valueChanges()</code></h3>
+<p><strong>What is it?</strong> - Returns an Observable of data as a synchronized array of JSON objects. All Snapshot metadata is stripped and just the method provides only the data.</p>
+<p><strong>Why would you use it?</strong> - When you just need a list of data. No snapshot metadata is attached to the resulting array which makes it simple to render to a view.</p>
+<p><strong>When would you not use it?</strong> - When you need a more complex data structure than an array or you need the <code>key</code> of each snapshot for data manipulation methods. This method assumes you either are saving the <code>key</code> for the snapshot data or using a "readonly" approach.</p>
+<h3><a id="user-content-snapshotchanges" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#snapshotchanges"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>snapshotChanges()</code></h3>
+<p><strong>What is it?</strong> - Returns an Observable of data as a synchronized array of <code>AngularFireAction&lt;DatabaseSnapshot&gt;[]</code>.</p>
+<p><strong>Why would you use it?</strong> - When you need a list of data but also want to keep around metadata. Metadata provides you the underyling <code>DatabaseReference</code> and snapshot key. Having the snapshot's <code>key</code> around makes it easier to use data manipulation methods. This method gives you more horsepower with other Angular integrations such as ngrx, forms, and animations due to the <code>type</code> property. The <code>type</code> property on each <code>AngularFireAction</code> is useful for ngrx reducers, form states, and animation states.</p>
+<p><strong>When would you not use it?</strong> - When you need a more complex data structure than an array or if you need to process changes as they occur. This array is synchronized with the remote and local changes in the Firebase Database.</p>
+<h3><a id="user-content-statechanges" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#statechanges"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>stateChanges()</code></h3>
+<p><strong>What is it?</strong> - Returns an Observable of the most recent change as an <code>AngularFireAction</code>.</p>
+<p><strong>Why would you use it?</strong> - The above methods return a singular <code>AngularFireAction</code> from each child event that occurs. <code>stateChanges()</code> emits changes as they occur rather than syncing the query order. This works well for ngrx integrations as you can build your own data structure in your reducer methods.</p>
+<p><strong>When would you not use it?</strong> - When you just need a list of data. This is a more advanced usage of <code>AngularFireDatabase</code>.</p>
+<h3><a id="user-content-audittrail" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#audittrail"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>auditTrail()</code></h3>
+<p><strong>What is it?</strong> - Returns an Observable of <code>AngularFireAction[]</code> as they occur. Similar to <code>stateChanges()</code>, but instead it keeps around the trail of events as an array.</p>
+<p><strong>Why would you use it?</strong> - This method is like <code>stateChanges()</code> except it is not ephemeral. It collects each change in an array as they occur. This is useful for ngrx integrations where you need to replay the entire state of an application. This also works as a great debugging tool for all applications. You can simple write <code>db.list('items').auditTrail().subscribe(console.log)</code> and check the events in the console as they occur.</p>
+<p><strong>When would you not use it?</strong> - When you just need a list of data. This is a more advanced usage of AngularFireDatabase.</p>
+<h3><a id="user-content-limiting-events" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#limiting-events"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Limiting events</h3>
+<p>There are four child events: <code>"child_added"</code>, <code>"child_changed"</code>, <code>"child_removed"</code>, and <code>"child_moved"</code>. Each streaming method listens to all four by default. However, your site may only be intrested in one of these events. You can specify which events you'd like to use through the first parameter of each method:</p>
+<div class="highlight highlight-source-ts"><pre><span class="pl-c1">this</span>.<span class="pl-smi">itemsRef</span> <span class="pl-k">=</span> <span class="pl-smi">db</span>.<span class="pl-en">list</span>(<span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span>);
+<span class="pl-c1">this</span>.<span class="pl-smi">itemsRef</span>.<span class="pl-en">snapshotChanges</span>([<span class="pl-s"><span class="pl-pds">'</span>child_added<span class="pl-pds">'</span></span>])
+  .<span class="pl-en">subscribe</span>(<span class="pl-v">actions</span> <span class="pl-k">=&gt;</span> {
+    <span class="pl-smi">actions</span>.<span class="pl-c1">forEach</span>(<span class="pl-v">action</span> <span class="pl-k">=&gt;</span> {
+      <span class="pl-c1">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">action</span>.<span class="pl-c1">type</span>);
+      <span class="pl-c1">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">action</span>.<span class="pl-smi">key</span>);
+      <span class="pl-c1">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">action</span>.<span class="pl-smi">payload</span>.<span class="pl-en">val</span>());
+    });
+  });</pre></div>
+<h2><a id="user-content-saving-data" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#saving-data"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Saving data</h2>
+<h3><a id="user-content-api-summary" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#api-summary"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>API Summary</h3>
+<p>The table below highlights some of the common methods on the <code>AngularFireList</code>.</p>
+<table>
+<thead>
+<tr>
+<th>method</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>push(value: T)</code></td>
+<td>Creates a new record on the list, using the Realtime Database's push-ids.</td>
+</tr>
+<tr>
+<td><code>update(keyRefOrSnap: string, value: T)</code></td>
+<td>Firebase</td>
+</tr>
+<tr>
+<td><code>remove(key: string?)</code></td>
+<td>Deletes the item by key. If no parameter is provided, the entire list will be deleted.</td>
+</tr></tbody></table>
+<h2><a id="user-content-returning-promises" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#returning-promises"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Returning promises</h2>
+<p>Each data operation method in the table above returns a promise. However,
+you should rarely need to use the completion promise to indicate success,
+because the realtime database keeps the list in sync.</p>
+<p>The promise can be useful to chain multiple operations, catching possible errors
+from security rules denials, or for debugging.</p>
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">const</span> promise <span class="pl-k">=</span> <span class="pl-smi">db</span>.<span class="pl-en">list</span>(<span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span>).<span class="pl-c1">remove</span>();
+<span class="pl-smi">promise</span>
+  .<span class="pl-c1">then</span>(<span class="pl-v">_</span> <span class="pl-k">=&gt;</span> <span class="pl-c1">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>success<span class="pl-pds">'</span></span>))
+  .<span class="pl-c1">catch</span>(<span class="pl-v">err</span> <span class="pl-k">=&gt;</span> <span class="pl-c1">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">err</span>, <span class="pl-s"><span class="pl-pds">'</span>You do not have access!<span class="pl-pds">'</span></span>));</pre></div>
+<h3><a id="user-content-adding-new-items" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#adding-new-items"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding new items</h3>
+<p>Use the <code>push()</code> method to add new items on the list.</p>
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">const</span> itemsRef <span class="pl-k">=</span> <span class="pl-smi">db</span>.<span class="pl-en">list</span>(<span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span>);
+<span class="pl-smi">itemsRef</span>.<span class="pl-c1">push</span>({ name: <span class="pl-smi">newName</span> });</pre></div>
+<h3><a id="user-content-replacing-items-in-the-list-using-set" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#replacing-items-in-the-list-using-set"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Replacing items in the list using <code>set</code></h3>
+<p>Use the <code>set()</code> method to update existing items.</p>
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">const</span> itemsRef <span class="pl-k">=</span> <span class="pl-smi">db</span>.<span class="pl-en">list</span>(<span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span>);
+<span class="pl-c"><span class="pl-c">//</span> to get a key, check the Example app below</span>
+<span class="pl-c"></span><span class="pl-smi">itemsRef</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">'</span>key-of-some-data<span class="pl-pds">'</span></span>, { size: <span class="pl-smi">newSize</span> });</pre></div>
+<p>Replaces the current value in the database with the new value specified as the parameter. This is called a destructive update, because it deletes everything currently in place and saves the new value.</p>
+<h3><a id="user-content-updating-items-in-the-list-using-update" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#updating-items-in-the-list-using-update"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Updating items in the list using <code>update</code></h3>
+<p>Use the <code>update()</code> method to update existing items.</p>
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">const</span> itemsRef <span class="pl-k">=</span> <span class="pl-smi">db</span>.<span class="pl-en">list</span>(<span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span>);
+<span class="pl-c"><span class="pl-c">//</span> to get a key, check the Example app below</span>
+<span class="pl-c"></span><span class="pl-smi">itemsRef</span>.<span class="pl-en">update</span>(<span class="pl-s"><span class="pl-pds">'</span>key-of-some-data<span class="pl-pds">'</span></span>, { size: <span class="pl-smi">newSize</span> });</pre></div>
+<p>Note that this updates the current value with in the database with the new value specified as the parameter. This is called a non-destructive update, because it only updates the values specified.</p>
+<h3><a id="user-content-removing-items-from-the-list" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#removing-items-from-the-list"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Removing items from the list</h3>
+<p>Use the <code>remove()</code> method to remove data at the list item's location.</p>
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">const</span> itemsRef <span class="pl-k">=</span> <span class="pl-smi">db</span>.<span class="pl-en">list</span>(<span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span>);
+<span class="pl-c"><span class="pl-c">//</span> to get a key, check the Example app below</span>
+<span class="pl-c"></span><span class="pl-smi">itemsRef</span>.<span class="pl-c1">remove</span>(<span class="pl-s"><span class="pl-pds">'</span>key-of-some-data<span class="pl-pds">'</span></span>);</pre></div>
+<h2><a id="user-content-deleting-the-entire-list" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#deleting-the-entire-list"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deleting the entire list</h2>
+<p>If you omit the <code>key</code> parameter from <code>.remove()</code> it deletes the entire list.</p>
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">const</span> itemsRef <span class="pl-k">=</span> <span class="pl-smi">db</span>.<span class="pl-en">list</span>(<span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span>);
+<span class="pl-smi">itemsRef</span>.<span class="pl-c1">remove</span>();</pre></div>
+<p><strong>Example app</strong></p>
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">import</span> { <span class="pl-smi">Component</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>@angular/core<span class="pl-pds">'</span></span>;
+<span class="pl-k">import</span> { <span class="pl-smi">AngularFireDatabase</span>, <span class="pl-smi">AngularFireList</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>angularfire2/database<span class="pl-pds">'</span></span>;
+<span class="pl-k">import</span> { <span class="pl-smi">Observable</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>rxjs<span class="pl-pds">'</span></span>;
+<span class="pl-k">import</span> { <span class="pl-smi">map</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>rxjs/operators<span class="pl-pds">'</span></span>;
+
+@<span class="pl-en">Component</span>({
+  selector: <span class="pl-s"><span class="pl-pds">'</span>app-root<span class="pl-pds">'</span></span>,
+  template: <span class="pl-s"><span class="pl-pds">`</span></span>
+<span class="pl-s">  &lt;ul&gt;</span>
+<span class="pl-s">    &lt;li *ngFor="let item of items | async"&gt;</span>
+<span class="pl-s">      &lt;input type="text" #updatetext [value]="item.text" /&gt;</span>
+<span class="pl-s">      &lt;button (click)="updateItem(item.key, updatetext.value)"&gt;Update&lt;/button&gt;</span>
+<span class="pl-s">      &lt;button (click)="deleteItem(item.key)"&gt;Delete&lt;/button&gt;</span>
+<span class="pl-s">    &lt;/li&gt;</span>
+<span class="pl-s">  &lt;/ul&gt;</span>
+<span class="pl-s">  &lt;input type="text" #newitem /&gt;</span>
+<span class="pl-s">  &lt;button (click)="addItem(newitem.value)"&gt;Add&lt;/button&gt;</span>
+<span class="pl-s">  &lt;button (click)="deleteEverything()"&gt;Delete All&lt;/button&gt;</span>
+<span class="pl-s">  <span class="pl-pds">`</span></span>,
+})
+<span class="pl-k">export</span> <span class="pl-k">class</span> <span class="pl-en">AppComponent</span> {
+  itemsRef<span class="pl-k">:</span> <span class="pl-en">AngularFireList</span>&lt;<span class="pl-c1">any</span>&gt;;
+  items<span class="pl-k">:</span> <span class="pl-en">Observable</span>&lt;<span class="pl-c1">any</span>[]&gt;;
+  <span class="pl-k">constructor</span>(<span class="pl-v">db</span><span class="pl-k">:</span> <span class="pl-en">AngularFireDatabase</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-smi">itemsRef</span> <span class="pl-k">=</span> <span class="pl-smi">db</span>.<span class="pl-en">list</span>(<span class="pl-s"><span class="pl-pds">'</span>messages<span class="pl-pds">'</span></span>);
+    <span class="pl-c"><span class="pl-c">//</span> Use snapshotChanges().map() to store the key</span>
+<span class="pl-c"></span>    <span class="pl-c1">this</span>.<span class="pl-smi">items</span> <span class="pl-k">=</span> <span class="pl-c1">this</span>.<span class="pl-smi">itemsRef</span>.<span class="pl-en">snapshotChanges</span>().<span class="pl-en">pipe</span>(
+      <span class="pl-en">map</span>(<span class="pl-v">changes</span> <span class="pl-k">=&gt;</span> 
+        <span class="pl-smi">changes</span>.<span class="pl-en">map</span>(<span class="pl-v">c</span> <span class="pl-k">=&gt;</span> ({ key: <span class="pl-smi">c</span>.<span class="pl-smi">payload</span>.<span class="pl-smi">key</span>, <span class="pl-k">...</span><span class="pl-smi">c</span>.<span class="pl-smi">payload</span>.<span class="pl-en">val</span>() }))
+      )
+    );
+  }
+  addItem(<span class="pl-v">newName</span><span class="pl-k">:</span> <span class="pl-c1">string</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-smi">itemsRef</span>.<span class="pl-c1">push</span>({ text: <span class="pl-smi">newName</span> });
+  }
+  updateItem(<span class="pl-v">key</span><span class="pl-k">:</span> <span class="pl-c1">string</span>, <span class="pl-v">newText</span><span class="pl-k">:</span> <span class="pl-c1">string</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-smi">itemsRef</span>.<span class="pl-en">update</span>(<span class="pl-smi">key</span>, { text: <span class="pl-smi">newText</span> });
+  }
+  deleteItem(<span class="pl-v">key</span><span class="pl-k">:</span> <span class="pl-c1">string</span>) {    
+    <span class="pl-c1">this</span>.<span class="pl-smi">itemsRef</span>.<span class="pl-c1">remove</span>(<span class="pl-smi">key</span>); 
+  }
+  deleteEverything() {
+    <span class="pl-c1">this</span>.<span class="pl-smi">itemsRef</span>.<span class="pl-c1">remove</span>();
+  }
+}</pre></div>
+<h3><a id="user-content-next-step-querying-lists" class="anchor" aria-hidden="true" href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md#next-step-querying-lists"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/querying-lists.md">Next Step: Querying lists</a></h3>
+</article>
+  </div>
+
+  </div>
+
+  <details class="details-reset details-overlay details-overlay-dark">
+    <summary data-hotkey="l" aria-label="Jump to line" aria-haspopup="dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line" role="dialog">
+      <!-- '"` --><!-- </textarea></xmp> --><form class="js-jump-to-line-form Box-body d-flex" action="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line…" aria-label="Jump to line" autofocus="">
+        <button type="submit" class="btn" data-close-dialog="">Go</button>
+</form>    </details-dialog>
+  </details>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+        
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">© 2018 <span title="0.28451s from unicorn-3391865033-jjgxx">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com/">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon" href="https://github.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://blog.github.com/" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-YbYQolthwOjjcZW6TrGsR9xPknvePWm3PD3NqEPruNA31+99ihO2NlHUHWUUNdkWAjvEVQxbZJtOkemmzqUk2A==" type="application/javascript" src="./angularfire2_lists.md at master · angular_angularfire2_files/frameworks-036f84db110c42958fd43d657fa0eb49.js.download"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-NEBT06FORaNxQPGWttJh2rpujn1cZjOSK4O4lWUZjVaQbVIAPNLQ8jeA3tinxLDlLDko+BIYZg3AaLRkoV3Z5g==" type="application/javascript" src="./angularfire2_lists.md at master · angular_angularfire2_files/github-fdc7b12b74538e92758913bd3053daaf.js.download"></script>
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  <template id="site-details-dialog"></template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
+</div>
+
+
+  
+
+
+</body></html>
