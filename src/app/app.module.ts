@@ -4,14 +4,11 @@ import { FormsModule} from '@angular/forms';
 import { Component, OnInit } from '@angular/core'
 import { AppComponent } from './app.component';
 import {ProfileService} from './Services/profile.service';
-
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { RouterModule, Routes } from '@angular/router';
 import { AngularFireDatabase} from 'angularfire2/database';
-import {Ng2PageScrollModule} from 'ng2-page-scroll';
-
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import {DBFunctionsService} from './Services/db-functions.service';
 import { HomeComponent } from './home/home.component';
@@ -85,9 +82,6 @@ const appRoutes:Routes=[
     AngularFireAuthModule,
     RouterModule,
     AngularFireDatabaseModule,
-   
-    
-    Ng2PageScrollModule
   ],
 
   providers: [AngularFireDatabase,DBFunctionsService,ProfileService  ],

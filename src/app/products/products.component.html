@@ -8,167 +8,198 @@
         </nav>
               <hr style="width:100%">
         <div class="row">
-            
+        
             <div class="col-lg-2 ">
              
                  <nav id="navbar-example3" class="navbar navbar-light bg-light bg-light1">
-                   <h4>Filter by : </h4>
-                   <hr>
+                   <h4>Filter by :  </h4>
+                   <hr> 
+                   
                      <h6 >Category </h6><br><br>
-                     <ul>
-                         <li>
+                        <ul>
+                            <li>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input"   (click)="checkCat1()" (click)="Intersection()" >
+                                    <label class="form-check-label" for="exampleCheck1"><p>Management</p></label>
+                                </div>
+                            </li>
+                            <li>  
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input"   (click)="checkCat2()" (click)="Intersection()"  >
+                                    <label class="form-check-label" for="exampleCheck1" ><p>Accounting</p></label>
+                                </div>
+                            </li>
+                            <li> 
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input"  (click)="checkCat3()"  (click)="Intersection()">
+                                    <label class="form-check-label" for="exampleCheck1"><p>RH</p></label>
+                                </div>
+                            </li>
+                            <li> 
                             <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" [(ngModel)]='checkbox' (ngModelChange)='onCheckboxChange()' (click)="FiltreCategorie('cat1')">
-                                <label class="form-check-label" for="exampleCheck1"><p>category 1</p></label>
+                                    <input type="checkbox" class="form-check-input"  (click)="checkCat4()"  (click)="Intersection()">
+                                    <label class="form-check-label" for="exampleCheck1"><p>Finance</p></label>
                             </div>
-                        </li>
-                        <li>  
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input"[(ngModel)]='checkbox1' (ngModelChange)='onCheckboxChange()' (click)="FiltreCategorie('cat2')">
-                                <label class="form-check-label" for="exampleCheck1"><p>category 2</p></label>
-                            </div>
-                        </li>
-                        <li> 
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input"   [(ngModel)]='checkbox2' (ngModelChange)='onCheckboxChange()' (click)="FiltreCategorie('cat3')">
-                                <label class="form-check-label" for="exampleCheck1"><p>category 3</p></label>
-                            </div>
-                        </li>
-                        <li>   
-                            <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" (click)="AllData('cat3')">
-                                    <label class="form-check-label" for="exampleCheck1"><p>All categorys </p></label>
-                            </div>
-                        </li>     
-                        </ul>   
-                       <hr> 
+                            </li>
+                            <li> 
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input"  (click)="checkCat5()"  (click)="Intersection()">
+                                    <label class="form-check-label" for="exampleCheck1"><p>Communication</p></label>
+                                </div>
+                            </li>
+                            <li> 
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input"  (click)="checkCat6()"  (click)="Intersection()">
+                                    <label class="form-check-label" for="exampleCheck1"><p>All Categories</p></label>
+                                </div>
+                            </li>
+                            </ul>   
+                        <hr> 
                        
                      <h6 >Product Type</h6><br><br>
                        <ul>
                             <li>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('1',7000)">
-                                    <label class="form-check-label" for="exampleCheck1"><p>type1</p> </label>
+                                    <input type="checkbox" class="form-check-input" (click)="checkType1()"  (click)="Intersection()">
+                                    <label class="form-check-label" for="exampleCheck1"><p>SIteWeb</p> </label>
                                 </div>
                             </li> 
                             <li>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
-                                    <label class="form-check-label" for="exampleCheck1"><p>type2</p> </label>
+                                    <input type="checkbox" class="form-check-input" (click)="checkType2()" (click)="Intersection()">
+                                    <label class="form-check-label" for="exampleCheck1"><p>App Mobile</p> </label>
                                 </div>
                             </li>  
                             <li>
                                 <div class="form-group form-check">
-                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
-                                    <label class="form-check-label" for="exampleCheck1"><p>type3</p> </label>
+                                     <input type="checkbox" class="form-check-input" (click)="checkType3()"  (click)="Intersection()">
+                                    <label class="form-check-label" for="exampleCheck1"><p>Desktop Software<p> </label>
                                 </div>
                             </li> 
                             <li>
                                 <div class="form-group form-check">
-                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
-                                     <label class="form-check-label" for="exampleCheck1"><p>type4</p> </label>
+                                     <input type="checkbox" class="form-check-input" (click)="checkType4()"  (click)="Intersection()">
+                                     <label class="form-check-label" for="exampleCheck1"><p>Script</p> </label>
                                 </div>
                             </li>
                             <li>
                                 <div class="form-group form-check">
-                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
-                                     <label class="form-check-label" for="exampleCheck1"><p>type5</p> </label>
+                                     <input type="checkbox" class="form-check-input" (click)="checkType5()"  (click)="Intersection()" >
+                                     <label class="form-check-label" for="exampleCheck1"><p>Data base </p> </label>
                                 </div>
-                            </li>                      
+                            </li>    
+                            <li>
+                               <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" (click)="checkType6()"  (click)="Intersection()" >
+                                    <label class="form-check-label" for="exampleCheck1"><p>Module </p> </label>
+                               </div>
+                            </li> 
+                            <li>
+                               <div class="form-group form-check">
+                                   <input type="checkbox" class="form-check-input" (click)="checkType7()"  (click)="Intersection()" >
+                                   <label class="form-check-label" for="exampleCheck1"><p>Plugin </p> </label>
+                              </div>
+                           </li> 
+                           <li>
+                               <div class="form-group form-check">
+                                   <input type="checkbox" class="form-check-input" (click)="checkType8()"  (click)="Intersection()" >
+                                   <label class="form-check-label" for="exampleCheck1"><p>All types</p> </label>
+                                </div>
+                             </li>                                            
                                  
                         </ul>  
                         <hr>   
                      <h6 >Product pice</h6><br><br>
-                     <div class="input-group mb-3">
-                            <div class="input-group mb-3">
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                    <div class="input-group-prepend">
-                                            <span class="input-group-text"><p> DA</p></span>
-                                     </div>
+                        <div class="input-group mb-3">
+                                <div class="input-group mb-3">
+                                        <input type="number" min="0" [(ngModel)]="PrixMin" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                        <div class="input-group-prepend">
+                                                <span class="input-group-text"><p> DA</p></span>
+                                        </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                        <input type="number" min="0" [(ngModel)]="PrixMax"  class="form-control" aria-label="Amount (to the nearest dollar)">
+                                        <div class="">
+                                                <span class="input-group-text"><p> DA</p></span>
+                                        </div>
+                                </div>
+                                
+                                <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" (click)="submitPrix()"  (click)="Intersection()"type="button">></button>
+                                </div>
                             </div>
-                            <div class="input-group mb-3">
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                    <div class="">
-                                            <span class="input-group-text"><p> DA</p></span>
-                                     </div>
-                            </div>
-                            
-                            <div class="input-group-append">
-                              <button class="btn btn-outline-secondary" type="button">></button>
-                            </div>
-                          </div>
-                       <hr>
+                        <hr>
 
-                       <h6 >Rating</h6><br><br>
+                     <h6 >Rating</h6><br><br>
                        
                          <ul>
                              <li>
                                 <div class="form-group form-check">
-                                   <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('1',7000)">
+                                   <input type="checkbox" class="form-check-input" (click)="checkRat1()" (click)="Intersection()">
                                    <label class="form-check-label" for="exampleCheck1"><img src="../../assets/star1.png" alt=""><img src="../../assets/star1.png" alt=""><img src="../../assets/star1.png" alt=""><img src="../../assets/star1.png" alt=""><img src="../../assets/star1.png" alt=""></label>
                                 </div>
                             </li>
                             <li>    
                                 <div class="form-group form-check">
-                                  <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
+                                  <input type="checkbox" class="form-check-input" (click)="checkRat2()" (click)="Intersection()">
                                   <label class="form-check-label" for="exampleCheck1"><img src="../../assets/star.png" alt=""><img src="../../assets/star1.png" alt=""><img src="../../assets/star1.png" alt=""><img src="../../assets/star1.png" alt=""><img src="../../assets/star1.png" alt=""></label>
                                </div>
                              </li>    
                              <li>    
                                  <div class="form-group form-check">
-                                   <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
+                                   <input type="checkbox" class="form-check-input" (click)="checkRat3()" (click)="Intersection()">
                                    <label class="form-check-label" for="exampleCheck1"><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star1.png" alt=""><img src="../../assets/star1.png" alt=""><img src="../../assets/star1.png" alt=""></label>
                                 </div>
                              </li>
                              <li>    
                                  <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
+                                    <input type="checkbox" class="form-check-input" (click)="checkRat4()" (click)="Intersection()">
                                     <label class="form-check-label" for="exampleCheck1"><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star1.png" alt=""><img src="../../assets/star1.png" alt=""></label>
                                  </div>
                              </li>
                              <li>    
                                 <div class="form-group form-check">
-                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
+                                     <input type="checkbox" class="form-check-input" (click)="checkRat5()" (click)="Intersection()">
                                      <label class="form-check-label" for="exampleCheck1"><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star1.png" alt=""></label>
                                  </div>
                             </li>
                             <li>    
                                 <div class="form-group form-check">
-                                   <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
+                                   <input type="checkbox" class="form-check-input" (click)="checkRat6()" (click)="Intersection()">
                                    <label class="form-check-label" for="exampleCheck1"><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""></label>
                                 </div>
                            </li>                      
                          </ul>    
                            <hr>
-                        <h6 >Date Added</h6> <br><br>
+                     <h6 >Date Added</h6> <br><br>
                              <ul>
                                     <li>
                                        <div class="form-group form-check">
-                                          <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('1',7000)">
+                                          <input type="checkbox" class="form-check-input"  (click)="checkDate4()" (click)="Intersection()">
                                           <label class="form-check-label" for="exampleCheck1"><p> Any Date </p></label>
                                        </div>
                                    </li>
                                    <li>    
                                        <div class="form-group form-check">
-                                         <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
+                                         <input type="checkbox" class="form-check-input" (click)="checkDate1()" (click)="Intersection()">
                                          <label class="form-check-label" for="exampleCheck1"><p> Last week </p></label>
                                       </div>
                                     </li>    
                                     <li>    
-                                            <div class="form-group form-check">
-                                              <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
-                                              <label class="form-check-label" for="exampleCheck1"><p> Last month </p></label>
-                                           </div>
+                                        <div class="form-group form-check">
+                                          <input type="checkbox" class="form-check-input" (click)="checkDate2()" (click)="Intersection()">
+                                          <label class="form-check-label" for="exampleCheck1"><p> Last month </p></label>
+                                        </div>
                                     </li>
                                     <li>    
-                                            <div class="form-group form-check">
-                                              <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="FiltrePrix('7001','70004')">
-                                              <label class="form-check-label" for="exampleCheck1"><p> Last year </p></label>
-                                           </div>
-                                         </li>        
+                                        <div class="form-group form-check">
+                                          <input type="checkbox" class="form-check-input" (click)="checkDate3()" (click)="Intersection()">
+                                          <label class="form-check-label" for="exampleCheck1"><p> Last year </p></label>
+                                        </div>
+                                    </li>        
                                 </ul>    
                                      
-                   </nav>
+                 </nav>
             
                             
                
@@ -178,14 +209,7 @@
             </div>  
             <div class="col-lg-9 col9">
               <nav class="navbar navbar-light bg-light bg-light2">
-                    <div class="form-group ">
-                             <select class="form-control form-control1" id="exampleFormControlSelect1">
-                               <option>Show all</option><br><br>
-                               <option>Show 4 product</option><br><br>
-                               <option>Show 8 product</option><br><br>
-                             </select>
-                    </div>
-                  
+                   
                         <div class="row">
                        
                             <button type="button " class="btn1 btn btn-outline-light"><img src="../../assets/grid.png" alt=""></button>
@@ -197,27 +221,32 @@
                         </div>
                    <div class="form-group ">
                        
-                        <select class="form-control form-control1" id="exampleFormControlSelect1">
-                          <option>No sort selected</option><br>
-                          <option type="button">Sort by : Date</option><br>
-                          <option>Sort by : Best rated </option><br>
-                          <option>Sort by : Pice(low->high) </option><br>
-                          <option>Sort by : Pice(high->low)</option><br>
+                        <select class="form-control form-control1" [(ngModel)]="chosenMod" (ngModelChange)="modo()" id="exampleFormControlSelect1">
+                          <option value="mod5">No sort selceted</option><br>
+                          <option value="mod1">Sort by : Date</option><br>
+                          <option value="mod2">Sort by : Best rated </option><br>
+                          <option value="mod3">Sort by : Pice(low->high) </option><br>
+                          <option value="mod4">Sort by : Pice(high->low)</option><br>
                         </select>
                     </div>
+                    <p> Result Find : {{Nbresult}}</p>  
                    <nav aria-label="Page navigation example">
                        <ul class="pagination">
-                         <li class="page-item"><a class="page-link" (click)="Next()"><</a></li>
+                         <li class="page-item"><a class="page-link" *ngIf="ShowDisabl1" (click)="Show()"><</a></li>
                          
-                         <li class="page-item"><a class="page-link" (click)="Next()">></a></li>
+                         <li class="page-item"><a class="page-link" *ngIf="ShowDisabl" (click)="Show()">></a></li>
                        </ul>
                  </nav>
               </nav>
               
                
                <div class=" container ">
-                   
-             <app-product ></app-product>
+                   <div *ngIf="edited">
+                    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>    
+                   </div>
+                   <div  *ngIf="edited2" >
+                   <app-product [Projets]=ProjetsAffich></app-product> 
+                   </div>
                </div> 
        </div>
  </div>
