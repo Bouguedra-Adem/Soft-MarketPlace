@@ -31,6 +31,7 @@ import { ProfileUserComponent } from './profile-user/profile-user.component';
 import { ProfileUserNavbarComponent } from './profile-user/profile-user-navbar/profile-user-navbar.component';
 import { SlideImgComponent } from './slide-img/slide-img.component';
 import { CreatProductComponent } from './products/creat-product/creat-product.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -50,9 +51,7 @@ const appRoutes:Routes=[
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   declarations: [
     AppComponent,
-    
-  
-   
+
     HomeComponent,
     AboutUsComponent,
     ContactComponent,
@@ -70,23 +69,16 @@ const appRoutes:Routes=[
     ProfileUserNavbarComponent,
     SlideImgComponent,
     CreatProductComponent,
- 
+    NavbarComponent,
 
-    
-    
-   
-    
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes),
+    RouterModule.forRoot(appRoutes),
     BrowserModule,FormsModule,
     AngularFireModule.initializeApp(environment.Firebase),
     AngularFireAuthModule,
     RouterModule,
     AngularFireDatabaseModule,
-   
-    
     Ng2PageScrollModule
   ],
 
