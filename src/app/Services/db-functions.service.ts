@@ -18,4 +18,4 @@ export class DBFunctionsService {
        console.log("adem");
      });
   }
-  
+}

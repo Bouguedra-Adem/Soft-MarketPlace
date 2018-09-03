@@ -14,6 +14,7 @@ import { filterQueryId } from '@angular/core/src/view/util';
 })
 export class ProductsComponent  {
   Projets :any[];
+  boolRat :boolean=true;
   Prjs :any[];
   bool:boolean=true;
   ProjetsCat :any[]=[];
@@ -81,8 +82,8 @@ export class ProductsComponent  {
      this.Prjs=serviceDB.Projets;
      this.ProjetsAffich=this.Prjs;
      this.ProjetsAffichShow=this.Prjs;
-     for (let prj in this.Projets){
-     console.log(this.RatingMax(this.Projets[prj].Rating,1));}
+     //for (let prj in this.Projets){
+    // console.log(this.RatingMax(this.Projets[prj].Rating,1));}
      this.GetLenght(this.Projets);
      this.saveTodos();
   
@@ -207,54 +208,57 @@ export class ProductsComponent  {
         if (this.filtreRatBool){
              console.log("her1");
                   for(let prj in this.Projets){
-                    if (this.filtreRatBool1){
+                    this.boolRat=true;
+                    if (this.filtreRatBool1 && this.boolRat){
                         if (Number(this.Projets[prj].Rating[1])===0 && Number(this.Projets[prj].Rating[2])===0 && Number(this.Projets[prj].Rating[3])===0 && Number(this.Projets[prj].Rating[4])===0 &&Number(this.Projets[prj].Rating[5])===0 ){
                            this.ProjetsRating.push(this.Projets[prj]);
-                           console.log("her2");
+                            this.boolRat=false;
                          }
                      }
-                     if (this.filtreRatBool2){
+                     if (this.filtreRatBool2 && this.boolRat){
                         if (this.RatingMax(this.Projets[prj].Rating,1)){
                           this.ProjetsRating.push(this.Projets[prj]);
-                          console.log("her3");
+                          this.boolRat=false;
                         }
 
                      }
-                     if (this.filtreRatBool3){
+                     if (this.filtreRatBool3 && this.boolRat){
                       if (this.RatingMax(this.Projets[prj].Rating,2)){
                         this.ProjetsRating.push(this.Projets[prj]);
-                        console.log("her4");
+                        this.boolRat=false;
                       }
 
                      } 
-                    if (this.filtreRatBool4){
+                    if (this.filtreRatBool4 && this.boolRat){
                       if (this.RatingMax(this.Projets[prj].Rating,3)){
                         this.ProjetsRating.push(this.Projets[prj]);
-                        console.log("her5");
+                        this.boolRat=false;
                       }
 
                    }
-                   if (this.filtreRatBool5){
+                   if (this.filtreRatBool5 && this.boolRat){
+                    
                     var bool:boolean=this.RatingMax((this.Projets[prj].Rating),4); console.log(this.RatingMax(this.Projets[prj].Rating,4));
                     if (bool===true){
-
                       this.ProjetsRating.push(this.Projets[prj]);
-                      console.log("her6");
+                      this.boolRat=false;
                     }
 
                    }
-                   if (this.filtreRatBool6){
+                   if (this.filtreRatBool6 && this.boolRat){
                      var bool:boolean=this.RatingMax((this.Projets[prj].Rating),5); console.log(this.RatingMax(this.Projets[prj].Rating,5));
                     if (bool===true){
                       this.ProjetsRating.push(this.Projets[prj]);
-                      console.log("her7");
+                      this.boolRat=false;
                     }
 
                   }
-                  console.log(this.ProjetsRating);
-               this.Projets=this.ProjetsRating;
-               this.ProjetsRating=[];
+                
+              
+            
         }
+        this.Projets=this.ProjetsRating;
+        this.ProjetsRating=[];
       }
  this.ProjetsAffich=this.Projets;
  this.ProjetsAffichShow=this.Projets;
@@ -265,7 +269,7 @@ export class ProductsComponent  {
 /*****************************************************************************/ //calcul Rating Max
  RatingMax(Data:any [],Pos :number){
   let val=0;
-  console.log("rating max :"+Data);
+  console.log("Data=",Data);
   for (let i in Data){
     console.log("For");
     if (Number(i)===Pos){
@@ -559,37 +563,46 @@ export class ProductsComponent  {
 SortByRating(){
   if (this.ProjetsAffich!= undefined) {
     this.ProjetsAffich.sort( (a: any, b: any) => {
+      console.log(this.bestRating(a.Rating)+" "+this.bestRating(b.Rating));
       if (this.bestRating(a.Rating) <this.bestRating(b.Rating) ){
-        console.log((Number(a.Prix)+" "+Number(b.Prix)));
+        console.log("1");
         return -1;
       } else if (this.bestRating(a.Rating) >this.bestRating(b.Rating) ) {
-        console.log((Number(a.Prix)+" "+Number(b.Prix)));
+        console.log("2");
         return 1;
       } else { 
-          console.log((Number(a.Prix)+" "+Number(b.Prix)));
+        console.log("3");
            return 0;    
       }
     });
     }
-   console.log("apr rating ="+this.ProjetsAffich); 
+   console.log("apr rating =",this.ProjetsAffich); 
+   console.log("*************************** end sortbyrating");
+   console.log("apr rating =",this.ProjetsAffich); 
  }
 /*****************************************************************/
  bestRating(Data : any []){
   if (this.RatingMax(Data[1],1)){
+  console.log("*************************** end bestrating"); 
    return 1;
  
   }else if(this.RatingMax(Data[2],2)){
+    console.log("*************************** end bestrating"); 
    return 2;
   }
   else if(this.RatingMax(Data[3],3)){
+    console.log("*************************** end bestrating"); 
     return 3;
   }
   else if(this.RatingMax(Data[4],4)){
+    console.log("*************************** end bestrating"); 
     return 4;
   }
   else if(this.RatingMax(Data[5],5)){
+    console.log("*************************** end bestrating"); 
     return 5;
   }
+
 } 
 
 /*************************************************************** */  // Sort

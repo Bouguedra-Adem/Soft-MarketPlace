@@ -9,6 +9,8 @@ import { concat } from 'rxjs/internal/observable/concat';
 })
 export class ProductComponent implements OnInit {
   @Input() Projets;
+  @Input() Rat;
+  Rating =new Array(this.Rat);
   tab=new Array(0) ;
   max:Number=2;
   constructor() {

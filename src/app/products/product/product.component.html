@@ -21,8 +21,9 @@
                         <div class="container"> 
                             <div class="row">  
                                 <div class="col-lg-4">
-                                    <h6> {{projet.Prix}} DA</h6> 
-                                    <img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star1.png" alt="">            
+                                    <h6> {{projet.Prix}} DA</h6>
+                                    <div *ngFor="let item of Rating" ></div> 
+                                    <img src="../../assets/star1.png" alt="">            
                                 </div>  
                                                 
                                 <div class="col-lg-6">
