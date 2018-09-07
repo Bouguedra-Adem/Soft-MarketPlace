@@ -14,11 +14,11 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import {DBFunctionsService} from './Services/db-functions.service';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './Home/home.component';
 import { AboutUsComponent } from './About-us/about-us.component';
 import { ContactComponent } from './Contact/contact.component';
 import { FooterComponent } from './Footer/footer.component';
-import { AccountComponent } from './account/account.component';
+import { AccountComponent } from './Account/account.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
 import {MatTabsModule} from '@angular/material/tabs';
