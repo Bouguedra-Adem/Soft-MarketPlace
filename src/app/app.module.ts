@@ -40,8 +40,9 @@ const appRoutes: Routes = [
   {path: 'Account', component: AccountComponent},
   {path: 'CreatProd', component: CreatProductComponent},
   {path: 'Profile', component: ProfileUserComponent},
-  {path: 'ProductDetaill', component: DetailProductComponent}
-
+  {path: 'ProductDetaill', component: DetailProductComponent},
+  {path: '', pathMatch: 'full', component: HomeComponent},
+  {path: '**', component: HomeComponent}
 ];
 
 @NgModule({
