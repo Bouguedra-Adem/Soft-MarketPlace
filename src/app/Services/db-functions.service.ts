@@ -9,14 +9,14 @@ export class DBFunctionsService {
 
   Projets;
   Panier;
-  constructor(public DB:AngularFireDatabase) {
-    const pub=this.DB.list<any>('pub').valueChanges();
-   
-   this.DB.list<any[]>('/Pub').valueChanges().subscribe(data => {
-       this.Projets = data;
-       console.log(data);
-       console.log("adem");
-     });
+
+  constructor(public DB: AngularFireDatabase) {
+    const pub = this.DB.list<any>('pub').valueChanges();
+
+    this.DB.list<any[]>('/Produit_details').valueChanges().subscribe(data => {
+      this.Projets = data;
+      console.log(this.Projets);
+      console.log("adem");
+    });
   }
-  
 }
