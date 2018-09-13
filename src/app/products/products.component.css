@@ -1,9 +1,29 @@
+body{
+    background-color: #6c757d0a;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #6c757d0a;
+}
+.input-group-text {
+   
+    padding: 0.0em 0.75rem;
+}
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -157px;
-    margin-left: -29px;
+   
+}
+.col9{
+    margin-left: -75px;
+}
+.bg-light {
+    background-color:  none !important;
 }
 .lead{
     text-align: center;
@@ -11,76 +31,49 @@
 hr{
     width: 200px;
 }
-.col1{
-    background-color:#6c757d21;
+p{
+    font-size: 13px;
+}
+a {
+    color: #48544dfc;
+    text-decoration: underline;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+.vl {
+    border-left: 1px solid rgb(0, 0, 0,0.1);
+
     height: 100%;
 }
-
-.col11{
-    
-    margin-top: 25px;
+.vl2{
+    border-left: 1px solid rgb(0, 0, 0,0.1);
+    height: 75%;
 }
-.col2{
-    background-color:#6c757d0f;
-}
-.col22{
-    background-color:#ffffff;
-    margin-top: 20px;
-}
-.bg-light1 {
-    background-color:#ffffff !important;
-    width: 195px;
-    right: 23px;
-    height: 500px;
-    margin-bottom: 20px;
+.btn1{
    
+    margin-bottom: 15px;
 }
-.bg-light1[_ngcontent-c1] {
-    background-color: #ffffff !important;
-    
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.36);
-    
-}
-.bg-light2[_ngcontent-c1] {
-    background-color: #ffffff;
-    
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.36);
-    
-}
-.bg-light2 {
-    background-color:#ffffff !important;
-    margin-top: 25px;
-    
-
+.col1{
    
+    height: 100%;
 }
+.form-control{
+border-radius: 1.25rem;
+}
+
+
 .carousel-inner {
     background: rgba(3, 3, 3, 0.3);
 }
 .bg-light3[_ngcontent-c1] {
-    background-color: #ffffff !important;
+
     width: 195px;
     right: 23px;
     height:auto;
     margin-bottom: 10px;
 }
-.ctn1 {
-    width: 100%;
-    padding-right: 7px;
-    padding-left: 73px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-top: 70px;
-}
-.ctn3{
-    width: 100%;
-    padding-right: 7px;
-    padding-left: 73px;
-    margin-right: 0px;
-    margin-left: 0px;
- 
 
-}
+
 .btn-secondary.dropdown-toggle{
     color: rgb(0, 0, 0);
     background-color: #ffffff;
@@ -100,6 +93,109 @@ hr{
    
     border-radius: 1.25rem;
 }
-.page-link{
-    color: rgb(0, 0, 0);
+.btn2{
+    color: #121212;
+     border-radius: 1.25rem;
+    
+ }
+ 
+/******************************************************************************/
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-spinner div {
+    transform-origin: 32px 32px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 29px;
+    width: 5px;
+    height: 14px;
+    border-radius: 20%;
+    background: #fff;
+  
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .lds-spinner[_ngcontent-c2] div[_ngcontent-c2]:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 29px;
+    width: 5px;
+    height: 14px;
+    border-radius: 20%;
+    background: #5fa464;
+}  
+.lds-spinner[_ngcontent-c2] {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin-left: 50%;
+    margin-top: 10%;
 }
