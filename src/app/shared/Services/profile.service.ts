@@ -14,8 +14,8 @@ export class ProfileService {
 
   constructor(private db: AngularFireDatabase, private afAuth: AngularFireAuth) {
     this.afAuth.authState.subscribe(user => {
-      if(user) this.userId = user.uid
-    })
+      if (user) { this.userId = user.uid; }
+    });
   }
 
 

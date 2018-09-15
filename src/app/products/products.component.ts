@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {AngularFireDatabase, AngularFireList} from 'angularfire2/database';
 import * as firebase from 'firebase/app';
 import {Observable} from 'rxjs';
-import {DBFunctionsService} from '../Services/db-functions.service';
+import {DBFunctionsService} from '../shared/Services/db-functions.service';
 import * as $ from 'jquery';
 import {concat} from 'rxjs/internal/observable/concat';
 import {filterQueryId} from '@angular/core/src/view/util';

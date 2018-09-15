@@ -1,0 +1,10 @@
+.container-fluid {
+  padding: 0px;
+  marging: 0px;
+  marging-top: 1px;
+}
+
+.row {
+  margin-left: 1rem;
+  marging-right: 1rem;
+}

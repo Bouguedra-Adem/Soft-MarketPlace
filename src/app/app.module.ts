@@ -3,14 +3,14 @@ import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {Component, OnInit} from '@angular/core';
 import {AppComponent} from './app.component';
-import {ProfileService} from './Services/profile.service';
+import {ProfileService} from './shared/Services/profile.service';
 import {AngularFireModule} from 'angularfire2';
 import {environment} from '../environments/environment';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {RouterModule, Routes} from '@angular/router';
 import {AngularFireDatabase} from 'angularfire2/database';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
-import {DBFunctionsService} from './Services/db-functions.service';
+import {DBFunctionsService} from './shared/Services/db-functions.service';
 import {HomeComponent} from './home/home.component';
 import {AboutUsComponent} from './About-us/about-us.component';
 import {ContactComponent} from './Contact/contact.component';
@@ -29,6 +29,9 @@ import {ProfileUserNavbarComponent} from './profile-user/profile-user-navbar/pro
 import {SlideImgComponent} from './slide-img/slide-img.component';
 import {CreatProductComponent} from './products/creat-product/creat-product.component';
 import {NavbarComponent} from './navbar/navbar.component';
+import {ProfileComponent} from './profile-user/profile/profile.component';
+import {EarningsComponent} from './profile-user/earnings/earnings.component';
+import {UserService} from './shared/Services/user.service';
 
 
 const appRoutes: Routes = [
@@ -39,7 +42,14 @@ const appRoutes: Routes = [
   {path: 'Home', component: HomeComponent},
   {path: 'Account', component: AccountComponent},
   {path: 'CreatProd', component: CreatProductComponent},
-  {path: 'Profile', component: ProfileUserComponent},
+  {
+    path: 'Profile', component: ProfileUserComponent,
+    children: [
+      {path: '', component: ProfileComponent},
+      {path: 'profile', component: ProfileComponent},
+      {path: 'earnings', component: EarningsComponent}
+    ]
+  },
   {path: 'ProductDetaill', component: DetailProductComponent},
   {path: '', pathMatch: 'full', component: HomeComponent},
   {path: '**', component: HomeComponent}
@@ -67,6 +77,8 @@ const appRoutes: Routes = [
     SlideImgComponent,
     CreatProductComponent,
     NavbarComponent,
+    ProfileComponent,
+    EarningsComponent,
 
   ],
   imports: [
@@ -79,7 +91,7 @@ const appRoutes: Routes = [
     /*Ng2PageScrollModule*/
   ],
 
-  providers: [AngularFireDatabase, DBFunctionsService, ProfileService],
+  providers: [AngularFireDatabase, DBFunctionsService, ProfileService, UserService],
   bootstrap: [AppComponent],
 })
 export class AppModule {
