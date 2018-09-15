@@ -1,0 +1,414 @@
+{
+  "Brief": {
+    "-LLzTO82CEXJ7dsSdjpO": { 
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit12",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    },
+    "-LLzTZHFX0lRMB4-SpfC": {
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit11",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    },
+    "-LLzTapiI-ol_82A83q1": {
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit10",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    },
+    "-LLzTonPOi6PJIWjQOqE": {
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit9",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    },
+    "-LLzTpnAUwLURvnKy6w2": {
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit8",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    },
+    "-LLzTrHR8qN2HYhcaRuf": {
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit7",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    },
+    "-LLzTsKIn2gRqS8Abqep": {
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit6",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    },
+    "-LLzTtfTUJFBbgCj4fNg": {
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit5",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    },
+    "-LLzUgxmcESXzr_ZnDrr": {
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit4",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    },
+    "-LLzUjDjHkq1DVE2af6W": {
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit3",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    },
+    "-LLzUkB_XdABax9yO9L6": {
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit2",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    },
+    "-LLzUl1lu1RglUPdue8S": {
+      "Date_added": "07/08/2018",
+      "Description_brief": "Une application qui affiche la geolocalisation des stations de service et leur état",
+      "Name": "Produit1",
+      "Price": {
+        "Etendu": 5000,
+        "Régulier": 1200
+      },
+      "Thumbnail": "link to storage",
+      "URL_demo": "test.heroku.com/"
+    }
+  },
+  "Detail": {
+    "-LLzTO82CEXJ7dsSdjpO": {
+        "Users_dev" : "-LLzTO82ClXQ5dssdjp0",
+      "Category": "Comptabilité",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    },
+    "-LLzTZHFX0lRMB4-SpfC": {
+        "Users_dev" :"-LLzTO82ClXQ5dssdjp0",
+        "Category": "RH",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    },
+    "-LLzTapiI-ol_82A83q1": {
+        "Users_dev" :"-LLzTO82cE6J72sS4jpO",
+      "Category": "Gestion",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    },
+    "-LLzTonPOi6PJIWjQOqE": {
+        "Users_dev" :"-LLzTO825sXz7fsSdjpO",
+      "Category": "Gestion",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    },
+    "-LLzTpnAUwLURvnKy6w2": {
+        "Users_dev" :"-LLzTO82CEqJp5sSdjdO",
+      "Category": "Communication",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    },
+    "-LLzTrHR8qN2HYhcaRuf": {
+        "Users_dev" :"-LLzTO82ClXQ5dssdjp0",
+      "Category": "Finance",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    },
+    "-LLzTsKIn2gRqS8Abqep": {
+        "Users_dev" :"-LLzTO82CEqJp5sSdjdO",
+      "Category": "Communication",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    },
+    "-LLzTtfTUJFBbgCj4fNg": {
+        "Users_dev" :"-LLzTO82ClXQ5dssdjp0",
+      "Category": "RH",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    },
+    "-LLzUgxmcESXzr_ZnDrr": {
+        "Users_dev" :"-LLzTO825sXz7fsSdjpO",
+      "Category": "RH",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    },
+    "-LLzUjDjHkq1DVE2af6W": {
+        "Users_dev" : "-LLzTO82cE6J72sS4jpO",
+      "Category": "Comptabilité",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    },
+    "-LLzUkB_XdABax9yO9L6": {
+        "Users_dev" :"-LLzTO82cE6J72sS4jpO",
+      "Category": "Finance",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    },
+    "-LLzUl1lu1RglUPdue8S": {
+        "Users_dev" : "-LLzTO82ClXQ5dssdjp0",
+      "Category": "Gestion",
+      "Contract_type": "Régulier",
+      "Date_updated": "07/09/2018",
+      "Description_complete": "du code html décrivant dans le détail le code",
+      "Img": "link to storage",
+      "Nb_sales": 5,
+      "Status": "Exposed",
+      "Tags": {
+        "GPS": true,
+        "Geolocalisation": true,
+        "Java": true,
+        "Mobile": true,
+        "SIG": true
+      },
+      "Technologies": {
+        "Android": true,
+        "Firebase": true,
+        "Java": true
+      },
+      "Type": "mobile"
+    }
+  }
+}
