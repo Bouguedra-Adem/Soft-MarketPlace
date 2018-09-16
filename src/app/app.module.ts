@@ -11,7 +11,6 @@ import {RouterModule, Routes} from '@angular/router';
 import {AngularFireDatabase} from 'angularfire2/database';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {DBFunctionsService} from './Services/db-functions.service';
-
 import {HomeComponent} from './Home/home.component';
 import {AboutUsComponent} from './About-us/about-us.component';
 import {ContactComponent} from './Contact/contact.component';
