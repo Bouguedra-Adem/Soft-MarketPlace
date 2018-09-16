@@ -1,0 +1,35 @@
+<app-slide-img [lien]=lien></app-slide-img>
+<div class="container container1">
+
+  <div class="container container2">
+   <div class="form">
+      <Span> Contact Us</Span>
+       <form  #f="ngForm">
+
+                      <label for="name"></label>
+                      <input class="form-control" type="text" id="name" placeholder="First Name" name="name" ngModel required >
+                      <br><br>
+
+                      <label for="last_name"></label>
+                      <input class="form-control" id="last_name" rows="2" placeholder="Last Name "  name="last_name" ngModel required>
+                      <br><br>
+
+
+                       <label for="Email"></label>
+                      <input class="form-control" id="Email" rows="2" placeholder="Your Mail " name="Email" ngModel required>
+                        <br><br>
+
+
+                      <label for="subject"></label>
+                      <input class="form-control" type="text" ID="subject" placeholder="Subject" name="subject" ngModel required>
+                      <br><br>
+
+                      <label for="mail"></label>
+                      <input class="form-control" type="text" ID="mail" placeholder="Body" name="mail" ngModel required>
+                      <br><br>
+                    <button type="submit" class="btn btn-primary btn-lg" [disabled]="f.invalid" >Send</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
