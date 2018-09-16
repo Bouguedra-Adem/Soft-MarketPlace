@@ -1,0 +1,722 @@
+{
+  "Categories" : {
+    "Communication" : {
+      "-LLzTpnAUwLURvnKy6w2" : true,
+      "-LLzTsKIn2gRqS8Abqep" : true
+    },
+    "Comptabilité" : {
+      "-LLzTO82CEXJ7dsSdjpO" : true,
+      "-LLzUjDjHkq1DVE2af6W" : true
+    },
+    "Finance" : {
+      "-LLzTrHR8qN2HYhcaRuf" : true,
+      "-LLzUkB_XdABax9yO9L6" : true
+    },
+    "Gestion" : {
+      "-LLzTapiI-ol_82A83q1" : true,
+      "-LLzTonPOi6PJIWjQOqE" : true,
+      "-LLzUl1lu1RglUPdue8S" : true
+    },
+    "RH" : {
+      "-LLzTZHFX0lRMB4-SpfC" : true,
+      "-LLzTtfTUJFBbgCj4fNg" : true,
+      "-LLzUgxmcESXzr_ZnDrr" : true
+    }
+  },
+  "Comments_per_Product" : {
+    "-LLzUl1lu1RglUPdue8S" : {
+      "-LLzTO82CElJ7dvS5jp0" : {
+        "Add_date" : "07/08/2018",
+        "User_name" : "Adel",
+        "User_photo" : "link",
+        "User_uid" : "Users_cons uid here",
+        "comment" : "best app"
+      }
+    }
+  },
+  "Earnings_per_Users_dev_per_Product" : {
+    "-LLzTO82ClXQ5dssdjp0" : {
+      "-LLzUl1lu1RglUPdue8S" : {
+        "Income" : 11200,
+        "Product_name" : "produit1",
+        "Sales" : 3
+      }
+    }
+  },
+  "Notifications_per_Users_dev" : {
+    "-LLzTO82ClXQ5dssdjp0" : {
+      "-LLzXEcblQ4OIRrInoNU" : {
+        "Date" : "08/02/2018",
+        "Detail" : "L'entreprise B à ajouter son avis sur produit : produit1",
+        "Subject" : "Commentaire",
+        "isRead" : true
+      },
+      "-LLzXFQM-gUH43Bd34IJ" : {
+        "Date" : "05/02/2018",
+        "Detail" : "L'entreprise A à ajouter produit : produit1 à son panier",
+        "Subject" : "Achat",
+        "isRead" : false
+      }
+    }
+  },
+  "Organisations" : {
+    "-LLzYavJEUPZ_D3HpxIf" : {
+      "About_us" : "IGAF Technologies est un Cabinet de Conseil en Management et Système d'Information, avec une forte spécialisation sur les solutions ERP/CRM, SIRH, Mobilité, GED/BPM et Infrastructure.",
+      "Address" : "Ouled Fayet, Alger",
+      "Country" : "Algeria",
+      "Field" : "Information Technology and Services",
+      "Name" : "IGAF",
+      "Size" : "11-50 employee",
+      "Specialties" : [ "SAP", "CRM", "ERP", "SAP HCM", "BI" ],
+      "Type" : "privately held",
+      "Website" : "http://www.igaf-technologies.com",
+      "Year_founded" : 2009
+    },
+    "-LLzYcoVOTeInFXQ9C2" : {
+      "About_us" : "Big Mama est une entreprise franco-algérienne dans le domaine d'analyse de données dans le but d'aider les organisation à prendre les meilleures décisions en exploitant leurs données",
+      "Address" : "Alger",
+      "Country" : "Algeria",
+      "Field" : "Data analysis",
+      "Name" : "Big Mama",
+      "Size" : "11-50 employee",
+      "Specialties" : [ "Web", "Big data", "BI" ],
+      "Type" : "privately held",
+      "Website" : "http://www.big-mama.io",
+      "Year_founded" : 2014
+    }
+  },
+  "Products" : {
+    "Brief" : {
+      "-LLzTO82CEXJ7dsSdjpO" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit12",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      },
+      "-LLzTZHFX0lRMB4-SpfC" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit11",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      },
+      "-LLzTapiI-ol_82A83q1" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit10",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      },
+      "-LLzTonPOi6PJIWjQOqE" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit9",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      },
+      "-LLzTpnAUwLURvnKy6w2" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit8",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      },
+      "-LLzTrHR8qN2HYhcaRuf" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit7",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      },
+      "-LLzTsKIn2gRqS8Abqep" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit6",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      },
+      "-LLzTtfTUJFBbgCj4fNg" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit5",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      },
+      "-LLzUgxmcESXzr_ZnDrr" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit4",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      },
+      "-LLzUjDjHkq1DVE2af6W" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit3",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      },
+      "-LLzUkB_XdABax9yO9L6" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit2",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      },
+      "-LLzUl1lu1RglUPdue8S" : {
+        "Date_added" : "07/08/2018",
+        "Description_brief" : "Une application qui affiche la geolocalisation des stations de service et leur état",
+        "Name" : "Produit1",
+        "Price" : {
+          "Etendu" : 5000,
+          "Régulier" : 1200
+        },
+        "Thumbnail" : "link to storage",
+        "URL_demo" : "test.heroku.com/"
+      }
+    },
+    "Detail" : {
+      "-LLzTO82CEXJ7dsSdjpO" : {
+        "Category" : "Comptabilité",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO82ClXQ5dssdjp0"
+      },
+      "-LLzTZHFX0lRMB4-SpfC" : {
+        "Category" : "RH",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO82ClXQ5dssdjp0"
+      },
+      "-LLzTapiI-ol_82A83q1" : {
+        "Category" : "Gestion",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO82cE6J72sS4jpO"
+      },
+      "-LLzTonPOi6PJIWjQOqE" : {
+        "Category" : "Gestion",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO825sXz7fsSdjpO"
+      },
+      "-LLzTpnAUwLURvnKy6w2" : {
+        "Category" : "Communication",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO82CEqJp5sSdjdO"
+      },
+      "-LLzTrHR8qN2HYhcaRuf" : {
+        "Category" : "Finance",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO82ClXQ5dssdjp0"
+      },
+      "-LLzTsKIn2gRqS8Abqep" : {
+        "Category" : "Communication",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO82CEqJp5sSdjdO"
+      },
+      "-LLzTtfTUJFBbgCj4fNg" : {
+        "Category" : "RH",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO82ClXQ5dssdjp0"
+      },
+      "-LLzUgxmcESXzr_ZnDrr" : {
+        "Category" : "RH",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO825sXz7fsSdjpO"
+      },
+      "-LLzUjDjHkq1DVE2af6W" : {
+        "Category" : "Comptabilité",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO82cE6J72sS4jpO"
+      },
+      "-LLzUkB_XdABax9yO9L6" : {
+        "Category" : "Finance",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO82cE6J72sS4jpO"
+      },
+      "-LLzUl1lu1RglUPdue8S" : {
+        "Category" : "Gestion",
+        "Contract_type" : "Régulier",
+        "Date_updated" : "07/09/2018",
+        "Description_complete" : "du code html décrivant dans le détail le code",
+        "Img" : "link to storage",
+        "Nb_sales" : 5,
+        "Status" : "Exposed",
+        "Tags" : {
+          "GPS" : true,
+          "Geolocalisation" : true,
+          "Java" : true,
+          "Mobile" : true,
+          "SIG" : true
+        },
+        "Technologies" : {
+          "Android" : true,
+          "Firebase" : true,
+          "Java" : true
+        },
+        "Type" : "mobile",
+        "Users_dev" : "-LLzTO82ClXQ5dssdjp0"
+      }
+    }
+  },
+  "Products_per_Users_dev" : {
+    "-LLzTO825sXz7fsSdjpO" : {
+      "-LLzTonPOi6PJIWjQOqE" : true,
+      "-LLzUgxmcESXzr_ZnDrr" : true
+    },
+    "-LLzTO82CEqJp5sSdjdO" : {
+      "-LLzTpnAUwLURvnKy6w2" : true,
+      "-LLzTsKIn2gRqS8Abqep" : true
+    },
+    "-LLzTO82ClXQ5dssdjp0" : {
+      "-LLzTO82CEXJ7dsSdjpO" : true,
+      "-LLzTZHFX0lRMB4-SpfC" : true,
+      "-LLzTrHR8qN2HYhcaRuf" : true,
+      "-LLzTtfTUJFBbgCj4fNg" : true,
+      "-LLzUl1lu1RglUPdue8S" : true
+    },
+    "-LLzTO82cE6J72sS4jpO" : {
+      "-LLzTapiI-ol_82A83q1" : true,
+      "-LLzUjDjHkq1DVE2af6W" : true,
+      "-LLzUkB_XdABax9yO9L6" : true
+    }
+  },
+  "Rating_per_Product" : [ null, {
+    "User_Cons_uid2" : true,
+    "Users_Cons_uid1" : true
+  }, {
+    "User_Cons_uid2" : true,
+    "Users_Cons_uid1" : true
+  }, {
+    "User_Cons_uid2" : true,
+    "Users_Cons_uid1" : true
+  }, {
+    "User_Cons_uid2" : true,
+    "Users_Cons_uid1" : true
+  }, {
+    "User_Cons_uid2" : true,
+    "Users_Cons_uid1" : true
+  } ],
+  "Specialties" : [ "SAP", "CRM", "ERP", "SAP HCM", "BI", "Web", "Big data" ],
+  "Statements_per_Users_dev" : {
+    "-LLzTO82ClXQ5dssdjp0" : {
+      "-LLzT282Cjnl7ksS6jpk" : {
+        "Amount" : 3000,
+        "Date" : "05/02/2018",
+        "Detail" : "Ajout d'une fonctionnalité au produit : produit1 du contrat d'achat ID : 1",
+        "ID" : 4,
+        "Type" : "Mise à jour de produit"
+      },
+      "-LLzTO82hfEm7dnSdjpO" : {
+        "Amount" : 1200,
+        "Date" : "05/03/2018",
+        "Detail" : "Achat du produit : produit1 sous un contrat régulier",
+        "ID" : 5,
+        "Type" : "achat de produit"
+      },
+      "-LLzTO88CEcJ7dsSdjpx" : {
+        "Amount" : 5000,
+        "Date" : "20/02/2018",
+        "Detail" : "Achat du produit : produit1 sous un contrat étendu",
+        "ID" : 3,
+        "Type" : "achat de produit"
+      },
+      "-LLzX5-2nNCx60aOkE83" : {
+        "Amount" : 800,
+        "Date" : "15/02/2018",
+        "Detail" : "Elimination d'un bug dans le produit : produit1 du contrat d'achat ID : 1",
+        "ID" : 2,
+        "Type" : "Maintenance de produit"
+      },
+      "-LLzX5-YnNT3KaHOLE83" : {
+        "Amount" : 1200,
+        "Date" : "05/02/2018",
+        "Detail" : "Achat du produit : produit1 sous un contrat régulier",
+        "ID" : 1,
+        "Type" : "achat de produit"
+      }
+    }
+  },
+  "Tags" : [ "GPS", "Geolocalisation", "Java", "Mobile", "SIG" ],
+  "Users_dev" : {
+    "-LLzTO825sXz7fsSdjpO" : {
+      "Address" : "cite universitaire BOURAOUI Ammar B110 ",
+      "Bio" : "I am a computer engineer found of management and business development.",
+      "Birthdate" : "06-05-2018",
+      "Country" : "Algeria",
+      "First_name" : "Adel",
+      "Last_name" : "BOUGUESRI",
+      "Notifications" : 5,
+      "Organisation" : "-LLzYcoVOTeInFXQ9C2",
+      "Payment" : {
+        "Account_number" : 2536985411,
+        "Payment_type" : "CIB",
+        "Total_income" : 20000
+      },
+      "Phone_number" : "0559226763",
+      "Photo" : "https://firebasestorage.googleapis.com/v0/b/soft-marketplace.appspot.com/o/DSC_2075_NEF_embedded.jpg?alt=media&token=30385da1-0e7c-4104-a598-72840883e5e9",
+      "Product_types" : [ "Mobile", "Web apps" ],
+      "Signup_date" : "07-09-2018",
+      "Social_links" : {
+        "Github" : "github.com/BOUGUESRIAdel",
+        "LinkedIn" : "linkedin.com/in/adelbouguesri"
+      },
+      "Technologies" : {
+        "Android" : true,
+        "HTML5" : true,
+        "Java" : true,
+        "Node" : true
+      },
+      "isValid" : true
+    },
+    "-LLzTO82CEqJp5sSdjdO" : {
+      "Address" : "cite universitaire BOURAOUI Ammar B110 ",
+      "Bio" : "I am a computer engineer found of management and business development.",
+      "Birthdate" : "06-05-2018",
+      "Country" : "Algeria",
+      "First_name" : "Adel",
+      "Last_name" : "BOUGUESRI",
+      "Notifications" : 0,
+      "Organisation" : "-LLzYavJEUPZ_D3HpxIf",
+      "Payment" : {
+        "Account_number" : 2536985411,
+        "Payment_type" : "CIB",
+        "Total_income" : 20000
+      },
+      "Phone_number" : "0559226763",
+      "Photo" : "https://firebasestorage.googleapis.com/v0/b/soft-marketplace.appspot.com/o/DSC_2075_NEF_embedded.jpg?alt=media&token=30385da1-0e7c-4104-a598-72840883e5e9",
+      "Product_types" : [ "Mobile", "Web apps" ],
+      "Signup_date" : "07-09-2018",
+      "Social_links" : {
+        "Github" : "github.com/BOUGUESRIAdel",
+        "LinkedIn" : "linkedin.com/in/adelbouguesri"
+      },
+      "Technologies" : {
+        "Android" : true,
+        "HTML5" : true,
+        "Java" : true,
+        "Node" : true
+      },
+      "isValid" : true
+    },
+    "-LLzTO82ClXQ5dssdjp0" : {
+      "Address" : "cite universitaire BOURAOUI Ammar B110 ",
+      "Bio" : "I am a computer engineer found of management and business development.",
+      "Birthdate" : "06-05-2018",
+      "Country" : "Algeria",
+      "First_name" : "Adel",
+      "Last_name" : "BOUGUESRI",
+      "Notifications" : 1,
+      "Organisation" : "-LLzYavJEUPZ_D3HpxIf",
+      "Payment" : {
+        "Account_number" : 2536985411,
+        "Payment_type" : "CIB",
+        "Total_income" : 20000
+      },
+      "Phone_number" : "0559226763",
+      "Photo" : "https://firebasestorage.googleapis.com/v0/b/soft-marketplace.appspot.com/o/DSC_2075_NEF_embedded.jpg?alt=media&token=30385da1-0e7c-4104-a598-72840883e5e9",
+      "Product_types" : [ "Mobile", "Web apps" ],
+      "Signup_date" : "07-09-2018",
+      "Social_links" : {
+        "Github" : "github.com/BOUGUESRIAdel",
+        "LinkedIn" : "linkedin.com/in/adelbouguesri"
+      },
+      "Technologies" : {
+        "Android" : true,
+        "HTML5" : true,
+        "Java" : true,
+        "Node" : true
+      },
+      "isValid" : true
+    },
+    "-LLzTO82cE6J72sS4jpO" : {
+      "Address" : "cite universitaire BOURAOUI Ammar B110 ",
+      "Bio" : "I am a computer engineer found of management and business development.",
+      "Birthdate" : "06-05-2018",
+      "Country" : "Algeria",
+      "First_name" : "Adel",
+      "Last_name" : "BOUGUESRI",
+      "Notifications" : 0,
+      "Organisation" : "Null",
+      "Payment" : {
+        "Account_number" : 2536985411,
+        "Payment_type" : "CIB",
+        "Total_income" : 20000
+      },
+      "Phone_number" : "0559226763",
+      "Photo" : "https://firebasestorage.googleapis.com/v0/b/soft-marketplace.appspot.com/o/DSC_2075_NEF_embedded.jpg?alt=media&token=30385da1-0e7c-4104-a598-72840883e5e9",
+      "Product_types" : [ "Mobile", "Web apps" ],
+      "Signup_date" : "07-09-2018",
+      "Social_links" : {
+        "Github" : "github.com/BOUGUESRIAdel",
+        "LinkedIn" : "linkedin.com/in/adelbouguesri"
+      },
+      "Technologies" : {
+        "Android" : true,
+        "HTML5" : true,
+        "Java" : true,
+        "Node" : true
+      },
+      "isValid" : true
+    },
+    "gNkrW7vNrrT6OpfcyOT14oJetTA3" : {
+      "Adr" : "sidi kassi",
+      "Borthday" : "02/05/1996",
+      "Country" : "",
+      "FirstName" : "Adem",
+      "LastName" : "Bouguedra",
+      "Password" : "0659159832",
+      "phoneNumber" : "0659159832"
+    }
+  },
+  "Users_dev_per_Organisations" : {
+    "-LLzYavJEUPZ_D3HpxIf" : {
+      "-LLzTO82CEqJp5sSdjdO" : true,
+      "-LLzTO82ClXQ5dssdjp0" : true
+    },
+    "-LLzYcoVOTeInFXQ9C2" : {
+      "-LLzTO825sXz7fsSdjpO" : true
+    }
+  }
+}
+
