@@ -1,0 +1,95 @@
+<app-slide-img [lien]=lien></app-slide-img>
+<div class="container container1">
+
+  <div class="container container2">
+   <div class="form">
+      <Span> CREER PROJET</Span>
+       <form  #f="ngForm">
+
+                      <label for="name"></label>
+                      <input class="form-control" type="text" id="name" placeholder="Titre projet" [(ngModel)]="produit.Brief.Name" name="name" ngModel required >
+                      <br><br>
+
+
+                      <label for="categorie"> Catégorie projet </label>
+                      <select class="form-control" id="categorie"  (click)="categorieKey($event)" name="categorie" ngModel required>
+                        <option>Catégorie 1</option>
+                        <option>Catégorie 2</option>
+                        <option>Catégorie 3</option>
+                        <option>Catégorie 4</option>
+                        <option>Catégorie 5</option>
+                      </select>
+
+
+                      <br><br>
+                          <label for="type"> Type projet</label>
+                        <select class="form-control" id="type"  (click)="typeKey($event)" name="type" ngModel required >
+                          <option>Type 1</option>
+                          <option>Type 2</option>
+                          <option>Type 3</option>
+                          <option>Type 4</option>
+                          <option>Type 5</option>
+                        </select>
+
+                        <br><br>
+
+                        <div class="custom-file ">
+                            <input type="file" class="custom-file-input" id="img" (change)="detectImg($event)" name="img" required>
+                            <label class="custom-file-label" for="img">Img...</label>
+                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                          </div>
+
+                        <br><br>
+
+                        <div class="custom-file ">
+                            <input type="file" class="custom-file-input" id="thumbnail" (change)="detectThum($event)" name="img" required>
+                            <label class="custom-file-label" for="thumbnail">Thumbnail...</label>
+                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                          </div>
+                          <br><br>
+                          <label for="description"></label>
+                        <textarea class="form-control" id="description" rows="2" placeholder="Description Projet " [(ngModel)]="produit.Brief.Description_brief" name="description" ngModel required></textarea>
+                        <br><br>
+
+
+                          <label for="detail"></label>
+                        <textarea class="form-control" id="detail" rows="2" placeholder="Description detailler " [(ngModel)]="produit.Detail.Description_complete" name="detail" ngModel required></textarea>
+                        <br><br>
+
+
+                      <label for="régulier"></label>
+                      <input class="form-control" type="text" ID="régulier" placeholder="Prix  Régulier" [(ngModel)]="prix_regulier" name="régulier" ngModel required>
+                      <br><br>
+
+                      <label for="etendu"></label>
+                      <input class="form-control" type="text" ID="etendu" placeholder="Prix  Etendu" [(ngModel)]="prix_etendu" name="etendu" ngModel required>
+                      <br><br>
+
+                      <label for="contract"></label>
+                      <input class="form-control" type="text" id="contract" placeholder="Contrat type" [(ngModel)]="produit.Detail.Contract_type" name="contract" ngModel required>
+                      <br><br>
+
+
+                      <label for="date"></label>
+                      <input class="form-control" type="text" id="date" placeholder="Date Update" [(ngModel)]="produit.Detail.Date_updated" name="date" ngModel required>
+                      <br><br>
+
+                      <label for="tag"></label>
+                      <input class="form-control" type="text" id="tag" placeholder="Tag" [(ngModel)]="tag" name="tag" ngModel required>
+                      <br><br>
+
+                      <label for="demo"></label>
+                      <input class="form-control" type="text" id="demo" placeholder="URL Demo" [(ngModel)]="produit.Brief.URL_demo" name="demo" ngModel required>
+                      <br><br>
+
+
+                      <label for="technomogie"></label>
+                     <input class="form-control" type="text" id="technomogie" placeholder="Technologies" [(ngModel)]="technologie" name="technomogie" ngModel required>
+                    <br><br>
+
+                    <button type="submit" class="btn btn-primary btn-lg" [disabled]="f.invalid" (click)="save()">Creer</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
