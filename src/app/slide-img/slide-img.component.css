@@ -1,23 +1,57 @@
-.carousel-caption {
-    background: rgba(3, 3, 3, 0.5);
-    height: 100%;
-    width: 100%;
-    right: 15%; 
-     bottom: 0px; 
-    left: 0px;
-    z-index: 300;
-    padding-top: 0px; 
-    padding-bottom: 0px; 
+
+p{
+    font-size: 13px;
+}
+.btn{
+    border-radius: 3.25rem;
+    height: 38px;
+}
+.h3Style{
+text-align: center;
+color: #ffffffcf;
+margin-top: -5%;
+}
+.rounded-circle{
+    box-shadow: 7px 7px 21px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 7px 21px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 21px -1px rgba(0,0,0,0.75);
+}
+.ctn2{
+    padding-top: 50px;
+    max-width: 50%;
+}
+.ctn1{
+    border-radius: 3.25rem;
+    height: 99px;
+    /* width: 29px; */
+    /* width: 0px; */
+   color: white;
+   text-align: center;
+    margin-left: 45%;
+    margin-right: 45%;
+    max-width: -35px;
+    background-color: rgba(54, 52, 52, 0.75); 
+}
+.ctn{
+margin-bottom: 20px;    
+margin-top: 10px;
+height: 400px;
+background-image: url(../../assets/banner1.jpg);
+box-shadow: 2px 3px 31px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 3px 31px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 31px 6px rgba(0,0,0,0.75);
+border-radius: 3.25rem;
+ background-color: #ffffff0a; 
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -99px;
+    margin-left: 10%;
+}
+.btn-primary {
     color: #fff;
-    text-align: center;
-    box-shadow: 1px 6px 5px -2px rgba(0, 0, 0, 0.12);
+    background-color: #28a745;
+    border-color: #28a745;
 }
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-.w-100 {
-    width: 100% !important;
-    height: 450px;
-}
+

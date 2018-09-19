@@ -14,14 +14,23 @@ import { filterQueryId } from '@angular/core/src/view/util';
 })
 export class ProductsComponent  {
   Projets :any[];
+  Detail :any[];
   boolRat :boolean=true;
   Prjs :any[];
+  data:any;
+  Key:any[];
+  KeyOrigin:any[];
   bool:boolean=true;
   ProjetsCat :any[]=[];
   ProjetsType :any[]=[];
   ProjetsPrix :any[]=[];
   ProjetsDate :any[]=[];
   ProjetsRating :any[]=[];
+  KeyCat :any[]=[];
+  KeyType :any[]=[];
+  KeyPrix :any[]=[];
+  KeyDate :any[]=[];
+  KeyRating :any[]=[];
   ProjetsAffich:any=[];
   ProjetsAffichShow:any=[];
   Nbshow:number=3;
@@ -78,12 +87,15 @@ export class ProductsComponent  {
   filtreRatBool6 :boolean=false;
 /******************************************************/ //Constructor
  constructor(serviceDB :DBFunctionsService) {
+     serviceDB.getproduct();
+     serviceDB.getDettail();
+     this.Detail=serviceDB.Dettail;
      this.Projets=serviceDB.Projets;
+     this.KeyOrigin=serviceDB.key;
+     this.Key=serviceDB.key;
      this.Prjs=serviceDB.Projets;
      this.ProjetsAffich=this.Prjs;
      this.ProjetsAffichShow=this.Prjs;
-     //for (let prj in this.Projets){
-    // console.log(this.RatingMax(this.Projets[prj].Rating,1));}
      this.GetLenght(this.Projets);
      this.saveTodos();
   
@@ -95,69 +107,72 @@ export class ProductsComponent  {
    this.show=this.Nbshow;
    this.ProjetsAffich=[];
    this.Projets=this.Prjs;
+   this.Key=this.KeyOrigin;
         if(this.filtreCatBool){
           console.log("filterbool==="+this.filtreCatBool);
             if (!this.filtreCatBool6){
                  console.log("week1");
-                
                   for(let prj in this.Projets){
                           if (this.filtreCatBool1 ) {
-                            if(this.Projets[prj].categorie==="gestion"){this.ProjetsCat.push(this.Projets[prj]);}
+                            if(this.Detail[this.Key[prj]].Category==="Gestion"){this.ProjetsCat.push(this.Projets[prj]);this.KeyCat.push(this.Key[prj])}
                           }
                           if (this.filtreCatBool2 ) {
-                            if(this.Projets[prj].categorie==="comptabilité"){this.ProjetsCat.push(this.Projets[prj]);}
+                            if(this.Detail[this.Key[prj]].Category==="Comptabilité"){this.ProjetsCat.push(this.Projets[prj]);this.KeyCat.push(this.Key[prj])}
                           }
                           if (this.filtreCatBool3 ) {
-                            if(this.Projets[prj].categorie==="RH"){this.ProjetsCat.push(this.Projets[prj]);}
+                            if(this.Detail[this.Key[prj]].Category==="RH"){this.ProjetsCat.push(this.Projets[prj]);this.KeyCat.push(this.Key[prj])}
                           }
                           if (this.filtreCatBool4 ) {
-                            if(this.Projets[prj].categorie==="finance"){this.ProjetsCat.push(this.Projets[prj]);}
+                            if(this.Detail[this.Key[prj]].Category==="Finance"){this.ProjetsCat.push(this.Projets[prj]);this.KeyCat.push(this.Key[prj])}
                           }
                           if (this.filtreCatBool5 ) {
-                            if(this.Projets[prj].categorie==="communication"){this.ProjetsCat.push(this.Projets[prj]);}
+                            if(this.Detail[this.Key[prj]].Category==="Communication"){this.ProjetsCat.push(this.Projets[prj]);this.KeyCat.push(this.Key[prj])}
                           }
                       
                     }
+                    this.Key=this.KeyCat;
                     this.Projets=this.ProjetsCat;
                 }
-              
+              this.KeyCat=[];
               this.ProjetsCat=[];
          }
         if (this.filtreTypeBool){
            if (!this.filtreTypeBool8){ 
                   console.log("week2");
                   for(let prj in this.Projets){
+
                   if(this.filtreTypeBool1){
-                    if(this.Projets[prj].Type==="siteweb"){this.ProjetsType.push(this.Projets[prj]); }  
+                    if(this.Detail[this.Key[prj]].Type==="siteweb"){this.ProjetsType.push(this.Projets[prj]);this.KeyType.push(this.Key[prj]); }  
                   }
                   if(this.filtreTypeBool2){
-                    if(this.Projets[prj].Type==="app mobile"){this.ProjetsType.push(this.Projets[prj]);} 
+                    if(this.Detail[this.Key[prj]].Type==="mobile"){this.ProjetsType.push(this.Projets[prj]);this.KeyType.push(this.Key[prj]);} 
                   }
                   if(this.filtreTypeBool3){
-                    if(this.Projets[prj].Type==="logiciel desktop"){this.ProjetsType.push(this.Projets[prj]);} 
+                    if(this.Detail[this.Key[prj]].Type==="logiciel desktop"){this.ProjetsType.push(this.Projets[prj]);this.KeyType.push(this.Key[prj]);} 
                   }
                   if(this.filtreTypeBool4){
-                    if(this.Projets[prj].Type==="script"){this.ProjetsType.push(this.Projets[prj]);} 
+                    if(this.Detail[this.Key[prj]].Type==="script"){this.ProjetsType.push(this.Projets[prj]);this.KeyType.push(this.Key[prj]);} 
                   }
                   if(this.filtreTypeBool5){
-                    if(this.Projets[prj].Type==="bdd"){this.ProjetsType.push(this.Projets[prj]);} 
+                    if(this.Detail[this.Key[prj]].Type==="bdd"){this.ProjetsType.push(this.Projets[prj]);this.KeyType.push(this.Key[prj]);} 
                   }
                   if(this.filtreTypeBool6){
-                    if(this.Projets[prj].Type==="module"){this.ProjetsType.push(this.Projets[prj]);} 
+                    if(this.Detail[this.Key[prj]].Type==="module"){this.ProjetsType.push(this.Projets[prj]);this.KeyType.push(this.Key[prj]);} 
                   }
                   if(this.filtreTypeBool7){
-                    if(this.Projets[prj].Type==="plugin"){this.ProjetsType.push(this.Projets[prj]);} 
+                    if(this.Detail[this.Key[prj]].Type==="plugin"){this.ProjetsType.push(this.Projets[prj]);this.KeyType.push(this.Key[prj]);} 
                   }
                  
                   
                 }
+               this.Key=this.KeyType; 
                this.Projets=this.ProjetsType;
              }
          this.ProjetsType=[];
          } 
         if (this.filterPrixBool){ 
               for(let prj in this.Projets){  
-                if (Number(this.Projets[prj].Prix)>= this.PrixMin && Number(this.Projets[prj].Prix)<= this.PrixMax){
+                if (Number(this.Projets[prj].Price.Etendu)>= this.PrixMin && Number(this.Projets[prj].Price.Etendu)<= this.PrixMax){
                   this.ProjetsPrix.push(this.Projets[prj]);
               
                 }
@@ -170,7 +185,7 @@ export class ProductsComponent  {
           if (!this.filtreDateBool4){
           
               for (let prj in this.Projets){
-                this.Date=(this.Projets[prj].date_pub).split("/");
+                this.Date=(this.Projets[prj].Date_added).split("/");
                 if (this.filtreDateBool1 && !this.filtreDateBool2 && !this.filtreDateBool3){ 
                   
                     if (Number(this.Date[0])>7){
@@ -486,33 +501,33 @@ export class ProductsComponent  {
   var h:any;
   if (this.ProjetsAffich!= undefined) {
   this.ProjetsAffich.sort( (a: any, b: any) => {
-    if (((a.date_pub).split("/"))[2] <((b.date_pub).split("/")[2])){
-      console.log(((a.date_pub).split("/"))[2]+" "+((b.date_pub).split("/")[2]));
-      console.log("i'm here1"+" "+a.date_pub+" ",b.date_pub);
+    if (((a.Date_added).split("/"))[2] <((b.Date_added).split("/")[2])){
+      console.log(((a.Date_added).split("/"))[2]+" "+((b.Date_added).split("/")[2]));
+      console.log("i'm here1"+" "+a.Date_added+" ",b.Date_added);
      
       return -1;
-    } else if (((a.date_pub).split("/"))[2] > ((b.date_pub).split("/")[2])) {
-      console.log("i'm here2"+" "+a.date_pub+" ",b.date_pub );
+    } else if (((a.Date_added).split("/"))[2] > ((b.Date_added).split("/")[2])) {
+      console.log("i'm here2"+" "+a.Date_added+" ",b.Date_added );
       return 1;
     } else { 
-          if (((a.date_pub).split("/"))[1] <((b.date_pub).split("/")[1])){
-            console.log(((a.date_pub).split("/"))[2]+" "+((b.date_pub).split("/")[2]));
-            console.log("i'm here1"+" "+a.date_pub+" ",b.date_pub);
+          if (((a.Date_added).split("/"))[1] <((b.Date_added).split("/")[1])){
+            console.log(((a.Date_added).split("/"))[2]+" "+((b.Date_added).split("/")[2]));
+            console.log("i'm here1"+" "+a.Date_added+" ",b.Date_added);
           
             return -1;
           } else 
-          if (((a.date_pub).split("/"))[1] > ((b.date_pub).split("/")[1])) {
-            console.log("i'm here2"+" "+a.date_pub+" ",b.date_pub );
+          if (((a.Date_added).split("/"))[1] > ((b.Date_added).split("/")[1])) {
+            console.log("i'm here2"+" "+a.Date_added+" ",b.Date_added );
             return 1;
           }else { 
-            if (((a.date_pub).split("/"))[0] <((b.date_pub).split("/")[0])){
-              console.log(((a.date_pub).split("/"))[2]+" "+((b.date_pub).split("/")[2]));
-              console.log("i'm here1"+" "+a.date_pub+" ",b.date_pub);
+            if (((a.Date_added).split("/"))[0] <((b.Date_added).split("/")[0])){
+              console.log(((a.Date_added).split("/"))[2]+" "+((b.Date_added).split("/")[2]));
+              console.log("i'm here1"+" "+a.Date_added+" ",b.Date_added);
             
               return -1;
             } else 
-            if (((a.date_pub).split("/"))[0] > ((b.date_pub).split("/")[0])) {
-              console.log("i'm here2"+" "+a.date_pub+" ",b.date_pub );
+            if (((a.Date_added).split("/"))[0] > ((b.Date_added).split("/")[0])) {
+              console.log("i'm here2"+" "+a.Date_added+" ",b.Date_added );
               return 1;
             }else return 0;
             
@@ -582,19 +597,19 @@ SortByRating(){
  }
 /*****************************************************************/
  bestRating(Data : any []){
-  if (this.RatingMax(Data[1],1)){
+  if (this.RatingMax(Data,1)){
   console.log("*************************** end bestrating"); 
    return 1;
  
-  }else if(this.RatingMax(Data[2],2)){
+  }else if(this.RatingMax(Data,2)){
     console.log("*************************** end bestrating"); 
    return 2;
   }
-  else if(this.RatingMax(Data[3],3)){
+  else if(this.RatingMax(Data,3)){
     console.log("*************************** end bestrating"); 
     return 3;
   }
-  else if(this.RatingMax(Data[4],4)){
+  else if(this.RatingMax(Data,4)){
     console.log("*************************** end bestrating"); 
     return 4;
   }
@@ -639,7 +654,7 @@ SortByRating(){
   setTimeout(function() {
     this.edited = false;
     this.edited2=true;
-    console.log(this.edited);
+    
   }.bind(this), 2200);
  }
 /**************************************************************/ //Show Data by nb (4 or 8 or all)

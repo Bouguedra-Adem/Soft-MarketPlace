@@ -21,14 +21,15 @@ import { ProductComponent } from './products/product/product.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { DetailProductComponent } from './products/detail-product/detail-product.component';
 import { SignInComponent } from './Account/sign-in/sign-in.component';
-
+import {DataService} from './Services/data.service';
 import { FormIndividualComponent } from './Account/SignUp/form-individual/form-individual.component';
 import { FormEnterpriseComponent } from './Account/SignUp/form-enterprise/form-enterprise.component';
 import { ProfileUserComponent } from './profile-user/profile-user.component';
 import { ProfileUserNavbarComponent } from './profile-user/profile-user-navbar/profile-user-navbar.component';
 import { SlideImgComponent } from './slide-img/slide-img.component';
 import { CreatProductComponent } from './products/creat-product/creat-product.component';
-
+import { from } from 'rxjs/internal/observable/from';
+import{AuthService}from './Services/auth-functions.service';
 
 
 const appRoutes:Routes=[
@@ -40,7 +41,7 @@ const appRoutes:Routes=[
   {path:'Account',component: AccountComponent},
   {path:'CreatProd',component: CreatProductComponent},
   {path:'Profile',component: ProfileUserComponent},
-  {path:'ProductDetaill',component: DetailProductComponent}
+  {path:'ProductDetaill',component: DetailProductComponent ,data :{} }
   
 ];
 @NgModule({
@@ -84,7 +85,7 @@ const appRoutes:Routes=[
     AngularFireDatabaseModule,
   ],
 
-  providers: [AngularFireDatabase,DBFunctionsService,ProfileService  ],
+  providers: [AngularFireDatabase,DBFunctionsService,ProfileService,DataService ,AuthService ],
   bootstrap: [AppComponent],
   
   
