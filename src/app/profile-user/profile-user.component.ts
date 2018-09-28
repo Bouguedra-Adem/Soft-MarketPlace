@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {DBFunctionsService} from '../shared/Services/db-functions.service';
-import * as firebase from 'firebase';
 import {UserService} from '../shared/Services/user.service';
+import {User} from '../shared/Model/User';
+import {AngularFireDatabase} from 'angularfire2/database';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-profile-user',
@@ -9,29 +10,21 @@ import {UserService} from '../shared/Services/user.service';
   styleUrls: ['./profile-user.component.css']
 })
 export class ProfileUserComponent implements OnInit {
-  userFirstName: string;
-  userLastName: string;
-  userName: string;
   userEmail: string;
   userPic: string;
   userNbrSales = 12;
-  userNbrLikes = 123;
   userNbrPostes = 30;
-  userNbrComments = 47;
+
+  user: Observable<User> ;
 
 
   constructor(private userService: UserService) {
-    this.userFirstName = 'Nadjib';
-    this.userLastName = 'Souab';
-    this.userName = this.userFirstName + this.userLastName;
-    this.userEmail = 'fn_souab@esi.dz';
-    this.userPic = 'https://bootdey.com/img/Content/avatar/avatar1.png';
-
+    this.user = this.userService.getUser().valueChanges();
   }
 
   ngOnInit() {
-
-    this.userService.getUser('-LLzTO825sXz7fsSdjpO').subscribe(console.log);
+    this.userEmail = 'fn_souab@esi.dz';
+    this.userPic = 'https://bootdey.com/img/Content/avatar/avatar1.png';
 
   }
 

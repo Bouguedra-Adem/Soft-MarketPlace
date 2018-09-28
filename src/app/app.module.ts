@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {Component, OnInit} from '@angular/core';
 import {AppComponent} from './app.component';
 import {ProfileService} from './shared/Services/profile.service';
@@ -32,6 +32,8 @@ import {NavbarComponent} from './navbar/navbar.component';
 import {ProfileComponent} from './profile-user/profile/profile.component';
 import {EarningsComponent} from './profile-user/earnings/earnings.component';
 import {UserService} from './shared/Services/user.service';
+import { ProfileFormComponent } from './profile-user/profile-form/profile-form.component';
+
 
 
 const appRoutes: Routes = [
@@ -47,12 +49,14 @@ const appRoutes: Routes = [
     children: [
       {path: '', component: ProfileComponent},
       {path: 'profile', component: ProfileComponent},
-      {path: 'earnings', component: EarningsComponent}
+      {path: 'earnings', component: EarningsComponent},
+      {path: 'edit', component: ProfileFormComponent}
     ]
   },
   {path: 'ProductDetaill', component: DetailProductComponent},
   {path: '', pathMatch: 'full', component: HomeComponent},
   {path: '**', component: HomeComponent}
+
 ];
 
 @NgModule({
@@ -79,6 +83,7 @@ const appRoutes: Routes = [
     NavbarComponent,
     ProfileComponent,
     EarningsComponent,
+    ProfileFormComponent,
 
   ],
   imports: [
@@ -87,8 +92,9 @@ const appRoutes: Routes = [
     AngularFireModule.initializeApp(environment.Firebase),
     AngularFireAuthModule,
     RouterModule,
-    AngularFireDatabaseModule,
-    /*Ng2PageScrollModule*/
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFireDatabaseModule
   ],
 
   providers: [AngularFireDatabase, DBFunctionsService, ProfileService, UserService],

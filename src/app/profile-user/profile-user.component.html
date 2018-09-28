@@ -1,4 +1,4 @@
-<div class="container body">
+<div class="container col-11 body">
 
   <!-- Header -->
   <div class="row header">
@@ -7,10 +7,10 @@
         <img title="profile image" class="rounded-circle" [src]='userPic' alt="Profile picture"></a>
     </div>
     <div class="col-sm-9 my-auto ">
-      <h1>{{userName}}</h1>
+      <h1>{{(user | async)?.First_name}} {{(user | async)?.Last_name}}</h1>
       <hr class="w-100">
-      <p><span class="font-weight-bold">First Name :</span> {{userFirstName}}</p>
-      <p><span class="font-weight-bold">Last Name :</span> {{userLastName}}</p>
+      <p><span class="font-weight-bold">First Name :</span> {{(user | async)?.First_name}}</p>
+      <p><span class="font-weight-bold">Last Name :</span> {{(user | async)?.Last_name}}</p>
       <p><span class="font-weight-bold">Email :</span> {{userEmail}}</p>
     </div>
   </div>
@@ -22,18 +22,15 @@
     <div class="col-sm-3 ">
       <ul class="list-group ">
         <li class="list-group-item text-left text-muted">About</li>
-        <li class="list-group-item text-left font-weight-light font-italic">I am a developer.I am a developer.I
-          am a developer.I am a developer.I am a developer.
-        </li>
+        <li class="list-group-item text-left font-weight-light font-italic">{{(user | async)?.Bio}}</li>
       </ul>
       <h2></h2>
 
       <ul class="list-group text-left">
         <li class="list-group-item text-muted">Activity</li>
-        <li class="list-group-item "><strong class="font-weight-bold">Posts :</strong> {{userNbrPostes}}</li>
-        <li class="list-group-item "><strong>Likes :</strong> {{userNbrLikes}}</li>
+        <li class="list-group-item "><strong >Sign up date :</strong> {{(user | async)?.Signup_date}}</li>
+        <li class="list-group-item "><strong >Posts :</strong> {{userNbrPostes}}</li>
         <li class="list-group-item "><strong>Sales :</strong> {{userNbrSales}}</li>
-        <li class="list-group-item "><strong>Comments :</strong> {{userNbrComments}}</li>
       </ul>
 
       <h1></h1>
