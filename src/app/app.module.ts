@@ -30,6 +30,7 @@ import {ProfileUserNavbarComponent} from './profile-user/profile-user-navbar/pro
 import {SlideImgComponent} from './slide-img/slide-img.component';
 import {CreatProductComponent} from './products/creat-product/creat-product.component';
 import {NavbarComponent} from './navbar/navbar.component';
+import { ClientsListComponent } from './clients-list/clients-list.component';
 
 
 const appRoutes: Routes = [
@@ -67,6 +68,7 @@ const appRoutes: Routes = [
     SlideImgComponent,
     CreatProductComponent,
     NavbarComponent,
+    ClientsListComponent,
 
   ],
   imports: [
