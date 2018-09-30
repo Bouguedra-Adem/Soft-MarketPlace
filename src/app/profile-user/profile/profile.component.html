@@ -1,0 +1,116 @@
+<!-- Profile ---------------------------------->
+<div class="container-fluid">
+  <ul class="list-group">
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3 title">
+        <h5 class="h5 ">First name : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.First_name}}</h6>
+      </div>
+    </li>
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3  title">
+        <h5 class="h5 ">Last name : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.Last_name}}</h6>
+      </div>
+    </li>
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3  title">
+        <h5 class="h5 ">Birthday : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.Birthdate}}</h6>
+      </div>
+    </li>
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3  title">
+        <h5 class="h5 ">Address : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.Address}}</h6>
+      </div>
+    </li>
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3  title">
+        <h5 class="h5 ">Country : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.Country}}</h6>
+      </div>
+    </li>
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3  title">
+        <h5 class="h5 ">Phone number : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.Phone_number}}</h6>
+      </div>
+    </li>
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3  title">
+        <h5 class="h5 ">Organisation : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.Organisation}}</h6>
+      </div>
+    </li>
+
+    <hr>
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3  title">
+        <h5 class="h5 ">Bio : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.Bio}}</h6>
+      </div>
+    </li>
+    <hr>
+    <h5 class="h5 ">Social links : </h5>
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3  title">
+        <h5 class="h5 ">Github : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.Social_links.Github}}</h6>
+      </div>
+    </li>
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3  title">
+        <h5 class="h5 ">LinkedIn : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.Social_links.LinkedIn}}</h6>
+      </div>
+    </li>
+    <hr>
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3  title">
+        <h5 class="h5 ">Product types : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.Product_types}}</h6>
+      </div>
+    </li>
+    <li class="list-group-item d-flex flex-row align-items-center">
+      <div class="col-sm-4 col-md-4 col-lg-3  title">
+        <h5 class="h5 ">Technologies : </h5>
+      </div>
+      <div class="col-sm-7 col-md-8">
+        <h6 class="h6 offset-1  text-muted font-italic"> {{(user | async)?.Technologies}}</h6>
+      </div>
+    </li>
+
+
+    <hr>
+    <div class="row justify-content-center">
+      <button class="btn btn-primary wx-auto font-weight-bold" type="button" [routerLink]="['/','Profile','edit']">
+        Edit
+      </button>
+    </div>
+  </ul>
+
+
+</div>

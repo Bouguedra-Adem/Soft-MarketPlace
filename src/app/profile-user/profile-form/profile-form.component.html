@@ -1,0 +1,121 @@
+
+<!-------------------------------------------- Form ------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------->
+<div class="col-sm-8 col-sm-offset-2">
+
+  <form class="form" [formGroup]="userForm" (ngSubmit)="onSubmitForm()">
+    <div class="form-group">
+
+      <div class="col-xs-6">
+        <label for="first_name">
+          <h4>First name</h4></label>
+        <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name"
+               title="enter your first name if any." formControlName="First_name">
+      </div>
+    </div>
+    <div class="form-group">
+
+      <div class="col-xs-6">
+        <label for="last_name">
+          <h4>Last name</h4></label>
+        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name"
+               title="enter your last name if any." formControlName="Last_name">
+      </div>
+    </div>
+
+    <div class="form-group">
+
+      <div class="col-xs-6">
+        <label for="Birthdate">
+          <h4>Date of birth</h4></label>
+        <input type="text" class="form-control" name="Birthdate" id="Birthdate" placeholder="Birthdate"
+               title="enter your Birthdate." formControlName="Birthdate">
+      </div>
+    </div>
+
+    <div class="form-group">
+
+      <div class="col-xs-6">
+        <label for="Address">
+          <h4>Address</h4></label>
+        <input type="text" class="form-control" name="Address" id="Address" placeholder="Address..."
+               title="enter your Address." formControlName="Address">
+      </div>
+    </div>
+    <div class="form-group">
+
+      <div class="col-xs-6">
+        <label for="Country">
+          <h4>Country</h4></label>
+        <input type="text" class="form-control" id="Country" placeholder="Country" title="enter a Country"
+               formControlName="Country">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-xs-6">
+        <label for="mobile">
+          <h4>Mobile</h4></label>
+        <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number"
+               title="enter your mobile number if any." formControlName="Phone_number">
+      </div>
+    </div>
+
+    <div class="form-group">
+
+      <div class="col-xs-6">
+        <label for="Bio">
+          <h4>Bio</h4></label>
+        <input type="text" class="form-control" name="Bio" id="Bio" placeholder="Bio"
+               title="enter your password." formControlName="Bio">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-xs-6">
+        <label for="Organisation">
+          <h4>Organisation</h4></label>
+        <input type="text" class="form-control" name="Organisation" id="Organisation" placeholder="Organisation"
+               title="enter your Organisation." formControlName="Organisation">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-xs-6">
+        <label for="Product_types">
+          <h4>Product types</h4></label>
+        <input type="text" class="form-control" name="Product_types" id="Product_types" placeholder="Product_types"
+               title="enter your Product types." formControlName="Product_types">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-xs-6">
+        <label for="Technologies">
+          <h4>Technologies</h4></label>
+        <input type="text" class="form-control" name="Technologies" id="Technologies" placeholder="Technologies"
+               title="enter your Technologies." formControlName="Technologies">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <div class="col-xs-6">
+        <label for="Social_links">
+          <h4>Social links</h4></label>
+        <input type="text" class="form-control" name="Social_links" id="Social_links" placeholder="Social_links"
+               title="enter your Social links." formControlName="Social_links">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-xs-12">
+        <br>
+        <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save
+        </button>
+        <button class="btn btn-lg" type="button"><i class="glyphicon glyphicon-repeat"></i> Cancel
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

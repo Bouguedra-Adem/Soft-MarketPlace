@@ -1,0 +1,18 @@
+.container-fluid {
+  padding: 0px;
+  marging: 0px;
+  marging-top: 1px;
+}
+
+li {
+  padding: 0px;
+  margin: 1px;
+}
+
+.title {
+  margin: 0px;
+  padding: 10px;
+  padding-left: 3%;
+  border-right: 1px solid #cdcdcd;
+  background-color: #dee5ed;
+}

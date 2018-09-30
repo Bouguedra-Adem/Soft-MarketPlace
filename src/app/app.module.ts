@@ -1,17 +1,17 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {Component, OnInit} from '@angular/core';
 import {AppComponent} from './app.component';
-import {ProfileService} from './Services/profile.service';
+import {ProfileService} from './shared/Services/profile.service';
 import {AngularFireModule} from 'angularfire2';
 import {environment} from '../environments/environment';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {RouterModule, Routes} from '@angular/router';
 import {AngularFireDatabase} from 'angularfire2/database';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
-import {DBFunctionsService} from './Services/db-functions.service';
-import {HomeComponent} from './Home/home.component';
+import {DBFunctionsService} from './shared/Services/db-functions.service';
+import {HomeComponent} from './home/home.component';
 import {AboutUsComponent} from './About-us/about-us.component';
 import {ContactComponent} from './Contact/contact.component';
 import {FooterComponent} from './Footer/footer.component';
@@ -30,7 +30,15 @@ import {ProfileUserNavbarComponent} from './profile-user/profile-user-navbar/pro
 import {SlideImgComponent} from './slide-img/slide-img.component';
 import {CreatProductComponent} from './products/creat-product/creat-product.component';
 import {NavbarComponent} from './navbar/navbar.component';
+<<<<<<< HEAD
 import { ClientsListComponent } from './clients-list/clients-list.component';
+=======
+import {ProfileComponent} from './profile-user/profile/profile.component';
+import {EarningsComponent} from './profile-user/earnings/earnings.component';
+import {UserService} from './shared/Services/user.service';
+import { ProfileFormComponent } from './profile-user/profile-form/profile-form.component';
+
+>>>>>>> bcae8ed5cd9afc7a38575997668f4ca0f9461353
 
 
 const appRoutes: Routes = [
@@ -41,8 +49,18 @@ const appRoutes: Routes = [
   {path: 'Home', component: HomeComponent},
   {path: 'Account', component: AccountComponent},
   {path: 'CreatProd', component: CreatProductComponent},
-  {path: 'Profile', component: ProfileUserComponent},
-  {path: 'ProductDetaill', component: DetailProductComponent}
+  {
+    path: 'Profile', component: ProfileUserComponent,
+    children: [
+      {path: '', component: ProfileComponent},
+      {path: 'profile', component: ProfileComponent},
+      {path: 'earnings', component: EarningsComponent},
+      {path: 'edit', component: ProfileFormComponent}
+    ]
+  },
+  {path: 'ProductDetaill', component: DetailProductComponent},
+  {path: '', pathMatch: 'full', component: HomeComponent},
+  {path: '**', component: HomeComponent}
 
 ];
 
@@ -68,7 +86,13 @@ const appRoutes: Routes = [
     SlideImgComponent,
     CreatProductComponent,
     NavbarComponent,
+<<<<<<< HEAD
     ClientsListComponent,
+=======
+    ProfileComponent,
+    EarningsComponent,
+    ProfileFormComponent,
+>>>>>>> bcae8ed5cd9afc7a38575997668f4ca0f9461353
 
   ],
   imports: [
@@ -77,11 +101,12 @@ const appRoutes: Routes = [
     AngularFireModule.initializeApp(environment.Firebase),
     AngularFireAuthModule,
     RouterModule,
-    AngularFireDatabaseModule,
-    /*Ng2PageScrollModule*/
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFireDatabaseModule
   ],
 
-  providers: [AngularFireDatabase, DBFunctionsService, ProfileService],
+  providers: [AngularFireDatabase, DBFunctionsService, ProfileService, UserService],
   bootstrap: [AppComponent],
 })
 export class AppModule {
