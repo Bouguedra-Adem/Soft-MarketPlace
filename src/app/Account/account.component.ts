@@ -61,8 +61,7 @@ export class AccountComponent implements OnInit {
   ngOnInit() {
   }
 Next1(){
-  this.Form_dev_2=!this.Form_dev_2;
-  this.Form_dev_1=!this.Form_dev_1;
+  
 this.bool1=this.bool2=this.bool3=this.bool4=this.bool5=this.bool6=this.bool7=this.bool8=false;
 if (this.Email===""){this.bool1=true;}
 if (this.First_name===""){this.bool2=true;}
@@ -80,13 +79,14 @@ this.UserProfile.Address=this.Adr;
 this.UserProfile.Borthdate=this.Birthdate;
 this.UserProfile.Phone_number=this.Phone_number;
 this.UserProfile.Country=this.chosenMod;
+this.Form_dev_2=!this.Form_dev_2;
+this.Form_dev_1=!this.Form_dev_1;
 
 }
 }
 Next2(){
   
-  this.Form_dev_3=!this.Form_dev_3;
-  this.Form_dev_2=!this.Form_dev_2;
+  
   this.bool9=this.bool10=this.bool11=this.bool12=this.bool13=false;
   if (this.Bio===""){this.bool9=true;}
   if (this.Technologies===""){this.bool11=true;}
@@ -100,7 +100,8 @@ Next2(){
   this.UserProfile.Product_types=this.Product_type.split(",");
   this.UserProfile.Social_links.Github=this.GithubLink;
   this.UserProfile.Social_links.LinkedIn=this.LinkdenLink;
- 
+  this.Form_dev_3=!this.Form_dev_3;
+  this.Form_dev_2=!this.Form_dev_2;
  
   }
 }
@@ -161,6 +162,7 @@ AsDev(){
   this.Form_dev_2=false;
   this.Form_dev_3=false;
   this.Form_dev_4=false;
+  this.chosenMod='mod1';
   this.bool1=this.bool2=this.bool3=this.bool4=this.bool5=this.bool6=this.bool7=this.bool8=this.bool9=this.bool10=this.bool11=this.bool12=this.bool13=this.bool14=this.bool15=false;
   this.UserProfile={};
   this.UserProfile.Social_links={};

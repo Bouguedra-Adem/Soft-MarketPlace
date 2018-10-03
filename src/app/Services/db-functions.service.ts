@@ -57,8 +57,21 @@ getDettail( ){
 }); 
 return 0;
 } 
+getRating(key:string ){
+  console.log("adem");
+  this.Projet=this.DB.list<any[]>(`/Comments_per_Product/${key}/`);
+  console.log("adem");
+  this.Projet.valueChanges().subscribe((data )=>{
+  this.Comment=data;
+  console.log(this.Comment);
+  return 1
+}); 
+return 0;
+} 
 }
 export interface Products{
 key ?:string;
 data:any;
+
+
 }

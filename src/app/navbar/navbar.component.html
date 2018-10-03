@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top ">
+  <a class="navbar-brand text-bold text-white" routerLink="/Home">SoftMarketplace</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown" *ngIf="navbarSimple" >
+
+    <ul class="navbar-nav"  >
+      <li class="nav-item nav-item1 active">
+        <a class="nav-link"  routerLink="/Home">ACCUEIL <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item nav-item1">
+        <a class="nav-link"  routerLink="/Produit">PRODUITS</a>
+      </li>
+      <li class="nav-item  nav-item1">
+        <a class="nav-link" routerLink="/AboutUs">A PROPOS</a>
+      </li>
+      <li class="nav-item nav-item1">
+        <a class="nav-link" routerLink="/Contact">CONTACTE </a>
+      </li>
+
+      <li class=" nav-item nav-item2">
+        <img src="../assets/login.png" alt="">
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary nav-item1  btn btn-secondary2 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            MON COMPTE
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <form class="px-4 py-3">
+              <div class="form-group">
+                <label for="exampleDropdownFormEmail1">Email address</label>
+                <input type="email" class="form-control" name="email1"  [(ngModel)]=email id="exampleDropdownFormEmail1" placeholder="email@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleDropdownFormPassword1">Password</label>
+                <input type="password" class="form-control" name="pass1" [(ngModel)]=password id="exampleDropdownFormPassword1" placeholder="Password">
+              </div>
+              <br>
+              <br>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                <label class="form-check-label" for="dropdownCheck">
+                  Remember me
+                </label>
+              </div>
+              <button type="submit" (click)="login(email,passwords)" class="btn btn-primary">Sign in</button>
+              <hr>
+              <a class="link" href="">Mot de passe oublier</a>
+              <br>
+              <a  class="link" routerLink="/Account">Creer compte</a>
+            </form>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown" *ngIf="navbarProducer">
+    
+       
+      </div>
+</nav>

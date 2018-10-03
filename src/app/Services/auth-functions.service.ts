@@ -8,15 +8,18 @@ import { $ } from 'protractor';
 
 @Injectable()
 export class AuthService {
-  user: Observable<firebase.User>;
+  user: any=null;
 
   constructor(private firebaseAuth: AngularFireAuth,private db: AngularFireDatabase) {
-    this.user = firebaseAuth.authState;
+    firebaseAuth.authState.subscribe(auth=>{
+      this.user =auth;
+    });
   }
 
 
 
   login(email: string, password: string) {
+    console.log('Nice, it worked!');
     this.firebaseAuth
       .auth
       .signInWithEmailAndPassword(email, password)
@@ -67,5 +70,24 @@ export class AuthService {
       console.log('email sent');
     })
   }
-  
+   // Returns true if user is logged in
+   get authenticated(): boolean {
+    return this.user !== null;
+  }
+
+  // Returns current user data
+  get currentUser(): any {
+    return this.authenticated ? this.user : null;
+  }
+
+  // Returns
+  get currentUserObservable(): any {
+    return this.firebaseAuth.authState
+  }
+
+  // Returns current user UID
+  get currentUserId(): string {
+    return this.authenticated ? this.user.uid : '';
+  }
+
 }
