@@ -1,6 +1,6 @@
 import { Component, OnInit ,Input} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {DBFunctionsService} from '../../Services/db-functions.service';
+import {DBFunctionsService} from '../../shared/Services/db-functions.service';
 import {DataService} from '../../Services/data.service';
 @Component({
   selector: 'app-detail-product',

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {AngularFireDatabase} from 'angularfire2/database';
+import {FirebaseListObservable} from 'angularfire2/database-deprecated';
 
 
 @Component({
@@ -7,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  adem:true;
+
+  constructor() {
+  }
 }

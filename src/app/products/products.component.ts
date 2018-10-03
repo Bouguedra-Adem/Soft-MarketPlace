@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { AngularFireDatabase,AngularFireList } from 'angularfire2/database';
+import {Component, OnInit} from '@angular/core';
+import {AngularFireDatabase, AngularFireList} from 'angularfire2/database';
 import * as firebase from 'firebase/app';
-import { Observable } from 'rxjs';
-import {DBFunctionsService} from '../Services/db-functions.service';
+import {Observable} from 'rxjs';
+import {DBFunctionsService} from '../shared/Services/db-functions.service';
 import * as $ from 'jquery';
-import { concat } from 'rxjs/internal/observable/concat';
-import { filterQueryId } from '@angular/core/src/view/util';
+import {concat} from 'rxjs/internal/observable/concat';
+import {filterQueryId} from '@angular/core/src/view/util';
 
 @Component({
   selector: 'app-products',
@@ -215,8 +215,6 @@ export class ProductsComponent  {
                 }
           
             }
-            this.Projets=this.ProjetsDate;
-           
           }
           this.ProjetsDate=[];  
          }
@@ -300,144 +298,243 @@ export class ProductsComponent  {
   }
  return true;
  }
-/******************************************************************************/ // Lenght Function
- GetLenght(Data :any[]){
-  this.Nbresult=0;
-  for (let j in Data){ this.Nbresult++;}
- }
-/*************************************************************** */ //chekbox categories
-  checkCat1(){
-    this.filtreCatBool1=!this.filtreCatBool1;
-  console.log(this.filtreCatBool1);
-    if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4){this.filtreCatBool=true; console.log(this.filtreCatBool);}
-    else{this.filtreCatBool=false; console.log(this.filtreCatBool);}
-  }
-  /*************************************************************** */
-  checkCat2(){
-    this.filtreCatBool2=!this.filtreCatBool2;
-    console.log(this.filtreCatBool2);
-    if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4){this.filtreCatBool=true;console.log(this.filtreCatBool);}
-    else{this.filtreCatBool=false; console.log(this.filtreCatBool);}
-  }
-  /*************************************************************** */
-  checkCat3(){
-    this.filtreCatBool3=!this.filtreCatBool3;
-    if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4){this.filtreCatBool=true;}
-    else{this.filtreCatBool=false; console.log(this.filtreCatBool);}
-  }
-  /**************************************************************** */
-  checkCat4(){ 
-    this.filtreCatBool4=!this.filtreCatBool4;
-    if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4){this.filtreCatBool=true;}
-    else{this.filtreCatBool=false; console.log(this.filtreCatBool);}
-  }
-  /**************************************************************** */
-  checkCat5(){ 
-    this.filtreCatBool5=!this.filtreCatBool5;
-    if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4 || this.filtreCatBool5){this.filtreCatBool=true;}
-    else{this.filtreCatBool=false; console.log(this.filtreCatBool);}
-  }
-  /*************************************************************** */
-  checkCat6(){ 
-  this.filtreCatBool6=!this.filtreCatBool6;
-  if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4 || this.filtreCatBool5){this.filtreCatBool=true;}
-  else{this.filtreCatBool=false; console.log(this.filtreCatBool);}
- }
-/*****************************************************************************/ //CheckBox Type
-  checkType1(){
-      this.filtreTypeBool1=!this.filtreTypeBool1;
-      console.log(this.filtreTypeBool1);
-      if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8){this.filtreTypeBool=true;console.log(this.filtreTypeBool);}
-      else{this.filtreTypeBool=false; console.log(this.filtreTypeBool);}
-    }
-  /*************************************************************** */
-  checkType2(){ 
-    this.filtreTypeBool2=!this.filtreTypeBool2;
-    console.log(this.filtreTypeBool2);
-    if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8){this.filtreTypeBool=true;console.log(this.filtreTypeBool);}
-    else{this.filtreTypeBool=false; console.log(this.filtreTypeBool);}
-  }
-  /*************************************************************** */
-  checkType3(){
-      this.filtreTypeBool3=!this.filtreTypeBool3;
-      console.log(this.filtreTypeBool3);
-      if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8){this.filtreTypeBool=true;console.log(this.filtreTypeBool);}
-      else{this.filtreTypeBool=false; console.log(this.filtreTypeBool);}
-    }
-  /**************************************************************** */
-  checkType4(){
 
-      this.filtreTypeBool4=!this.filtreTypeBool4;
-      console.log(this.filtreTypeBool4);
-      if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8){this.filtreTypeBool=true;console.log(this.filtreTypeBool);}
-      else{this.filtreTypeBool=false; console.log(this.filtreTypeBool);}
-    }
-  /****************************************************************/
-  checkType5(){
-    
-        this.filtreTypeBool5=!this.filtreTypeBool5;
-        console.log(this.filtreTypeBool5);
-        if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8){this.filtreTypeBool=true;console.log(this.filtreTypeBool);}
-        else{this.filtreTypeBool=false; console.log(this.filtreTypeBool);}
-      }
-  /****************************************************************/
-  checkType6(){
-    
-        this.filtreTypeBool6=!this.filtreTypeBool6;
-        console.log(this.filtreTypeBool6);
-        if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8){this.filtreTypeBool=true;console.log(this.filtreTypeBool);}
-        else{this.filtreTypeBool=false; console.log(this.filtreTypeBool);}
-      }
-  /****************************************************************/
-  checkType7(){
-    
-        this.filtreTypeBool7=!this.filtreTypeBool7;
-        console.log(this.filtreTypeBool7);
-        if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8){this.filtreTypeBool=true;console.log(this.filtreTypeBool);}
-        else{this.filtreTypeBool=false; console.log(this.filtreTypeBool);}
-      }
-  /****************************************************************/
-  checkType8(){
-  
-      this.filtreTypeBool8=!this.filtreTypeBool8;
-      console.log(this.filtreTypeBool8);
-      if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8){this.filtreTypeBool=true;console.log(this.filtreTypeBool);}
-      else{this.filtreTypeBool=false; }
-    }
-/**************************************************************************/  //Button Prix
-  submitPrix(){
-    console.log("prixMin="+this.PrixMin ,"prixmax="+this.PrixMax);
-    if (this.PrixMin !=0 || this.PrixMax!=0){
-      this.filterPrixBool=true;
-    }else {
-      this.filterPrixBool=false;
+  GetLenght(Data: any[]) {
+    this.Nbresult = 0;
+    for (let j in Data) {
+      this.Nbresult++;
     }
   }
-/**************************************************************************/ //checkbox date
-  checkDate1(){
-    this.filtreDateBool1=!this.filtreDateBool1;
-    if (this.filtreDateBool1 || this.filtreDateBool2 || this.filtreDateBool3 || this.filtreDateBool4 ){
-      this.filtreDateBool=true;
+
+  /*************************************************************** */ //chekbox categories
+  checkCat1() {
+    this.filtreCatBool1 = !this.filtreCatBool1;
+    console.log(this.filtreCatBool1);
+    if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4) {
+      this.filtreCatBool = true;
+      console.log(this.filtreCatBool);
     }
     else {
-      this.filtreDateBool=false;
+      this.filtreCatBool = false;
+      console.log(this.filtreCatBool);
     }
   }
-  /***************************************************************** */
-  checkDate2(){
-    this.filtreDateBool2=!this.filtreDateBool2;
-    if (this.filtreDateBool1 || this.filtreDateBool2 || this.filtreDateBool3 || this.filtreDateBool4 ){
-      this.filtreDateBool=true;
+
+  /*************************************************************** */
+  checkCat2() {
+    this.filtreCatBool2 = !this.filtreCatBool2;
+    console.log(this.filtreCatBool2);
+    if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4) {
+      this.filtreCatBool = true;
+      console.log(this.filtreCatBool);
     }
     else {
-      this.filtreDateBool=false;
+      this.filtreCatBool = false;
+      console.log(this.filtreCatBool);
     }
-  } 
+  }
+
+  /*************************************************************** */
+  checkCat3() {
+    this.filtreCatBool3 = !this.filtreCatBool3;
+    if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4) {
+      this.filtreCatBool = true;
+    }
+    else {
+      this.filtreCatBool = false;
+      console.log(this.filtreCatBool);
+    }
+  }
+
+  /**************************************************************** */
+  checkCat4() {
+    this.filtreCatBool4 = !this.filtreCatBool4;
+    if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4) {
+      this.filtreCatBool = true;
+    }
+    else {
+      this.filtreCatBool = false;
+      console.log(this.filtreCatBool);
+    }
+  }
+
+  /**************************************************************** */
+  checkCat5() {
+    this.filtreCatBool5 = !this.filtreCatBool5;
+    if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4 || this.filtreCatBool5) {
+      this.filtreCatBool = true;
+    }
+    else {
+      this.filtreCatBool = false;
+      console.log(this.filtreCatBool);
+    }
+  }
+
+  /*************************************************************** */
+  checkCat6() {
+    this.filtreCatBool6 = !this.filtreCatBool6;
+    if (this.filtreCatBool1 || this.filtreCatBool2 || this.filtreCatBool3 || this.filtreCatBool4 || this.filtreCatBool5) {
+      this.filtreCatBool = true;
+    }
+    else {
+      this.filtreCatBool = false;
+      console.log(this.filtreCatBool);
+    }
+  }
+
+  /*****************************************************************************/ //CheckBox Type
+  checkType1() {
+    this.filtreTypeBool1 = !this.filtreTypeBool1;
+    console.log(this.filtreTypeBool1);
+    if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8) {
+      this.filtreTypeBool = true;
+      console.log(this.filtreTypeBool);
+    }
+    else {
+      this.filtreTypeBool = false;
+      console.log(this.filtreTypeBool);
+    }
+  }
+
+  /*************************************************************** */
+  checkType2() {
+    this.filtreTypeBool2 = !this.filtreTypeBool2;
+    console.log(this.filtreTypeBool2);
+    if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8) {
+      this.filtreTypeBool = true;
+      console.log(this.filtreTypeBool);
+    }
+    else {
+      this.filtreTypeBool = false;
+      console.log(this.filtreTypeBool);
+    }
+  }
+
+  /*************************************************************** */
+  checkType3() {
+    this.filtreTypeBool3 = !this.filtreTypeBool3;
+    console.log(this.filtreTypeBool3);
+    if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8) {
+      this.filtreTypeBool = true;
+      console.log(this.filtreTypeBool);
+    }
+    else {
+      this.filtreTypeBool = false;
+      console.log(this.filtreTypeBool);
+    }
+  }
+
+  /**************************************************************** */
+  checkType4() {
+
+    this.filtreTypeBool4 = !this.filtreTypeBool4;
+    console.log(this.filtreTypeBool4);
+    if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8) {
+      this.filtreTypeBool = true;
+      console.log(this.filtreTypeBool);
+    }
+    else {
+      this.filtreTypeBool = false;
+      console.log(this.filtreTypeBool);
+    }
+  }
+
+  /****************************************************************/
+  checkType5() {
+
+    this.filtreTypeBool5 = !this.filtreTypeBool5;
+    console.log(this.filtreTypeBool5);
+    if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8) {
+      this.filtreTypeBool = true;
+      console.log(this.filtreTypeBool);
+    }
+    else {
+      this.filtreTypeBool = false;
+      console.log(this.filtreTypeBool);
+    }
+  }
+
+  /****************************************************************/
+  checkType6() {
+
+    this.filtreTypeBool6 = !this.filtreTypeBool6;
+    console.log(this.filtreTypeBool6);
+    if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8) {
+      this.filtreTypeBool = true;
+      console.log(this.filtreTypeBool);
+    }
+    else {
+      this.filtreTypeBool = false;
+      console.log(this.filtreTypeBool);
+    }
+  }
+
+  /****************************************************************/
+  checkType7() {
+
+    this.filtreTypeBool7 = !this.filtreTypeBool7;
+    console.log(this.filtreTypeBool7);
+    if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8) {
+      this.filtreTypeBool = true;
+      console.log(this.filtreTypeBool);
+    }
+    else {
+      this.filtreTypeBool = false;
+      console.log(this.filtreTypeBool);
+    }
+  }
+
+  /****************************************************************/
+  checkType8() {
+
+    this.filtreTypeBool8 = !this.filtreTypeBool8;
+    console.log(this.filtreTypeBool8);
+    if (this.filtreTypeBool1 || this.filtreTypeBool2 || this.filtreTypeBool3 || this.filtreTypeBool4 || this.filtreTypeBool5 || this.filtreTypeBool6 || this.filtreTypeBool7 || this.filtreTypeBool8) {
+      this.filtreTypeBool = true;
+      console.log(this.filtreTypeBool);
+    }
+    else {
+      this.filtreTypeBool = false;
+    }
+  }
+
+  /**************************************************************************/  //Button Prix
+  submitPrix() {
+    console.log('prixMin=' + this.PrixMin, 'prixmax=' + this.PrixMax);
+    if (this.PrixMin != 0 || this.PrixMax != 0) {
+      this.filterPrixBool = true;
+    } else {
+      this.filterPrixBool = false;
+    }
+  }
+
+  /**************************************************************************/ //checkbox date
+  checkDate1() {
+    this.filtreDateBool1 = !this.filtreDateBool1;
+    if (this.filtreDateBool1 || this.filtreDateBool2 || this.filtreDateBool3 || this.filtreDateBool4) {
+      this.filtreDateBool = true;
+    }
+    else {
+      this.filtreDateBool = false;
+    }
+  }
+
   /***************************************************************** */
-  checkDate3(){
-    this.filtreDateBool3=!this.filtreDateBool3;
-    if (this.filtreDateBool1 || this.filtreDateBool2 || this.filtreDateBool3 || this.filtreDateBool4 ){
-      this.filtreDateBool=true;
+  checkDate2() {
+    this.filtreDateBool2 = !this.filtreDateBool2;
+    if (this.filtreDateBool1 || this.filtreDateBool2 || this.filtreDateBool3 || this.filtreDateBool4) {
+      this.filtreDateBool = true;
+    }
+    else {
+      this.filtreDateBool = false;
+    }
+  }
+
+  /***************************************************************** */
+  checkDate3() {
+    this.filtreDateBool3 = !this.filtreDateBool3;
+    if (this.filtreDateBool1 || this.filtreDateBool2 || this.filtreDateBool3 || this.filtreDateBool4) {
+      this.filtreDateBool = true;
     }
     else {
       this.filtreDateBool=false;
@@ -620,34 +717,35 @@ SortByRating(){
 
 } 
 
-/*************************************************************** */  // Sort
- modo(){
+  /*************************************************************** */  // Sort
+  modo() {
 
-  switch(this.chosenMod) {  
-     case "mod1": { 
+    switch (this.chosenMod) {
+      case 'mod1': {
         this.SortByDate();
         break;
-     }
-     case "mod2": { 
-       this.SortByRating();
+      }
+      case 'mod2': {
+        this.SortByRating();
         break;
-     }
-     case "mod3": { 
+      }
+      case 'mod3': {
         this.SortByPrixLh();
         break;
-     }
-     case "mod4": { 
-        this.SortByPrixHl();
-      break;
-     }
-      case "mod5": { 
-        
-      break;
       }
+      case 'mod4': {
+        this.SortByPrixHl();
+        break;
+      }
+      case 'mod5': {
+
+        break;
+      }
+    }
+    this.saveTodos();
   }
-  this.saveTodos();
-  }
-/***************************************************************** */ // chargement...
+
+  /***************************************************************** */ // chargement...
   saveTodos(): void {
   this.edited=true;
   this.edited2=false;
@@ -662,30 +760,31 @@ SortByRating(){
     var data:any[]=[];
     
     this.GetLenght(this.ProjetsAffich);
-    if (this.Nbresult>=this.Nbshow ){
+    if (this.Nbresult >= this.Nbshow) {
       //if((this.show-this.Nbresult)<this.Nbshow){ this.ShowDisabl=false;}
-      this.ProjetsAffich=[];
-      console.log("im hereeeeee");
-      for (let prj in this.ProjetsAffichShow){
-        console.log("number prj="+Number(prj)+"show ="+this.show);
-          if (Number(prj)>= (this.show-this.Nbshow) && Number(prj)<this.show){
-            
-            if (this.ProjetsAffichShow[prj] !=null){
-              console.log("1")
+      this.ProjetsAffich = [];
+      console.log('im hereeeeee');
+      for (let prj in this.ProjetsAffichShow) {
+        console.log('number prj=' + Number(prj) + 'show =' + this.show);
+        if (Number(prj) >= (this.show - this.Nbshow) && Number(prj) < this.show) {
+
+          if (this.ProjetsAffichShow[prj] != null) {
+            console.log('1');
             data.push(this.ProjetsAffichShow[prj]);
-            }
           }
+        }
       }
-      this.ProjetsAffich=data;
-      this.show=this.show+this.Nbshow;
-      
+      this.ProjetsAffich = data;
+      this.show = this.show + this.Nbshow;
+
     }
-    else{
-    this.ShowDisabl=false;
+    else {
+      this.ShowDisabl = false;
     }
- }
-/********************************************************************************* */
-Hide(){
-  this.hide=!this.hide;
-}
+  }
+
+  /********************************************************************************* */
+  Hide() {
+    this.hide = !this.hide;
+  }
 }

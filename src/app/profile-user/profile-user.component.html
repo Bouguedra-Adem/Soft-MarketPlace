@@ -1,1 +1,83 @@
-<app-profile-user-navbar></app-profile-user-navbar>
+<div class="container col-11 body">
+
+  <!-- Header -->
+  <div class="row header">
+    <div class="col-sm-3 d-flex justify-content-center align-items-center">
+      <a>
+        <img title="profile image" class="rounded-circle" [src]='userPic' alt="Profile picture"></a>
+    </div>
+    <div class="col-sm-9 my-auto ">
+      <h1>{{(user | async)?.First_name}} {{(user | async)?.Last_name}}</h1>
+      <hr class="w-100">
+      <p><span class="font-weight-bold">First Name :</span> {{(user | async)?.First_name}}</p>
+      <p><span class="font-weight-bold">Last Name :</span> {{(user | async)?.Last_name}}</p>
+      <p><span class="font-weight-bold">Email :</span> {{userEmail}}</p>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="row">
+
+    <!--left col-->
+    <div class="col-sm-3 ">
+      <ul class="list-group ">
+        <li class="list-group-item text-left text-muted">About</li>
+        <li class="list-group-item text-left font-weight-light font-italic">{{(user | async)?.Bio}}</li>
+      </ul>
+      <h2></h2>
+
+      <ul class="list-group text-left">
+        <li class="list-group-item text-muted">Activity</li>
+        <li class="list-group-item "><strong >Sign up date :</strong> {{(user | async)?.Signup_date}}</li>
+        <li class="list-group-item "><strong >Posts :</strong> {{userNbrPostes}}</li>
+        <li class="list-group-item "><strong>Sales :</strong> {{userNbrSales}}</li>
+      </ul>
+
+      <h1></h1>
+      <button class="btn btn-primary col-11 mx-auto d-flex justify-content-center font-weight-bold" type="button"
+              id="addProject">+ Add Project
+      </button>
+    </div>
+
+
+    <!--Right Col -->
+    <div class="col-sm-9">
+
+      <!-- nav bar -->
+      <ul class="nav nav-tabs" id="myTab">
+        <li class="active"><a [routerLink]="['profile']" data-toggle="tab">Profile</a></li>
+        <li><a [routerLink]="['earnings']" data-toggle="tab">Earnings</a></li>
+      </ul>
+
+      <!-- Content -->
+      <div class="container-fluid">
+        <h2></h2>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
+  </div>
+  <!--/col-9-->
+</div>
+<!--/row-->
+
+
+<!--
+
+<div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      <div class="hidden-xs">Stars</div>
+    </button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+      <div class="hidden-xs">Favorites</div>
+    </button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+      <div class="hidden-xs">Following</div>
+    </button>
+  </div>
+</div>-->
