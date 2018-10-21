@@ -1,0 +1,53 @@
+<!-- <div class="container-fluid card my-2">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 justify-content-center align-items-center p-1">
+      <div class="col-sm-12 col-md-4 align-content-center">
+        <img title="profile image" class="rounded-circle px-1" [src]='userPic' alt="Profile picture">         
+      </div>
+      <div class="col-sm-12 col-md-8 align-content-center rounded-1 shadow p-2 bg-white">
+          <div class="col-sm-12" style="height: 100%;">
+            <h1>{{(user | async)?.First_name}} {{(user | async)?.Last_name}}</h1>
+            <hr class="w-100">
+            <p><span class="font-weight-bold">Phone number :</span> {{(user | async)?.First_name}}</p>
+            <p><span class="font-weight-bold">Email :</span> {{userEmail}}</p>
+            <p><span class="font-weight-bold">Address :</span> {{(user | async)?.Last_name}}</p>
+            <p><span class="font-weight-bold">Organisation :</span> {{(user | async)?.Last_name}}</p>
+          </div>    
+        
+      </div>
+    </div>
+  </div>
+</div> -->
+
+      <!-- <div class="col-sm-12 col-md-6 align-content-center">
+        <div class="rounded-1 shadow p-2 m-1 bg-white" style="height: 100%;">
+          <p><span class="font-weight-bold">Product :</span> {{(user | async)?.Last_name}}</p>
+          <p><span class="font-weight-bold">Price :</span> {{(user | async)?.Last_name}}</p>
+          <p><span class="font-weight-bold">Contract :</span> {{(user | async)?.Last_name}}</p>
+          <p><span class="font-weight-bold">State :</span> {{(user | async)?.Last_name}}</p>
+          <hr class="w-100">
+          <form action="/action_page.php" method="get">
+            <input type="checkbox" name="vehicle" value="Car"> I confirm having installed the product successfully<br>
+            <input class="btn-primary" type="submit" value="Submit">
+          </form>
+        </div>
+      </div> -->
+
+
+<div class="container-fluid card my-2">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center px-2">
+        <img title="Profile image" class="rounded-circle .img-fluid mx-auto d-block" style="width: 100%;" [src]='userPic' alt="Profile picture">         
+    </div>
+    <div class="col-sm-12 col-md-8">
+        <div class="col-12 p-2">
+              <h1>{{user?.First_name}} {{user.Last_name}}</h1>
+              <hr class="w-100">
+              <p><span class="font-weight-bold">Phone number :</span> {{user?.First_name}}</p>
+              <p><span class="font-weight-bold">Email :</span> {{userEmail}}</p>
+              <p><span class="font-weight-bold">Address :</span> {{user?.Address}}, {{user.Country}}</p>
+              <p><span class="font-weight-bold">Organisation :</span> {{(organisation | async)?.Name}}</p>          
+        </div>
+    </div>
+  </div>
+</div>

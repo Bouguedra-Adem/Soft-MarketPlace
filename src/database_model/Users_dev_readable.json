@@ -1,0 +1,24 @@
+{
+    "Users_cons_per_Users_dev" : {
+        "cqO9CGCMYlPUJ4eUpTdsoo7fIHJ3" : {
+            "-LNu1Cv1BWc2Wf_f5uTI" : {
+                "-LLzUjDjHkq1DVE2af6W" : {
+                    "Name": "Produit4",
+                    "Thumbnail": "link to storage",
+                    "isInstalled" : true,
+                    "State" : "inValidation",
+                    "Contract":"Regular",
+                    "Price":"1200"
+                },
+                "-LLzUkB_XdABax9yO9L6" : {
+                    "Name": "Produit2",
+                    "Thumbnail": "link to storage",
+                    "isInstalled" : false,
+                    "State" : "toInstall",
+                    "Contract":"Extended",
+                    "Price": "5000" 
+                } 
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "Address": "Some random place in Algiers",
+  "Bio": "E-business & Digital marketing.",
+  "Birthdate": "06-05-2018",
+  "Country": "Algeria",
+  "First_name": "Tarik",
+  "Last_name": "Metnani",
+  "Notifications": 5,
+  "Position" : "Associate Director",
+  "Organisation": "-LNu-QpeY7mMPlhXUsfe",
+  "Phone_number": "0559226763",
+  "Photo": "https://firebasestorage.googleapis.com/v0/b/soft-marketplace.appspot.com/o/Tarik%20Metnani.jpeg?alt=media&token=b6c8b9b9-9c8c-470d-ad16-aa5a1698665a",
+  "Signup_date": "03-10-2018",
+  "Social_links": {
+    "LinkedIn": "linkedin.com/in/tarikmetnani"
+  },
+  "isValid": true
+}

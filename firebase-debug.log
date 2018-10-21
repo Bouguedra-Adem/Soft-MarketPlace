@@ -1,0 +1,44 @@
+[debug] [2018-10-03T20:03:45.304Z] ----------------------------------------------------------------------
+[debug] [2018-10-03T20:03:45.307Z] Command:       /usr/bin/node /usr/bin/firebase database:set /Users_dev_readable src/database_model/Users_dev_readable.json
+[debug] [2018-10-03T20:03:45.308Z] CLI Version:   4.2.1
+[debug] [2018-10-03T20:03:45.308Z] Platform:      linux
+[debug] [2018-10-03T20:03:45.308Z] Node Version:  v8.12.0
+[debug] [2018-10-03T20:03:45.308Z] Time:          Wed Oct 03 2018 21:03:45 GMT+0100 (CET)
+[debug] [2018-10-03T20:03:45.308Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-03T20:03:45.370Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-10-03T20:03:45.370Z] > authorizing via signed-in user
+[debug] [2018-10-03T20:03:45.373Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-03T20:03:45.374Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-10-03T20:04:02.518Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-03T20:04:02.709Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/soft-marketplace  
+ 
+[debug] [2018-10-03T20:04:21.907Z] <<< HTTP RESPONSE 200
+[info] 
+[error] 
+[error] Error: Unexpected error while setting data
+[debug] [2018-10-03T20:09:45.143Z] ----------------------------------------------------------------------
+[debug] [2018-10-03T20:09:45.145Z] Command:       /usr/bin/node /usr/bin/firebase database:set /Users_dev_readable src/database_model/Users_dev_readable.json
+[debug] [2018-10-03T20:09:45.145Z] CLI Version:   4.2.1
+[debug] [2018-10-03T20:09:45.146Z] Platform:      linux
+[debug] [2018-10-03T20:09:45.146Z] Node Version:  v8.12.0
+[debug] [2018-10-03T20:09:45.146Z] Time:          Wed Oct 03 2018 21:09:45 GMT+0100 (CET)
+[debug] [2018-10-03T20:09:45.146Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-03T20:09:45.154Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-10-03T20:09:45.154Z] > authorizing via signed-in user
+[debug] [2018-10-03T20:09:45.156Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/soft-marketplace  
+ 
+[debug] [2018-10-03T20:09:55.400Z] ----------------------------------------------------------------------
+[debug] [2018-10-03T20:09:55.402Z] Command:       /usr/bin/node /usr/bin/firebase database:set /Users_dev_readable src/database_model/Users_dev_readable.json -y
+[debug] [2018-10-03T20:09:55.403Z] CLI Version:   4.2.1
+[debug] [2018-10-03T20:09:55.403Z] Platform:      linux
+[debug] [2018-10-03T20:09:55.403Z] Node Version:  v8.12.0
+[debug] [2018-10-03T20:09:55.403Z] Time:          Wed Oct 03 2018 21:09:55 GMT+0100 (CET)
+[debug] [2018-10-03T20:09:55.403Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-03T20:09:55.411Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-10-03T20:09:55.412Z] > authorizing via signed-in user
+[debug] [2018-10-03T20:09:55.414Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/soft-marketplace  
+ 
