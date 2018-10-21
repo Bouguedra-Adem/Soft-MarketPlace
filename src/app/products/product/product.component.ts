@@ -1,7 +1,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { concat } from 'rxjs/internal/observable/concat';
-;
-
+import {Router, NavigationExtras} from "@angular/router";
+import {DataService} from '../../Services/data.service';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -9,21 +9,30 @@ import { concat } from 'rxjs/internal/observable/concat';
 })
 export class ProductComponent implements OnInit {
   @Input() Projets;
+  @Input() Detail=[];
+  @Input() Key;
+  data :any;
+
   tab=new Array(0) ;
   max:Number=2;
-  constructor() {
+  constructor(private router: Router, private Data:DataService) {
     
    }
- Calcule_rating(data :any){
  
-    for (let i ;i<5;i++){
-        if ( Number(data.i ) >this.max ){
-            this.tab=new Array(i);
-        }
+ public onTap(data:any) {
+  
+  for(let prj in this.Projets){
+    if (this.Projets[prj]===data){
+      this.Data.detail= this.Detail[this.Key[prj]];
+      this.Data.key=this.Key[prj];
+     
     }
-    console.log(this.max)
+  }
+  this.Data.projet=data;
  
- }
+  this.router.navigate(["/ProductDetaill"]);
+}
+
   ngOnInit() {
   }
 

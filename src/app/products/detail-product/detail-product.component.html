@@ -1,239 +1,116 @@
 
-<div class="container container1 ">
-  
-  <h2 >titire Projet</h2>
-  <hr>
-  <nav class="navbar navbar-light bg-light2 bg-light">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Demande ce Produit</button>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Ecrire un Avis</button>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Damande Un Demo</button>
-      
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Formulaire</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+<div class="container-fluid">
+  <app-slide-img [Note]=note [lien]=lien [title]=title></app-slide-img>
+  <div class=" row">
+    <div class="col-lg-4">
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-body">              
+             <h6>Created:</h6>&nbsp;<p >{{projet.Date_added}}</p><br><br>
+             <h6>Last Update :</h6>&nbsp;<p >{{detail.Date_updated}}</p> <br><br>
+             <h6> Category:</h6>&nbsp;<p >{{detail.Category}}</p><br><br>
+             <h6> Type:</h6>&nbsp;<p >{{detail.Type}}</p><br><br>
+             <h6> Tags :</h6>&nbsp;<p *ngFor="let tag of Tags"  >{{tag}} , &nbsp; </p><br><br>
+             <h6> Technologies :</h6>&nbsp;<p *ngFor="let Technologie of Technologies"  >{{Technologie}} , &nbsp; </p><br><br>
             </div>
-            <div class="modal-body">
-             
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Send message</button>
-            </div>
-          </div>
-        </div>
-      </div>
-  </nav>
- <hr> 
-    <div class="container container2">
-      <div class="row">
-        <div class="col-lg-3">  <img src="../../assets/B.jpg" alt="..." class="img-thumbnail"></div>
-         
-        <div class="col-lg-7"> 
-            <div class="accordion" id="accordionExample">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                       <h5> Description Projet ></h5>
-                      </button>
-                    </h5>
-                  </div>
-              
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <h5>  Fonctionalités Principales ></h5>
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <h5> Plus D'informations ></h5>
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-              </div>
        </div>
-       <div class="col-lg-2"> Article
-          </div> 
-  </div>
-</div> 
-
- <div class="container container3">
-    
-    
-   <div class="row">
-      
-        <div class="col-lg-12">
-            <h3 class="h3"> Avis sur le produit </h3>
-            <hr>
-    
+       <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-body">              
+         <h6>Contract_type:</h6>&nbsp;<p >{{detail.Contract_type}}</p> <br><br>
+         <h6>Nb_sales:</h6>&nbsp;<p >{{detail.Nb_sales}}</p><br><br>
+         <h6>Status:</h6>&nbsp;<p >{{detail.Status}}</p><br><br>
+         <h6> Type:</h6>&nbsp;<p >{{detail.Type}}</p><br><br>
+         <h6> Price:</h6>&nbsp;<p >{{projet.Price.Etendu}}</p><br><br>
         </div>
-       
-      <div class="col-lg-12">
-        <div class="container">
-           <div class="row">
-              <div class="col-lg-2">
-
-              <img src="../../../assets/star.png" alt="">
-              </div>
-              <div class="col-lg-3">
-                  <div class="progress">
-                     5 étoile <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 10%"  aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <br>
-                  <div class="progress">
-                      4 étoile <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <br>
-                  <div class="progress">
-                      3 étoile <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <br>
-                  <div class="progress">
-                      3 étoile <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <br>
-                  <div class="progress">
-                      2 étoile <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <br>
-                  <div class="progress">
-                      1 étoile <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
+   </div>
+       <div class="card bg-light mb-3" style="max-width: 18rem;">
+          <div class="card-body">              
+          <button type="button" (click)="Hide()" class="btn btn-link"> <img src="../../assets/cart.png" alt="" style="display:inline">&nbsp; <h6 style="color:#28a745;display:inline">Add to your Panier</h6></button>
+            
+          </div>
+     </div>
+     <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-body">              
+        <button type="button" (click)="Hide2()" class="btn btn-link"> <img src="../../assets/catalogue.png" alt="" style="display:inline">&nbsp; <h6 style="color:#28a745;display:inline">Description</h6></button>
+          
+        </div>
+   </div>
+       <div class="card bg-light mb-3" style="max-width: 18rem;">
+          <div class="card-body">              
+          <button type="button" (click)="Hide()" class="btn btn-link"> <img src="../../assets/chat.png" alt="" style="display:inline">&nbsp; <h6 style="color:#28a745;display:inline">Comment</h6></button>
+            
+          </div>
+     </div>
+     <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-body">              
+            <h6> Number of total votes :</h6><p ></p> <br><br>
+            <img src="../../assets/star.png" ><h6 style="display:inline"> 5:</h6> &nbsp;
+            <div class="progress">
+                <div style="display:inline" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow=rat1    aria-valuemin="0" aria-valuemax="100"></div>
               </div>  
               
-              <div class="col-lg-5 col6">
-                <h4>Avez-vous utilisé ce produit auparavant? </h4>
-                  <img src="../../../assets/star (1).png" alt="">
-                   <img src="../../../assets/star (1).png" alt="">
-                    <img src="../../../assets/star (1).png" alt="">
-                     <img src="../../../assets/star (1).png" alt=""> 
-                     <img src="../../../assets/star (1).png" alt=""> 
-                     <img src="../../../assets/star (1).png" alt="">
-                     <br><br>
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Ecrire un Avis</button>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
+            <img src="../../assets/star.png" ><h6 style="display:inline"> 4:</h6> &nbsp;
+            <div class="progress">
+                <div style="display:inline" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow=rat2 aria-valuemin="0" aria-valuemax="100"></div>
+              </div>  
+              <img src="../../assets/star.png" ><h6 style="display:inline"> 3:</h6> &nbsp;
+              <div class="progress">
+                  <div style="display:inline" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow=rat3 aria-valuemin="0" aria-valuemax="100"></div>
+                </div>  
+                
+              <img src="../../assets/star.png" ><h6 style="display:inline"> 2:</h6> &nbsp;
+              <div class="progress">
+                  <div style="display:inline" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow=rat4 aria-valuemin="0" aria-valuemax="100"></div>
+                </div>  
+                <img src="../../assets/star.png" ><h6 style="display:inline"> 1:</h6> &nbsp;
+                <div class="progress">
+                    <div style="display:inline" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow=rat5 aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>  
+                       
+            <br><br>
+          
+        </div>
+   </div>
+    </div>
+    <div  class="col-lg-8">
+      <div class="card bg-light mb-3" *ngIf="hide" style="max-width: auto;" >
+      <div class="card-body">   
+        <div class="container ctn2" >
+          
+            <h2>Comments :</h2> <br><br>
+              <div class="row">
+              <!-- Contenedor Principal -->
+                <div class="comments-container" *ngFor="let item of Ctn" >
+             
+                <ul id="comments-list" class="comments-list">
+                  <li>
+                    <div class="comment-main-level">
+                      <!-- Avatar -->
+                      <div class="comment-avatar"><img src="../../assets/B.jpg" alt=""></div>
+                      <!-- Contenedor del Comentario -->
+                      <div class="comment-box">
+                        <div class="comment-head">
+                          <h6 class="comment-name "> {{item.User_name}}</h6>
+                          <span>{{item.Add_date}}</span>
+                         
                         </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="form-group">
-                              <label for="recipient-name" class="col-form-label">Recipient:</label>
-                              <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                            <div class="form-group">
-                              <label for="message-text" class="col-form-label">Message:</label>
-                              <textarea class="form-control" id="message-text"></textarea>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Send message</button>
+                        <div class="comment-content">
+                          {{item.comment}} 
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </li>
+                </ul>
               </div>
-              
-          </div>
-         </div>  
-      </div>
-   
-      <div class="col-lg-12">
-        <div class="card col-md-6 mt-5 mb-5">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="100000">
-            <div class="w-100 carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <div class="carousel-caption">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <img src="http://via.placeholder.com/200x200" alt="" class="rounded-circle img-fluid"/>
-                    </div>
-                    <div class="col-sm-9">
-                      <h3>Comment1</h3>
-                      <small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small>
-                      <small class="smallest mute">- Yayo Dudemous</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <img src="http://via.placeholder.com/200x200" alt="" class="rounded-circle img-fluid">
-                    </div>
-                    <div class="col-sm-9">
-                      <h3>Comment2</h3>
-                      <small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small>
-                      <small class="smallest mute">- Yayo Dudemous</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <img src="http://via.placeholder.com/200x200" alt="" class="rounded-circle img-fluid">
-                    </div>
-                    <div class="col-sm-9">
-                      <h3>Comment3</h3>
-                      <small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small>
-                      <small class="smallest mute">- Yayo Dudemous</small>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-            <div class="float-right navi">
-            <a class="" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon ico" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon ico" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-            </div>
           </div>
-        </div>
-      </div>
-
+        </div> 
+        <div class="card bg-light mb-3" *ngIf="hide2" style="max-width: auto;" >
+            <div class="card-body"> 
+              <h2>Description</h2>  
+            </div>
+       </div>
+    </div>
   </div>
-  </div>
+ 
 </div>

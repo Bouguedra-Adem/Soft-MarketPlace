@@ -18,18 +18,18 @@ import {FooterComponent} from './Footer/footer.component';
 import {AccountComponent} from './Account/account.component';
 import {ProductsComponent} from './products/products.component';
 import {ProductComponent} from './products/product/product.component';
-
+import {NavbarComponent } from './navbar/navbar.component';
 import {MatTabsModule} from '@angular/material/tabs';
-import {DetailProductComponent} from './products/detail-product/detail-product.component';
-import {SignInComponent} from './Account/sign-in/sign-in.component';
-
+import { DetailProductComponent } from './products/detail-product/detail-product.component';
+import { SignInComponent } from './Account/sign-in/sign-in.component';
+import {DataService} from './Services/data.service';
+import { from } from 'rxjs/internal/observable/from';
 import {FormIndividualComponent} from './Account/SignUp/form-individual/form-individual.component';
 import {FormEnterpriseComponent} from './Account/SignUp/form-enterprise/form-enterprise.component';
 import {ProfileUserComponent} from './profile-user/profile-user.component';
 import {ProfileUserNavbarComponent} from './profile-user/profile-user-navbar/profile-user-navbar.component';
 import {SlideImgComponent} from './slide-img/slide-img.component';
 import {CreatProductComponent} from './products/creat-product/creat-product.component';
-import {NavbarComponent} from './navbar/navbar.component';
 import { ClientsListComponent } from './profile-user/clients-list/clients-list.component';
 import {ProfileComponent} from './profile-user/profile/profile.component';
 import {EarningsComponent} from './profile-user/earnings/earnings.component';
@@ -37,6 +37,7 @@ import {UserService} from './shared/Services/user.service';
 import { ProfileFormComponent } from './profile-user/profile-form/profile-form.component';
 import { ClientCardComponent } from './profile-user/clients-list/client-card/client-card.component';
 import { ClientListService } from './shared/Services/client-list.service';
+import { AuthService } from './Services/auth-functions.service';
 
 
 const appRoutes: Routes = [
@@ -60,6 +61,7 @@ const appRoutes: Routes = [
   {path: 'ProductDetaill', component: DetailProductComponent},
   {path: '', pathMatch: 'full', component: HomeComponent},
   {path: '**', component: HomeComponent}
+
 
 ];
 
@@ -103,7 +105,8 @@ const appRoutes: Routes = [
     AngularFireDatabaseModule
   ],
 
-  providers: [AngularFireDatabase, DBFunctionsService, ProfileService, UserService, ClientListService],
+  providers: [AngularFireDatabase, DBFunctionsService, ProfileService, UserService, ClientListService, DataService, AuthService],
+
   bootstrap: [AppComponent],
 })
 export class AppModule {

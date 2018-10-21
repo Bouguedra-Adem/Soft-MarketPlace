@@ -1,10 +1,116 @@
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-caption"> 
-      
-    </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="{{lien}}" alt="First slide">
-            </div>
+<div class="container-fluid ctn">
+    <img src="../../assets/B.jpg" style="width:18%; height:50%;"class="rounded-circle" alt="">
+    <h1 class="h3Style">{{title}}</h1>
+    <div class="contaier ctn1"><h1>{{Note}}</h1><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""> </div>
+    <div class="container ctn2">
+           <div class="row">
+               <div class="col-lg-2">
+                    <button type="button" class="btn btn-primary" data-toggle="modal"  data-target="#exampleModal" data-whatever="@mdo"><p>BUY NOW</p></button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                           
+                            <div class="modal-content">
+                                <div class="modal-header" *ngIf="bool1">
+                                    <h5 class="modal-title" id="exampleModalLabel" style="text-align:center;">you don't have a permission ! create your account or login to it</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="false">&times;</span>
+                                    </button>
+                                </div>
+                               
+                                <div class="modal-footer"*ngIf="bool1" >
+                                    
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" class="btn btn-primary" (click)='onTap()' >My Account</button>
+                                </div>
+                                <div class="modal-header" *ngIf="bool">
+                                <h5 class="modal-title" id="exampleModalLabel">Formulaire</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body" *ngIf="bool">
+                                
+                                </div>
+                                <div class="modal-footer" *ngIf="bool">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+             
+                </div>
+              <div class="col-lg-4">
+                        <button type="button" class="btn btn-primary" data-toggle="modal"  data-target="#exampleModal1" data-whatever="@mdo"><p> REQUEST A DEMANSTRATION </p></button>
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header" *ngIf="bool1">
+                                                <h5 class="modal-title" id="exampleModalLabel" style="text-align:center;">you don't have a permission ! create your account or login to it</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            
+                                            <div class="modal-footer"*ngIf="bool1" >
+                                                
+                                                <button type="button"type="button" class="close" data-dismiss="modal" aria-label="Close" class="btn btn-primary" (click)='onTap()'>My Account</button>
+                                            </div>
+                                            <div class="modal-header" *ngIf="bool">
+                                            <h5 class="modal-title" id="exampleModalLabel">Formulaire</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body" *ngIf="bool">
+                                            
+                                            </div>
+                                            <div class="modal-footer" *ngIf="bool">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Send message</button>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                 
+               </div>
+               <div class="col-lg-5">
+                    <button type="button" class="btn btn-primary" data-toggle="modal"  data-target="#exampleModal2" data-whatever="@mdo"><p>GIVE AN OPINION</p></button>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header" *ngIf="bool1">
+                                            <h5 class="modal-title" id="exampleModalLabel" style="text-align:center;">you don't have a permission ! create your account or login to it</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="modal-footer"*ngIf="bool1" >
+                                            
+                                            <button type="button"type="button" class="close" data-dismiss="modal" aria-label="Close" class="btn btn-primary"(click)='onTap()' >My Account</button>
+                                        </div>
+                                        <div class="modal-header" *ngIf="bool">
+                                        <h5 class="modal-title" id="exampleModalLabel">Formulaire</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body" *ngIf="bool">
+                                        
+                                        </div>
+                                        <div class="modal-footer" *ngIf="bool">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+             
+                </div>
+                
+                
+                
         </div>
     </div>
+    
+</div>  

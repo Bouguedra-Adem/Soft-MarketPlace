@@ -1,0 +1,237 @@
+
+<div class="contaire-fluid ctn1">
+<div class="row row1">
+  <div class="col-lg-4 col4">
+      <div class="contaier-fluid ctn2">
+        <h2 style="text-align:center;padding-top:50%;color:black">Creat Account As :</h2>
+        <div class="row row2">
+            <div class="col-lg-4">
+                <button type="button" style=" border-radius: 1.25rem;" (click)="AsDev()" class="btn btn-success btn-sm">Producer</button>
+            </div>
+             <div class="col-lg-4">
+                <button type="button" style=" border-radius: 1.25rem;" class="btn btn-success btn-sm">Consomator</button>
+            </div>
+         </div>
+      </div>
+  </div>
+  <div class="col-lg-8">
+      <h2 *ngIf="Form_dev_1 ||Form_dev_2||Form_dev_3 " style="text-align:center;padding-top:5%;color:black;">Producer Forms :</h2>
+      <form *ngIf="Form_dev_1" >
+            <div class="form-group">
+                  
+                  <input type="email" class="form-control is-invalid" name="Email" [(ngModel)]="Email" [ngModelOptions]="{standalone: true}" [class.is-invalid]=bool1 aria-describedby="emailHelp" placeholder="Email">
+                 
+                  <div *ngIf="bool1" class="invalid-feedback">
+                    Invalid Email.
+                  </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control is-invalid"name="First_name" [class.is-invalid]="bool2"[ngModelOptions]="{standalone: true}" [(ngModel)]="First_name" placeholder="First name">
+                   
+                      <div *ngIf="bool2"  class="invalid-feedback">
+                        Invalid FirstName
+                      </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control is-invalid" name="Last_name" [class.is-invalid]="bool3"[ngModelOptions]="{standalone: true}" [(ngModel)]="Last_name" placeholder="Last name">
+                   
+                      <div *ngIf="bool3" class="invalid-feedback">
+                        Invalid LastName
+                      </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control is-invalid" name="adr" [class.is-invalid]="bool4" [ngModelOptions]="{standalone: true}"[(ngModel)]="Adr" placeholder="Address">
+                    <div *ngIf="bool4" class="invalid-feedback">
+                        Invalid 
+                    </div>                
+                </div>
+                <div class="form-group col-md-6">
+              
+                  <select id="inputState" class="form-control is-invalid" name="chosmod" [class.is-invalid]="bool15" [(ngModel)]="chosenMod">
+                    <option value="mod1">Choose your country...</option>
+                    <option value="Algérie">Algeria</option>
+                    <option value="tunis">tunis</option>
+                  </select>
+                  <div *ngIf="bool15" class="invalid-feedback">
+                    Invalid 
+                 </div>
+                </div>
+              
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <input type="text" class="form-control is-invalid" name="Birthdate" [class.is-invalid]="bool5"[ngModelOptions]="{standalone: true}" [(ngModel)]="Birthdate"  placeholder="Date Birthdate DD/MM/YYYY">
+                      <div *ngIf="bool5" class="invalid-feedback">
+                        Invalid 
+                      </div>
+                    </div>
+                  <div class="form-group col-md-6">
+                      <input type="text" class="form-control is-invalid" name="Phone_number" [class.is-invalid]="bool6" [ngModelOptions]="{standalone: true}"[(ngModel)]="Phone_number" placeholder="Phone Number">
+                      <div *ngIf="bool6" class="invalid-feedback">
+                        Invalid PhoneNumber
+                      </div>
+                </div>
+              </div>
+              <div class="form-group">
+              
+                <input type="password" class="form-control is-invalid"  name="Password" [class.is-invalid]="bool7"[ngModelOptions]="{standalone: true}" [(ngModel)]="Password" placeholder="Password">
+                <div *ngIf="bool7" class="invalid-feedback">
+                    Invalid Password
+                  </div>
+              </div>
+             
+              <div class="form-group">
+                  <input type="password" class="form-control is-invalid"  name="ConfirmPassword" [class.is-invalid]="bool8"[ngModelOptions]="{standalone: true}" [(ngModel)]="ConfirmPassword" placeholder="Confirm Password">
+                  <div *ngIf="bool8" class="invalid-feedback">
+                   Invalid Confirm Password
+                  </div>
+            </div>       
+              <div class="row row3">
+               
+                  <div class="col-lg-6">
+                     <button type="button" class="btn btn-success" (click)="Next1()">Next ></button>
+                  </div>
+              </div>    
+      </form>
+      <form *ngIf="Form_dev_2" >
+            <div class="form-group">
+                  <textarea class="form-control is-invalid" id="exampleFormControlTextarea1"  name="Bio" [class.is-invalid]="bool9"[ngModelOptions]="{standalone: true}" [(ngModel)]="Bio" rows="2" placeholder="Bio..."></textarea>
+                  <div *ngIf="bool9" class="invalid-feedback">
+                    Invalid Confirm Password
+                  </div>
+            </div>
+            <div class="Form-group">
+                <input type="text" class="form-control is-invalid" name="Product_type" [class.is-invalid]="bool10"[ngModelOptions]="{standalone: true}" [(ngModel)]="Product_type"  placeholder="Product_type : Mobile ,Web apps, .. ">
+                <div *ngIf="bool10" class="invalid-feedback">
+                  Invalid 
+                </div>
+            </div>
+            <br>
+              <div class="form-group">
+                  <input type="text" class="form-control is-invalid" name="Technologies" [class.is-invalid]="bool11" [ngModelOptions]="{standalone: true}"[(ngModel)]="Technologies"  placeholder="Technologies : Html ,Css ,NodeJs ,...">
+                  <div *ngIf="bool11" class="invalid-feedback">
+                    Invalid 
+                  </div>
+              </div>
+                 <div class="form-row">
+                    
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control is-invalid" name="GithubLink" [class.is-invalid]="bool12"[ngModelOptions]="{standalone: true}" [(ngModel)]="GithubLink" placeholder="Github Link">
+                        <div *ngIf="bool12" class="invalid-feedback">
+                            Invalid 
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control is-invalid" name="LinkdenLink" [class.is-invalid]="bool13" [ngModelOptions]="{standalone: true}"[(ngModel)]="LinkdenLink" placeholder="Linkden Link">
+                        <div *ngIf="bool13" class="invalid-feedback">
+                            Invalid 
+                        </div>
+                    </div>
+                 </div>
+            
+           
+            <div class="row row3">
+                <div class="col-lg-6">
+                   <button type="button" class="btn btn-success" (click)="Prev2()">< Previous</button>
+                </div>
+                <div class="col-lg-6">
+                   <button type="button" class="btn btn-success" (click)="Next2()">Next ></button>
+                </div>
+          </div>    
+      </form>
+      <form *ngIf="Form_dev_3" >
+          
+          <div class="form-row" style="padding-left:25%;padding-top:8%;">
+              <div class="form-group col-md-6">
+                <div class="form-check">
+                      <input class="form-check-input " type="checkbox"    [class.is-invalid]="CIB1"(click)="checkboxCIB()" >
+                      <label class="form-check-label" for="defaultCheck1">
+                        CIB
+                      </label>
+                      <div *ngIf="CIB1" class="invalid-feedback">
+                        Invalid 
+                    </div>
+                 </div>
+                
+                
+              </div> 
+              <div class="form-group col-md-6">
+                   <div class="form-check">
+                      <input class="form-check-input" type="checkbox"  [class.is-invalid]="CCP1" (click)="checkboxCCP()" >
+                      <label class="form-check-label" for="defaultCheck1">
+                       CCP
+                      </label>
+                      <div *ngIf="CCP1" class="invalid-feedback">
+                        Invalid
+                     </div>
+                   </div> 
+              </div>
+              <div class="form-group col-md-8">
+                  
+                    <input type="text" class="form-control " name="Account_number" [(ngModel)]="Account_number" [class.is-invalid]="bool14" [ngModelOptions]="{standalone: true}" placeholder="Account_number">
+                    
+                     <div *ngIf="bool14" class="invalid-feedback">
+                       Invalid 
+                     </div> 
+                
+            </div>
+            <br><br>
+            <div class="form-group col-md-8">
+            <div class="form-check">
+                    <input class="form-check-input" type="checkbox"    [class.is-invalid]="CDN" (click)="checkboxCDN()" >
+                    <label class="form-check-label" for="defaultCheck1">
+                     accept the conditions
+                    </label>
+                    <div *ngIf="CDN" class="invalid-feedback">
+                      Invalid
+                   </div>
+                   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
+                       Contract guide
+                   </button>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                           
+                          </div>
+                        </div>
+                     </div>
+             </div> 
+            </div>
+            
+          </div> 
+          <div class="row row3">
+              <div class="col-lg-6">
+                 <button type="button" class="btn btn-success" (click)="Prev3()">< Previous</button>
+              </div>
+              <div class="col-lg-6">
+                 <button type="submit" class="btn btn-success" (click)="Submit()">Submit</button>
+              </div>
+        </div>    
+      </form>
+      <div *ngIf="Form_dev_4"  class="card text-white bg-success mb-3" style="max-width: 30rem; margin-left:25%;margin-top:20%">
+           
+            <div class="card-body">
+              <h5 class="card-title">Producer account</h5>
+              <p class="card-text">your request has been sent successfully, wait for the administrator's response</p>
+            </div>
+      </div>
+</div>
+
+
+
+</div>
+

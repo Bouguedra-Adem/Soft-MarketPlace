@@ -1,0 +1,45 @@
+.col4{
+    background-image: url(../../assets/B.jpg);
+    
+    height: 600px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px; 
+     padding-left: 0px; 
+    background-repeat: no-repeat;
+}
+form{
+    padding-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.ctn1{
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #6c757d0a;
+}
+.row2{
+    padding-top: 10%;
+    padding-left: 25%;
+}
+.row3{
+  
+    padding-top: 10px;
+}
+.row1{
+   
+    padding-left: 50px;
+    padding-right: 50px;
+     box-shadow: 7px 7px 21px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 7px 21px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 21px -1px rgba(0,0,0,0.75);
+    
+}
+.ctn2{
+    height: 99%;
+   
+    background-color: rgba(131, 194, 125, 0.75);
+}

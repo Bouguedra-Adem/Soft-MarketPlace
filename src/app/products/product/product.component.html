@@ -1,32 +1,30 @@
 
 <div class="container">
     <div class="row">
-         <div class="col-12 col-sm-4  col-md-6 col-lg-6 col" *ngFor="let projet of Projets " colspan = "6" rowspan="7" >
+         <div class="col-12 col-sm-4  col-md-6 col-lg-6 col" *ngFor="let projet of Projets" colspan = "6" rowspan="7" >
                 <div class="card" >
                         
                    <div class="project">
                         <figure >
                             <img src="../../assets/B.jpg" class="cadr-img-top">
                             <span class="actions">
-                                <span class="project-details">{{projet.titre}}</span><br>
-                                <p>Date Pub :{{projet.date_pub}}</p>
-                                <h6 class="pp">Description</h6>
-                                <p class="pp"> {{projet.Description}} </p>
+                                <span class="project-details">{{projet.Name}}</span><br>
+                                <p>Date Pub :{{projet.Date_added}}</p>
+                                <h6 class="pp">Description :</h6>
+                                <p class="pp"> {{projet.Description_brief}} </p>
                            </span>
                        </figure>
                     </div>
             
-                    <div class="card-body">
-                     
+                    <div class="card-body">                     
                         <div class="container"> 
                             <div class="row">  
                                 <div class="col-lg-4">
-                                    <h6> {{projet.Prix}} DA</h6> 
-                                    <img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star.png" alt=""><img src="../../assets/star1.png" alt="">            
+                                    <h6> {{projet.Price.Etendu}} DA</h6>            
                                 </div>  
                                                 
                                 <div class="col-lg-6">
-                                   <button type="button" routerLink="/ProductDetaill"   class="btn btn-outline-success">See More</button>
+                                   <button type="button" (click)='onTap(projet ,key)'  class="btn btn-outline-success">See More</button>
                                 </div>
                                 <div class="col-lg-2">
                                    <button type="button " class=" btn1 btn btn-outline-light"><img src="../../assets/cart.png" alt=""></button>

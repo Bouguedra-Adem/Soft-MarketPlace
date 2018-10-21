@@ -1,6 +1,9 @@
 body{
     background-color: #6c757d0a;
 }
+.f1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
 .container-fluid {
     width: 100%;
     padding-right: 15px;
@@ -106,6 +109,8 @@ border-radius: 1.25rem;
     position: relative;
     width: 64px;
     height: 64px;
+    margin-left: 50%;
+    margin-top: 10%;
   }
   .lds-spinner div {
     transform-origin: 32px 32px;
@@ -120,8 +125,7 @@ border-radius: 1.25rem;
     width: 5px;
     height: 14px;
     border-radius: 20%;
-    background: #fff;
-  
+    background: #5fa464;
   }
   .lds-spinner div:nth-child(1) {
     transform: rotate(0deg);
