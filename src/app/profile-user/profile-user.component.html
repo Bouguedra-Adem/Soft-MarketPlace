@@ -4,7 +4,7 @@
   <div class="row header">
     <div class="col-sm-3 d-flex justify-content-center align-items-center">
       <a>
-        <img title="profile image" class="rounded-circle" [src]='userPic' alt="Profile picture"></a>
+        <img title="profile image" class="rounded-circle  p-2" [src]='userPic' alt="Profile picture"></a>
     </div>
     <div class="col-sm-9 my-auto ">
       <h1>{{(user | async)?.First_name}} {{(user | async)?.Last_name}}</h1>
@@ -45,8 +45,9 @@
 
       <!-- nav bar -->
       <ul class="nav nav-tabs" id="myTab">
-        <li class="active"><a [routerLink]="['profile']" data-toggle="tab">Profile</a></li>
-        <li><a [routerLink]="['earnings']" data-toggle="tab">Earnings</a></li>
+        <li style="margin: 5px;" class="active"><button class="btn btn-blue" [routerLink]="['profile']" data-toggle="tab">Profile</button></li>
+        <li style="margin: 5px;"><button class="btn btn-blue" [routerLink]="['earnings']" data-toggle="tab">Earnings</button></li>
+        <li style="margin: 5px;"><button class="btn btn-blue" [routerLink]="['clients-list']" data-toggle="tab">Clients list</button></li>
       </ul>
 
       <!-- Content -->
